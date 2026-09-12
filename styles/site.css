@@ -372,8 +372,8 @@ samp {
   #quarto-margin-sidebar {
     align-self: start;
     left: auto;
-    max-height: calc(100vh - 5.75rem);
-    overflow-y: auto;
+    max-height: none;
+    overflow: visible;
     position: sticky;
     top: 5rem !important;
     transform: translateX(clamp(1.25rem, 2vw, 2.5rem));
