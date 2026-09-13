@@ -430,3 +430,33 @@ samp {
     font-size: 0.86rem;
   }
 }
+
+.session-pdf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 0.45rem;
+  padding: 0.1rem 0.42rem;
+  border: 1px solid #c92a35;
+  border-radius: 0.25rem;
+  background: #fff;
+  color: #b4232f !important;
+  font-size: 0.78em;
+  font-weight: 700;
+  line-height: 1.45;
+  text-decoration: none !important;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.session-pdf-link:hover,
+.session-pdf-link:focus-visible {
+  border-color: #a51e28;
+  background: #b4232f;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.session-pdf-link .bi-filetype-pdf {
+  font-size: 1.15em;
+}
