@@ -1,0 +1,2272 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Simon THIVET">
+  <title>Pétrologie magmatique – SST.02208 – Séance 2 - Les roches magmatiques I : pétrographie et classification</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-3e9cb11a7d19b9c55707719c07642c0a.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+  
+  <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Séance 2 - Les roches magmatiques I : pétrographie et classification</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Simon THIVET
+</div>
+</div>
+</div>
+
+</section>
+<section id="plan-du-cours" class="slide level2">
+<h2>Plan du cours</h2>
+<!-- Tableau standard : Temps compact, Contenu prioritaire, Objectif lisible. -->
+<div class="course-plan-table">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Temps</th>
+<th>Contenu</th>
+<th>Objectif</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0-40 min</td>
+<td>Les différentes textures des roches magmatiques</td>
+<td>Décrire une roche magmatique avec des critères explicites</td>
+</tr>
+<tr class="even">
+<td>40-45 min</td>
+<td>Questions générales</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>45-60 min</td>
+<td>Pause</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>60-100 min</td>
+<td>Les différents systèmes de classification des roches magmatiques</td>
+<td>Nommer une roche magmatique selon sa composition minéralogique et chimique</td>
+</tr>
+<tr class="odd">
+<td>100-105 min</td>
+<td>Questions générales</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="rappel-sur-les-trois-échelles-danalyse" class="slide level2">
+<h2>Rappel sur les trois échelles d’analyse</h2>
+<div class="slide-block">
+<p><strong>Observer une roche à plusieurs échelles et comprendre son histoire</strong></p>
+<p>Cela nécessite l’utilisation de plusieurs outils et connaissances.</p>
+</div>
+<!-- BLOCS 2 À 4 : les trois échelles d'observation. -->
+<div class="slide-block-grid three" style="margin-top: var(--space-m);">
+<!-- BLOC 2 : orange | Terrain. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Échelle globale à locale : terrain</strong></p>
+<ul>
+<li>Échelle : km → m</li>
+<li>Connaissance du contexte géologique</li>
+<li>Contextualisation et analyse de l’affleurement</li>
+</ul>
+</div>
+<!-- BLOC 3 : vert | Échantillon. -->
+<div class="slide-block slide-block--green">
+<p><strong>Échelle macroscopique : échantillon</strong></p>
+<ul>
+<li>Échelle : m → mm</li>
+<li>Analyse des composants</li>
+<li>Caractérisation de la nature des échantillons : couleur, texture, forme, structure, minéralogie…</li>
+</ul>
+</div>
+<!-- BLOC 4 : orange | Laboratoire. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Échelle micro- à nanométrique : laboratoire</strong></p>
+<ul>
+<li>Échelle : mm → µm voire nm</li>
+<li>Préparation des échantillons</li>
+<li>Analyses pétrographiques (microscopie) et géochimiques (spectroscopie)</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Même roche, trois regards</strong> : Où affleure-t-elle ? Comment est-elle faite ? De quoi est-elle composée ?</p>
+<p><strong>On change d’échelle, mais on étudie toujours la même histoire géologique.</strong></p>
+</div>
+</div>
+</div>
+</section>
+<section id="rappel-sur-les-familles-de-roches-magmatiques" class="slide level2">
+<h2>Rappel sur les familles de roches magmatiques</h2>
+<!-- GRILLE UNIQUE : trois blocs, une colonne par famille de roche. -->
+<div class="slide-block-grid three">
+<!-- BLOC 1 : roches mantelliques. -->
+<div class="slide-block">
+<p><strong>Roches mantelliques</strong></p>
+<ul>
+<li>Sources ou résidus de fusion</li>
+<li>Roches ultramafiques avec des cristaux visibles à l’œil nu</li>
+<li>Information directe sur le manteau</li>
+</ul>
+<p><strong>Péridotite en enclave</strong></p>
+<div class="slide-media-grid three" style="--media-frame-height: 115px;">
+<figure>
+<img src="../material_used/seance_01/partie_b/slides_assets/mantle-outcrop.png" alt="Affleurement contenant des nodules de péridotite à San Carlos en Arizona">
+<figcaption>
+Affleurement.
+</figcaption>
+</figure>
+<figure>
+<img src="../material_used/seance_01/partie_b/slides_assets/mantle-sample.png" alt="Échantillon de péridotite riche en olivine">
+<figcaption>
+Échantillon.
+</figcaption>
+</figure>
+<figure>
+<img src="../material/cours_02/peroditite microscope.jpg" alt="Péridotite observée au microscope">
+<figcaption>
+Vue au microscope.
+</figcaption>
+</figure>
+</div>
+<p>San Carlos volcanic field, Arizona (USA), près de Peridot</p>
+</div>
+<!-- BLOC 2 : roches plutoniques. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Roches plutoniques</strong></p>
+<ul>
+<li>Cristallisation lente en profondeur</li>
+<li>Cristaux visibles à l’œil nu</li>
+<li>Information directe sur la nature de la formation du socle crustal</li>
+</ul>
+<p><strong>Granite</strong></p>
+<div class="slide-media-grid three" style="--media-frame-height: 115px;">
+<figure>
+<img src="../material_used/seance_01/partie_b/slides_assets/plutonic-outcrop.webp" alt="Affleurement de granite orbiculaire à Ruskiavuori en Finlande">
+<figcaption>
+Affleurement.
+</figcaption>
+</figure>
+<figure>
+<img src="../material_used/seance_01/partie_b/slides_assets/plutonic-sample.jpg" alt="Détail d'un granite orbiculaire">
+<figcaption>
+Échantillon.
+</figcaption>
+</figure>
+<figure>
+<img src="../material/cours_02/orbiculaire microscope.jpg" alt="Granite orbiculaire observé au microscope">
+<figcaption>
+Vue au microscope.
+</figcaption>
+</figure>
+</div>
+<p>Granites orbiculaires, Ruskiavuori (Finlande)</p>
+</div>
+<!-- BLOC 3 : roches volcaniques. -->
+<div class="slide-block">
+<p><strong>Roches volcaniques</strong></p>
+<ul>
+<li>Refroidissement rapide en surface</li>
+<li>Cristaux moins visibles à l’œil nu et vésicules</li>
+<li>Information directe sur les volcans</li>
+</ul>
+<p><strong>Basalte</strong></p>
+<div class="slide-media-grid three" style="--media-frame-height: 115px;">
+<figure>
+<img src="../material_used/seance_01/partie_b/slides_assets/volcanic-outcrop.webp" alt="Éruption et mise en place de lave au Piton de La Fournaise">
+<figcaption>
+Terrain.
+</figcaption>
+</figure>
+<figure>
+<img src="../material_used/seance_01/partie_b/slides_assets/volcanic-samples.jpg" alt="Échantillons de roches volcaniques du Piton de La Fournaise">
+<figcaption>
+Échantillons.
+</figcaption>
+</figure>
+<figure>
+<img src="../material/cours_02/sscoriabbasaltica(3).jpg" alt="Scorie basaltique observée au microscope">
+<figcaption>
+Vue au microscope.
+</figcaption>
+</figure>
+</div>
+<p>Piton de La Fournaise, La Réunion (France)</p>
+</div>
+</div>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Les roches mantelliques ne sont pas toujours le produit direct de la solidification d’un magma au sens strict : elles peuvent représenter des sources, des résidus de fusion ou des cumulats. Pour le cours, elles doivent cependant entrer très tôt dans le vocabulaire, car elles sont essentielles pour discuter la naissance des magmas.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="observer-un-affleurement" class="slide level2">
+<h2>Observer un affleurement</h2>
+<div class="slide-block">
+<p><strong>L’affleurement donne le contexte naturel de la roche</strong></p>
+<p>On cherche d’abord : le contexte géologique, la géométrie du corps rocheux, les contacts avec les roches voisines, les variations latérales ou verticales, les indices de mise en place des roches, …</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Pourquoi c’est important</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Où suis-je dans l’affleurement ?</td>
+<td>éviter l’échantillon sans contexte</td>
+</tr>
+<tr class="even">
+<td>La roche est-elle fraîche ?</td>
+<td>limiter les effets d’altération</td>
+</tr>
+<tr class="odd">
+<td>Quelle relation avec les autres roches ?</td>
+<td>reconstruire une chronologie relative</td>
+</tr>
+<tr class="even">
+<td>Quel échantillon est représentatif ?</td>
+<td>ne pas généraliser à partir d’un cas isolé</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Un échantillon isolé est beaucoup moins informatif qu’un échantillon replacé dans son contexte.</li>
+<li>L’identification de terrain est une hypothèse provisoire, qui sera testée par l’échantillon, la lame mince et éventuellement la chimie.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-daffleurement-roches-mantelliques" class="slide level2">
+<h2>Quelques exemples d’affleurement : roches mantelliques</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.40fr) minmax(0, 0.60fr);">
+<div class="slide-block">
+<p><strong>Ophiolite de l’Oman</strong></p>
+<figure style="margin: 0;">
+<img style="display: block; width: 100%; height: auto;" src="../material_used/seance_02/cours_02_moho_oman.jpg" alt="Ophiolite de l'Oman montrant la limite entre la croûte et le manteau">
+<figcaption>
+Ophiolite de l’Oman avec la limite entre le manteau et la croûte bien visible.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p>Ce type d’affleurement, présent dans des endroits limités sur Terre, donne accès à des matériaux mis en place à de grandes profondeurs. Ces roches mantelliques sont progressivement exhumées par des processus tectoniques comme l’obduction, ou par le volcanisme qui fait remonter des matériaux profonds lors des éruptions.</p>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-daffleurement-roches-plutoniques" class="slide level2">
+<h2>Quelques exemples d’affleurement : roches plutoniques</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);">
+<div class="slide-block">
+<p><strong>Intrusion plutonique en Corse</strong></p>
+<figure style="margin: 0;">
+<img style="display: block; width: 100%; height: auto;" src="../material_used/seance_02/cours_02_affleurement_intrusion_porto_corse.png" alt="Contact entre une intrusion granitique et son encaissant à Porto, en Corse">
+<figcaption>
+Intrusion plutonique en contact avec l’encaissant (Porto, Corse).
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p>Ces affleurements, régulièrement présents sur la croûte continentale, donnent accès à des matériaux crustaux mis en place en profondeur. Ces roches plutoniques sont progressivement exhumées par des processus érosifs et tectoniques comme la collision continentale. Ces roches informent sur la cristallisation des magmas en profondeur.</p>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-daffleurement-roches-volcaniques" class="slide level2">
+<h2>Quelques exemples d’affleurement : roches volcaniques</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);">
+<div class="slide-block">
+<p><strong>Empilement de coulées de lave à Madère</strong></p>
+<figure style="margin: 0;">
+<img style="display: block; width: 100%; height: auto;" src="../material_used/seance_02/cours_02_affleurement_coulees_prismees_madere.png" alt="Coulées basaltiques prismées à Madère, au Portugal">
+<figcaption>
+Coulées basaltiques prismées (Madère, Portugal).
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p>Ces affleurements, régulièrement présents dans les zones volcaniques, que ce soit en domaine continental ou océanique, montrent des matériaux directement mis en place en surface. Ces roches informent sur le volcanisme et la solidification des magmas en surface.</p>
+</div>
+</div>
+</section>
+<section id="observer-un-échantillon-au-niveau-macroscopique" class="slide level2">
+<h2>Observer un échantillon au niveau macroscopique</h2>
+<div class="slide-block">
+<p><strong>L’observation macroscopique d’un échantillon permet une description plus précise de la roche étudiée</strong></p>
+<p>On décrit d’abord : couleur générale (roche leucocrate claire ou mélanocrate sombre), texture granulométrique, texture cristalline, texture vésiculaire, altération, hétérogénéités, …</p>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Une roche mal décrite peut entraîner une mauvaise interprétation de son histoire. Il faut donc décrire méthodiquement une roche, la comparer avec d’autres si possible, avant de pouvoir la classer, l’interpréter et la nommer.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-déchantillons-roches-mantelliques" class="slide level2">
+<h2>Quelques exemples d’échantillons : roches mantelliques</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Les péridotites</strong></p>
+<figure style="margin: 0;">
+<img style="display: block; width: 75%; height: auto;" src="../material_used/seance_02/cours_02_peridotite_examples.png" alt="Péridotite en inclusion dans un basalte et péridotite métamorphisée lors de la collision alpine">
+<figcaption>
+À gauche : morceau de péridotite en inclusion dans un basalte (roche volcanique). À droite : péridotite métamorphisée lors de la collision alpine (roche magmatique métamorphisée).
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p>Ces exemples illustrent deux histoires de roches mantelliques : en inclusion dans un basalte, un fragment de péridotite est transporté vers la surface par le magma ; dans les Alpes, une péridotite a été métamorphisée lors de la collision alpine.</p>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-déchantillons-roches-plutoniques" class="slide level2">
+<h2>Quelques exemples d’échantillons : roches plutoniques</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.30fr) minmax(0, 0.70fr);">
+<div class="slide-block">
+<p><strong>Les granites</strong></p>
+<figure style="margin: 0;">
+<img style="display: block; width: 100%; height: auto;" src="../material_used/seance_02/cours_02_granite_texture_grenue.png" alt="Granite montrant une texture grenue">
+<figcaption>
+Texture grenue d’un granite.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p>Formées en profondeur, ces roches refroidissent lentement. Les minéraux ont le temps de cristalliser et sont visibles à l’œil nu : ils s’emboîtent les uns dans les autres et donnent une texture grenue, comme dans ce granite.</p>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Les roches plutoniques sont entièrement cristallisées, sans pâte vitreuse.</li>
+<li>Les cristaux peuvent avoir des tailles et habitus différents.</li>
+<li>Leurs natures et leurs proportions varient selon la composition chimique du magma.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-déchantillons-roches-volcaniques" class="slide level2">
+<h2>Quelques exemples d’échantillons : roches volcaniques</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);">
+<div class="slide-block">
+<p><strong>Les basaltes</strong></p>
+<figure style="margin: 0;">
+<img style="display: block; width: 100%; height: auto;" src="../material_used/seance_02/cours_02_basalte_porphyrique.png" alt="Échantillon de basalte porphyrique">
+<figcaption>
+Texture porphyrique d’un basalte.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p>Les roches volcaniques refroidissent relativement rapidement en surface : la pâte est souvent très fine ou vitreuse. Dans une texture porphyrique comme celle de ce basalte, de gros cristaux formés plus tôt en profondeur sont visibles dans cette pâte (ou matrice) fine.</p>
+</div>
+</div>
+</section>
+<section id="analyser-un-échantillon-au-niveau-microscopique-et-géochimique" class="slide level2">
+<h2>Analyser un échantillon au niveau microscopique et géochimique</h2>
+<div class="slide-block">
+<p><strong>L’analyse de l’échantillon en laboratoire donne accès à ce qui est invisible à l’œil nu</strong></p>
+<p>On peut utiliser des techniques de microscopie pour étudier en détail la pétrographie de la roche et des techniques de spectroscopie pour étudier la composition chimique de la roche et de ses constituants.</p>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>On peut notamment identifier des minéraux non visibles à l’œil nu pour reconstituer l’ordre relatif de cristallisation, des zonations géochimiques traduisant des variations de conditions P-T-X, …</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-danalyses-microscopiques-roches-mantelliques" class="slide level2">
+<h2>Quelques exemples d’analyses microscopiques : roches mantelliques</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Les péridotites</strong></p>
+<figure style="margin: 0;">
+<img style="display: block; width: 100%; height: auto;" src="../material_used/seance_02/cours_02_peridotite_microscope.jpg" alt="Péridotite observée au microscope optique en lumière polarisée">
+<figcaption>
+Photo d’une péridotite au microscope optique, lumière polarisée et analysée (LPA).
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p>Dans une péridotite, l’olivine et les pyroxènes forment une mosaïque de cristaux jointifs. Les roches du manteau se déforment à l’état solide : les grains peuvent s’orienter, s’étirer, se fragmenter ou recristalliser. Leur taille, leur forme et leur orientation gardent ainsi la trace des mouvements profonds du manteau.</p>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-danalyses-microscopiques-roches-plutoniques" class="slide level2">
+<h2>Quelques exemples d’analyses microscopiques : roches plutoniques</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.60fr) minmax(0, 0.40fr);">
+<div class="slide-block">
+<p><strong>Les gabbros</strong></p>
+<figure style="margin: 0;">
+<img style="display: block; width: 100%; height: auto;" src="../material_used/seance_02/cours_02_gabbro_texture_grenue.png" alt="Échantillon de gabbro à texture grenue et lame mince montrant pyroxènes et plagioclases">
+<figcaption>
+Échantillon de gabbro vu à l’œil nu et au microscope optique (LPA).
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p>Le refroidissement lent en profondeur laisse le temps aux cristaux de grandir et de s’imbriquer : la roche présente une texture grenue. Dans ce gabbro, les cristaux de plagioclase et de pyroxène sont visibles et forment une roche entièrement cristallisée, sans matrice résiduelle vitreuse ou microlitique.</p>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-danalyses-microscopiques-roches-volcaniques" class="slide level2">
+<h2>Quelques exemples d’analyses microscopiques : roches volcaniques</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.55fr) minmax(0, 0.45fr);">
+<div class="slide-block">
+<p><strong>Les basaltes</strong></p>
+<figure style="margin: 0;">
+<img style="display: block; width: 100%; height: auto;" src="../material_used/seance_02/cours_02_basalte_texture_microlitique.png" alt="Basalte en lame mince montrant des microlites, du verre et des phénocristaux">
+<figcaption>
+Échantillon de basalte vu à l’œil nu et au microscope optique (LPA).
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p>Le refroidissement rapide des roches volcaniques limite la croissance des cristaux : de petits microlites se forment dans une pâte parfois vitreuse. Des cristaux plus gros, les phénocristaux visibles ici, peuvent avoir commencé à cristalliser avant l’éruption en profondeur. La texture enregistre ainsi les différentes étapes du refroidissement du magma.</p>
+</div>
+</div>
+</section>
+<section id="mais-alors-comment-classifier-toutes-ces-roches" class="slide level2">
+<h2>Mais alors, comment classifier toutes ces roches ?</h2>
+<div class="slide-block">
+<p><strong>Pour les roches en général, et en particulier les roches magmatiques, on identifie majoritairement trois types de classification :</strong></p>
+<ul>
+<li>Textures de grains (roche massive vs.&nbsp;fragments)</li>
+<li>Textures cristallines (verre vs.&nbsp;cristaux de différentes tailles)</li>
+<li>Textures vésiculaires (dense vs.&nbsp;vésicules de différentes tailles)</li>
+</ul>
+</div>
+</section>
+<section id="texture-de-grains-roche-massive-vs.-fragments" class="slide level2">
+<h2>Texture de grains (roche massive vs.&nbsp;fragments)</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Fragments pyroclastiques</strong></p>
+<!-- Modifier width="45%" pour régler la taille de l'image ; son format original est conservé. -->
+<figure style="margin: 0 auto; text-align: center; width: 50%;">
+<img style="display: block; width: 100%; height: auto; margin: 0 auto;" src="../material_used/seance_02/cours_02_taille_forme_pyroclastes.jpg" alt="Diagramme montrant la taille et la forme des pyroclastes selon les styles éruptifs, avec des exemples de grains de cendres">
+<figcaption>
+Taille et morphologie des fragments pyroclastiques, avec des exemples naturels de cendres volcaniques © Thivet et al.&nbsp;2026 Elsevier.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Taille et forme des fragments</strong></p>
+<p>Si les roches magmatiques ne sont pas sous l’aspect massif (des roches massives peuvent être par exemple des intrusions plutoniques et des coulées de lave), on parle de fragments et plus particulièrement de pyroclastes (ou téphras).</p>
+<p>Les pyroclastes sont classés selon leur taille :</p>
+<ul>
+<li>Blocs et bombes : plus de 64 mm ;</li>
+<li>lapilli : de 2 à 64 mm ;</li>
+<li>cendres : moins de 2 mm.</li>
+</ul>
+<p>Leur forme (anguleuse ou arrondie, équante ou allongée) et leur vésicularité font aussi partie de leur description, et permettent de leur donner un nom secondaire.</p>
+</div>
+</div>
+</section>
+<section id="textures-cristallines-verre-vs.-cristaux" class="slide level2">
+<h2>Textures cristallines (verre vs.&nbsp;cristaux)</h2>
+<div class="slide-block">
+<p><strong>La distribution de la taille des cristaux</strong></p>
+<p>Différents noms de textures cristallines existent pour décrire les roches magmatiques :</p>
+<ul>
+<li>Grenue</li>
+<li>Porphyrique</li>
+<li>microlitique</li>
+<li>vitreuse</li>
+</ul>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Interprétation typique :</strong> histoire de cristallisation et rapidité de refroidissement.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="textures-cristallines-texture-grenue" class="slide level2">
+<h2>Textures cristallines : texture grenue</h2>
+<!-- DEUX BLOCS EN COLONNES : un exemple à gauche, définition et interprétation à droite. -->
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);">
+<!-- BLOC GAUCHE : exemple de roche à texture grenue. -->
+<div class="slide-block">
+<p><strong>Gabbro</strong></p>
+<!-- Modifier width="100%" pour régler la taille de l'image ; son format original est conservé. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img src="../material_used/seance_02/cours_02_gabbro_texture_grenue_exemple.png" alt="Exemple de gabbro à texture grenue">
+<figcaption>
+Gabbro : cristaux de plagioclase et de pyroxène, visibles à l’œil nu et au microscope optique (LPA).
+</figcaption>
+</figure>
+</div>
+</div>
+<!-- BLOC DROIT : définition et interprétation. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Texture grenue</strong></p>
+<p>Une texture grenue est une texture entièrement cristallisée, dans laquelle les cristaux sont visibles à l’œil nu et s’emboîtent les uns dans les autres, sans pâte vitreuse.</p>
+<p>Elle traduit généralement le refroidissement lent d’un magma en profondeur : le temps disponible permet aux cristaux de nucléer, de grandir et de former une mosaïque de grains jointifs.</p>
+<p>La taille, la forme et les proportions des cristaux renseignent sur les conditions de cristallisation. Cette texture caractérise surtout les roches plutoniques, comme les gabbros, les granites et les granodiorites, mais elle ne suffit pas à déterminer leur composition ou leur nom.</p>
+</div>
+</div>
+</section>
+<section id="textures-cristallines-texture-porphyrique" class="slide level2">
+<h2>Textures cristallines : texture porphyrique</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.30fr) minmax(0, 0.70fr);">
+<!-- BLOC GAUCHE : exemple d'andésite à texture porphyrique. -->
+<div class="slide-block">
+<p><strong>Andésite</strong></p>
+<!-- Modifier width="100%" pour régler la taille de l'image ; son format original est conservé. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img src="../material_used/seance_02/cours_02_andesite_texture_porphyrique.png" alt="Andésite à texture porphyrique">
+<figcaption>
+Andésite : phénocristaux de pyroxènes et d’amphiboles dans une matrice microlitique ou vitreuse.
+</figcaption>
+</figure>
+</div>
+</div>
+<!-- BLOC DROIT : définition et interprétation. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Texture porphyrique</strong></p>
+<p>Une texture porphyrique est une texture caractérisée par la présence de grands cristaux (phénocristaux) bien visibles à l’œil nu, qui sont noyés dans une matrice beaucoup plus fine, formée de micro-cristaux ou de verre.</p>
+<p>Elle traduit généralement un refroidissement en deux temps (ou polyphasé) d’un magma : une première phase de refroidissement lent en profondeur permettant la croissance des grands cristaux, suivie d’une seconde phase de refroidissement beaucoup plus rapide lors de la remontée ou de l’éruption du magma, figeant le reste du liquide sous forme de petits cristaux ou de verre.</p>
+</div>
+</div>
+</section>
+<section id="textures-cristallines-texture-aphyrique-ou-microlitique" class="slide level2">
+<h2>Textures cristallines : texture aphyrique ou microlitique</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.30fr) minmax(0, 0.70fr);">
+<!-- BLOC GAUCHE : exemple de basalte à texture microlitique. -->
+<div class="slide-block">
+<p><strong>Basalte</strong></p>
+<!-- Modifier width="100%" pour régler la taille de l'image ; son format original est conservé. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img src="../material_used/seance_02/cours_02_basalte_texture_microlitique.png" alt="Basalte présentant une texture microlitique">
+<figcaption>
+Basalte : matrice composée de cristaux invisibles à l’œil nu (microlites ou nanolites) ou de verre.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Cet exemple peut aussi être classifié comme une texture porphyrique, étant donné que l’on observe quelques phénocristaux à l’œil nu.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- BLOC DROIT : définition et interprétation. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Texture microlitique</strong></p>
+<p>Une texture microlitique est une texture incomplètement cristallisée, caractérisée par une multitude de minuscules cristaux allongés en forme de baguettes (les microlites), invisibles à l’œil nu, qui sont noyés aux côtés d’éventuels grands cristaux dans une pâte vitreuse non cristallisée (le verre).</p>
+<p>Elle traduit généralement le refroidissement très rapide d’un magma en surface, lors d’une éruption volcanique : la lave, entrée en contact brutal avec l’air ou l’eau, se fige si vite que les atomes n’ont pas le temps de s’organiser pour former de grands cristaux, bloquant une partie de la roche à l’état de verre.</p>
+</div>
+</div>
+</section>
+<section id="textures-cristallines-texture-vitreuse" class="slide level2">
+<h2>Textures cristallines : texture vitreuse</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);">
+<!-- BLOC GAUCHE : exemple d'obsidienne présentant une texture vitreuse. -->
+<div class="slide-block">
+<p><strong>Obsidienne</strong></p>
+<!-- Modifier width="100%" pour régler la taille de l'image ; son format original est conservé. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img src="../material_used/seance_02/cours_02_obsidienne_texture_vitreuse.jpg" alt="Obsidienne présentant une texture vitreuse">
+<figcaption>
+Obsidienne : verre volcanique avec une absence majoritaire de cristaux.
+</figcaption>
+</figure>
+</div>
+</div>
+<!-- BLOC DROIT : définition et interprétation. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Texture vitreuse</strong></p>
+<p>Une texture vitreuse est une texture non cristallisée, entièrement ou quasi entièrement constituée de verre volcanique amorphe, dans laquelle aucun cristal (ou seulement de rares traces microscopiques) n’est visible, même au microscope.</p>
+<p>Elle traduit généralement un refroidissement extrêmement brutal (ou « trempe ») d’un magma en surface, le plus souvent au contact direct de l’eau ou de l’air : la chute de température est si instantanée que les atomes sont figés dans le désordre le plus total, sans avoir eu le moindre temps pour s’organiser et nucléer des cristaux.</p>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>La haute viscosité de certains magmas peut aussi empêcher la cristallisation des atomes, c’est notamment le cas des obsidiennes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="textures-cristallines-textures-particulières" class="slide level2">
+<h2>Textures cristallines : textures particulières</h2>
+<!-- BLOC UNIQUE : quatre images en deux colonnes et deux lignes. -->
+<div class="slide-block">
+<!-- Les images remplissent toute la largeur de leur cellule et conservent leur format original. -->
+<div class="slide-media-grid two" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_texture_particulieres_1.png" alt="Textures orbiculaire et en peigne">
+</figure>
+<figure>
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_texture_particulieres_2.png" alt="Coupe d'un orbicule et texture de cumulat">
+</figure>
+<figure>
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_texture_particulieres_3.png" alt="Textures vitreuse perlitique et spinifex">
+</figure>
+</div>
+</div>
+</section>
+<section id="textures-vésiculaires-verre-vs.-vésicules" class="slide level2">
+<h2>Textures vésiculaires (verre vs.&nbsp;vésicules)</h2>
+<div class="slide-block">
+<p><strong>La distribution de la taille des vésicules</strong></p>
+<p>Différents noms de textures vésiculaires existent pour décrire les roches magmatiques :</p>
+<ul>
+<li>Réticulite</li>
+<li>Ponce</li>
+<li>Scorie</li>
+<li>Dense</li>
+</ul>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Interprétation typique :</strong> histoire de dégazage et rapidité de remontée magmatique. Cristallisation et dégazage sont intimement liés (Séances 6 et 11)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="textures-vésiculaires-texture-réticulaire" class="slide level2">
+<h2>Textures vésiculaires : texture réticulaire</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.30fr) minmax(0, 0.70fr);">
+<!-- BLOC GAUCHE : roches présentant une texture réticulaire. -->
+<div class="slide-block">
+<p><strong>Réticulite</strong></p>
+<div class="slide-media-grid two" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img src="../material_used/seance_02/cours_02_reticulite_texture_reticulaire.jpg" alt="Réticulite d'Hawaï">
+<figcaption>
+Réticulite observée à l’échelle de l’échantillon.
+</figcaption>
+</figure>
+<figure>
+<img src="../material_used/seance_02/cours_02_scan_texture_reticulaire.png" alt="Scan tomographique d'une réticulite">
+<figcaption>
+Réticulite observée par scan tomographique.
+</figcaption>
+</figure>
+</div>
+</div>
+<!-- BLOC DROIT : définition et interprétation. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Texture réticulaire</strong></p>
+<p>Une texture réticulaire est une texture volcanique de type « mousse solide », caractérisée par des bulles si abondantes et dilatées qu’elles ont éclaté et fusionné, ne laissant qu’un réseau tridimensionnel de fins filaments de verre interconnectés.</p>
+<p>Elle se forme généralement dans des pyroclastes basaltiques très fluides produits lors de fontaines de lave intenses. La décompression rapide entraîne une forte expansion des gaz juste avant la solidification du verre, créant une structure extrêmement poreuse et perméable. Cette texture, avec une porosité souvent supérieure à 95 %, est caractéristique de la réticulite.</p>
+</div>
+</div>
+</section>
+<section id="textures-vésiculaires-texture-ponceuse" class="slide level2">
+<h2>Textures vésiculaires : texture ponceuse</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);">
+<!-- BLOC GAUCHE : roches présentant une texture ponceuse. -->
+<div class="slide-block">
+<p><strong>Ponce</strong></p>
+<div class="slide-media-grid two" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img src="../material_used/seance_02/cours_02_ponce_texture_ponceuse.jpg" alt="Ponce volcanique">
+<figcaption>
+Ponce volcanique observée à l’échelle macroscopique.
+</figcaption>
+</figure>
+<figure>
+<img src="../material_used/seance_02/cours_02_ponce_scan_texture_ponceuse.jpg" alt="Ponce observée au microscope">
+<figcaption>
+Ponce volcanique observée au microscope électronique à balayage.
+</figcaption>
+</figure>
+</div>
+</div>
+<!-- BLOC DROIT : définition et interprétation. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Texture ponceuse</strong></p>
+<p>Une texture ponceuse est une texture hautement vacuolaire, caractérisée par une multitude de petites cavités allongées ou sphériques, séparées par de minces parois de verre volcanique cloisonnées.</p>
+<p>Elle traduit généralement un refroidissement très rapide en surface d’un magma visqueux et riche en gaz lors d’éruptions volcaniques explosives : la décompression brutale libère les gaz qui forment une mousse de lave silicatée, piégée instantanément sous forme de verre lors du contact avec l’air. La densité exceptionnellement basse de la roche, souvent inférieure à celle de l’eau (ce qui la fait flotter), renseigne sur le volume immense occupé par ces bulles de gaz fossiles, que l’on appelle vésicules.</p>
+</div>
+</div>
+</section>
+<section id="textures-vésiculaires-texture-scoriacée" class="slide level2">
+<h2>Textures vésiculaires : texture scoriacée</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);">
+<!-- BLOC GAUCHE : roches présentant une texture scoriacée. -->
+<div class="slide-block">
+<p><strong>Scorie</strong></p>
+<div class="slide-media-grid two" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img src="../material_used/seance_02/cours_02_scorie_texture_scoriacee.jpg" alt="Scorie volcanique">
+<figcaption>
+Roche : scorie volcanique observée à l’échelle macroscopique.
+</figcaption>
+</figure>
+<figure>
+<img src="../material_used/seance_02/cours_02_scorie_scan_texture_scoriacee.jpg" alt="Scorie observée au microscope">
+<figcaption>
+Roche : vésicules de la scorie observées au microscope.
+</figcaption>
+</figure>
+</div>
+</div>
+<!-- BLOC DROIT : définition et interprétation. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Texture scoriacée</strong></p>
+<p>Une texture scoriacée est une texture grossièrement vacuolaire, caractérisée par de grandes cavités irrégulières, déchiquetées et aux parois épaisses, formées de verre volcanique sombre et opaque qui intègre parfois de petits cristaux isolés.</p>
+<p>Elle traduit généralement le refroidissement rapide en surface d’un magma plus ou moins fluide. Le magma originaire de ce type de texture a permis aux bulles de gaz de grossir, de se déformer et de s’échapper plus facilement que dans une ponce avant la solidification complète. L’aspect rugueux, lourd et scoriacé de la surface renseigne sur la dynamique d’écoulement et d’éclatement des bulles de gaz à l’air libre.</p>
+</div>
+</div>
+</section>
+<section id="textures-vésiculaires-texture-dense" class="slide level2">
+<h2>Textures vésiculaires : texture dense</h2>
+<div class="slide-block-grid two" style="grid-template-columns: minmax(0, 1.30fr) minmax(0, 0.70fr);">
+<!-- BLOC GAUCHE : roche présentant une texture dense. -->
+<div class="slide-block">
+<p><strong>Obsidienne</strong></p>
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img src="../material_used/seance_02/cours_02_obsidienne_texture_vitreuse.jpg" alt="Obsidienne présentant une texture dense et vitreuse">
+<figcaption>
+Roche : obsidienne, exemple de roche volcanique dense.
+</figcaption>
+</figure>
+</div>
+</div>
+<!-- BLOC DROIT : définition et interprétation. -->
+<div class="slide-block slide-block--orange">
+<p><strong>Texture dense</strong></p>
+<p>Une texture dense (souvent qualifiée de massive) est une texture magmatique compacte, caractérisée par l’absence totale de vacuoles, de pores ou de bulles de gaz visibles, offrant une matrice rocheuse pleine, homogène et continue.</p>
+<p>Elle traduit généralement soit le refroidissement d’un magma sous une pression si forte qu’elle a empêché les gaz de s’échapper et de former des bulles (en profondeur), soit la solidification d’une lave en surface qui a été préalablement totalement dégazée avant de se figer.</p>
+</div>
+</div>
+</section>
+<section id="classification-minéralogique-et-géochimique-des-roches-magmatiques" class="slide level2">
+<h2>Classification minéralogique et géochimique des roches magmatiques</h2>
+<div class="slide-block">
+<p><strong>Après la pause</strong></p>
+<p>Nous venons de voir comment décrire ces roches grâce à leurs textures et pourquoi cela est important. Ces termes sont descriptifs, mais ils ne permettent pas de définir le nom réel d’une roche au sens minéralogique et géochimique. Nous allons donc maintenant voir comment déterminer le nom d’une roche magmatique à partir de sa composition chimique ou minéralogique.</p>
+</div>
+</section>
+<section id="classification-par-composition-minéralogique-le-diagramme-de-streckeisen" class="slide level2">
+<h2>Classification par composition minéralogique : le diagramme de Streckeisen</h2>
+<div class="slide-block-grid two" style="--streckeisen-image-width: 90%; grid-template-columns: minmax(0, 0.80fr) minmax(0, 1.20fr);">
+<div class="slide-block">
+<!-- Modifier --streckeisen-image-width pour régler la taille globale de l'image sans déformer ses proportions. -->
+<figure style="margin: 0 auto; text-align: center; width: var(--streckeisen-image-width);">
+<img style="display: block; height: auto; margin: 0 auto; width: 100%;" src="../material_used/seance_02/cours_02_streckeisen.gif" alt="Diagramme de Streckeisen présentant les nomenclatures des roches volcaniques et plutoniques">
+<figcaption>
+Diagramme de Streckeisen
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange" style="font-size: 0.75em;">
+<p><strong>La classification du double triangle de Streckeisen</strong></p>
+<p>La classification du double triangle de Streckeisen est utilisée pour classer l’ensemble des roches magmatiques. Toutefois, elle est plus adaptée aux roches magmatiques acides et intermédiaires, c’est-à-dire aux roches plutôt leucocrates, donc claires.</p>
+<p>Elle est fondée sur la proportion des trois familles de minéraux leucocrates essentiels dans ces roches. Il s’agit des feldspaths : A, les feldspaths alcalins (orthose potassique), et P, les plagioclases (feldspaths calco-sodiques) ; Q, le quartz pour les roches sursaturées en silice ; ou F, les feldspathoïdes, souvent abrégés « foid », pour les roches sous-saturées en silice.</p>
+<p>Les minéraux ferromagnésiens sont généralement en faible proportion, de l’ordre de quelques dizaines de pourcents. La proportion de ces minéraux, généralement colorés, permet de définir l’indice de coloration (IC). En théorie, il est conseillé de ne pas utiliser cette classification lorsque l’IC dépasse 90 %. En pratique, elle est moins adaptée aux roches ayant un IC supérieur à 50–60 %. La case « anorthosite, diorite, gabbro » regroupe par exemple des roches dont l’indice de coloration peut être très variable. Une classification plus adaptée existe pour les roches ultrabasiques.</p>
+</div>
+</div>
+</section>
+<section id="feldspath-alcalin-a" class="slide level2">
+<h2>Feldspath Alcalin (A)</h2>
+<!-- BLOC UNIQUE : trois exemples de feldspath alcalin en une colonne pleine largeur. -->
+<div class="slide-block">
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img style="display: block; width: 50%; height: auto;" src="../material_used/seance_02/cours_02_feldspath_alcalin_A_1.png" alt="Feldspath alcalin, exemple 1">
+</figure>
+<figure>
+<img style="display: block; width: 50%; height: auto;" src="../material_used/seance_02/cours_02_feldspath_alcalin_A_2.png" alt="Feldspath alcalin, exemple 2">
+</figure>
+</div>
+<p>Le feldspath alcalin (ou potassique) est le pôle potassique des feldspaths. Il se forme dans un magma saturé en <span class="math inline">\(\mathrm{SiO_2}\)</span> et plutôt riche en K.</p>
+</div>
+</section>
+<section id="plagioclase-p" class="slide level2">
+<h2>Plagioclase (P)</h2>
+<!-- BLOC UNIQUE : exemple de plagioclase. -->
+<div class="slide-block">
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%; margin: 0 auto;">
+<figure>
+<img style="display: block; width: 80%; height: auto; object-fit: contain;" src="../material/cours_02/plagio.png" alt="Plagioclase">
+</figure>
+</div>
+<p>Le plagioclase est la solution solide Ca–Na des feldspaths. Il se forme dans un magma saturé en <span class="math inline">\(\mathrm{SiO_2}\)</span> et plutôt riche en Ca et Na.</p>
+</div>
+</section>
+<section id="quartz-q" class="slide level2">
+<h2>Quartz (Q)</h2>
+<!-- BLOC UNIQUE : trois exemples de quartz en une colonne pleine largeur. -->
+<div class="slide-block">
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img style="display: block; width: 45%; height: auto;" src="../material_used/seance_02/cours_02_quartz_Q_2.png" alt="Quartz, exemple 2">
+</figure>
+<figure>
+<img style="display: block; width: 45%; height: auto;" src="../material_used/seance_02/cours_02_quartz_Q_3.png" alt="Quartz, exemple 3">
+</figure>
+</div>
+<p>Le quartz (<span class="math inline">\(\mathrm{SiO_2}\)</span>) se forme lorsque le magma est sursaturé en silice et doit former des minéraux constitués de silice pure.</p>
+</div>
+</section>
+<section id="feldspathoïdes-f" class="slide level2">
+<h2>Feldspathoïdes (F)</h2>
+<!-- BLOC UNIQUE : exemples de feldspathoïdes. -->
+<div class="slide-block">
+<!-- Modifier width="xx%" directement sur chaque img pour régler sa largeur indépendamment du cadre. -->
+<div class="slide-media-grid two" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img style="display: block; width: 45%; height: auto; margin: 0 auto; object-fit: contain;" src="../material_used/seance_02/cours_02_feldspathoide_nepheline_1.png" alt="Néphéline, exemple 1">
+</figure>
+<figure>
+<img style="display: block; width: 45%; height: auto; margin: 0 auto; object-fit: contain;" src="../material_used/seance_02/cours_02_feldspathoide_nepheline_2.png" alt="Néphéline, exemple 2">
+</figure>
+<figure>
+<img style="display: block; width: 80%; height: auto; margin: 0 auto; object-fit: contain;" src="../material_used/seance_02/cours_02_feldspathoide_hauyne.png" alt="Hauyne">
+</figure>
+<figure>
+<img style="display: block; width: 80%; height: auto; margin: 0 auto; object-fit: contain;" src="../material_used/seance_02/cours_02_feldspathoide_leucite.png" alt="Leucite">
+</figure>
+</div>
+<p>Les feldspathoïdes les plus courants sont la leucite, la néphéline et la haüyne. Ces cristaux se forment lorsque le magma est sous-saturé en silice ; ils présentent donc des proportions de Si relativement faibles.</p>
+</div>
+</section>
+<section id="diagramme-de-streckeisen-exemples-de-composition" class="slide level2">
+<h2>Diagramme de Streckeisen : exemples de composition</h2>
+<div class="slide-block">
+<p><strong>Compositions modales hypothétiques des roches magmatiques</strong></p>
+<p>Chaque colonne représente une composition normalisée à 100 % pour les minéraux Q–A–P–F, hors minéraux ferromagnésiens. Le quartz et les feldspathoïdes ne coexistent pas : les échantillons A–D seront placés dans le triangle Q–A–P, les échantillons E–I dans le triangle F–A–P des deux diapositives suivantes.</p>
+<div class="cell" data-execution_count="1">
+<div id="tbl-compositions-qapf" class="cell quarto-float quarto-figure quarto-figure-center" data-execution_count="1">
+<figure class="quarto-float quarto-float-tbl">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-compositions-qapf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1
+</figcaption>
+<div aria-describedby="tbl-compositions-qapf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display">
+<table class="caption-top" style="width:100%; table-layout:fixed; line-height:1.05;">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Minéral<br>
+(%)</th>
+<th data-quarto-table-cell-role="th">A</th>
+<th data-quarto-table-cell-role="th">B</th>
+<th data-quarto-table-cell-role="th">C</th>
+<th data-quarto-table-cell-role="th">D</th>
+<th data-quarto-table-cell-role="th">E</th>
+<th data-quarto-table-cell-role="th">F</th>
+<th data-quarto-table-cell-role="th">G</th>
+<th data-quarto-table-cell-role="th">H</th>
+<th data-quarto-table-cell-role="th">I</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Q · Quartz</th>
+<td>35</td>
+<td>45</td>
+<td>55</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">A · Feldspath alcalin</th>
+<td>61</td>
+<td>38.5</td>
+<td>4.5</td>
+<td>30</td>
+<td>55</td>
+<td>15</td>
+<td>85</td>
+<td>20</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">P · Plagioclase</th>
+<td>4</td>
+<td>16.5</td>
+<td>40.5</td>
+<td>60</td>
+<td>15</td>
+<td>55</td>
+<td>10</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">F · Feldspathoïde</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>30</td>
+<td>30</td>
+<td>5</td>
+<td>75</td>
+<td>95</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Total</th>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="diagramme-de-streckeisen-nomenclature-plutonique" class="slide level2">
+<h2>Diagramme de Streckeisen : nomenclature plutonique</h2>
+<div class="slide-block">
+<p><strong>Classification modale QAPF des roches plutoniques</strong></p>
+<!-- Légende placée à droite pour réduire la hauteur occupée par la figure. -->
+<style>
+.reveal .slides section#diagramme-de-streckeisen-nomenclature-plutonique .quarto-float-fig {
+  --figure-width: 90%;
+}
+
+.reveal .slides section#diagramme-de-streckeisen-nomenclature-volcanique .quarto-float-fig {
+  /* Modifier cette valeur pour régler indépendamment la taille de la figure de la slide 39. */
+  --figure-width: 100%;
+}
+
+.reveal .slides section#diagramme-de-streckeisen-nomenclature-plutonique .quarto-float-fig,
+.reveal .slides section#diagramme-de-streckeisen-nomenclature-volcanique .quarto-float-fig {
+  align-items: center;
+  display: grid;
+  gap: var(--space-m);
+  grid-template-columns: minmax(0, 72%) minmax(0, 1fr);
+}
+
+.reveal .slides section#diagramme-de-streckeisen-nomenclature-plutonique .quarto-float-fig > div,
+.reveal .slides section#diagramme-de-streckeisen-nomenclature-volcanique .quarto-float-fig > div {
+  margin: 0;
+  min-width: 0;
+  justify-self: center;
+  width: var(--figure-width);
+}
+
+.reveal .slides section#diagramme-de-streckeisen-nomenclature-plutonique .quarto-float-fig > div img,
+.reveal .slides section#diagramme-de-streckeisen-nomenclature-volcanique .quarto-float-fig > div img {
+  display: block;
+  height: auto;
+  max-width: none;
+  width: 100%;
+}
+
+.reveal .slides section#diagramme-de-streckeisen-nomenclature-plutonique .quarto-float-fig > figcaption,
+.reveal .slides section#diagramme-de-streckeisen-nomenclature-volcanique .quarto-float-fig > figcaption {
+  align-self: center;
+  margin: 0;
+}
+</style>
+<p>Le quartz et les feldspathoïdes ne coexistent pas : on utilise le triangle Q–A–P pour les roches à quartz, ou F–A–P pour les roches à feldspathoïdes. Les proportions sont normalisées à 100 % en excluant les minéraux ferromagnésiens. Les lettres A–D repèrent les compositions à quartz du tableau précédent ; les lettres E–I repèrent celles à feldspathoïdes. Les chiffres latéraux indiquent Q ou F (%), ceux de la base A/(A+P) (%).</p>
+<div id="cell-fig-streckeisen-plutonique" class="cell" data-fig-height="4.6" data-fig-width="10" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-streckeisen-plutonique" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-streckeisen-plutonique-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="02-roches-magmatiques_files/figure-revealjs/fig-streckeisen-plutonique-output-1.png" class="quarto-figure quarto-figure-center" width="937" height="436">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-streckeisen-plutonique-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Diagramme QAPF simplifié de Streckeisen pour les roches plutoniques, avec les compositions A–I du tableau précédent.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="diagramme-de-streckeisen-nomenclature-volcanique" class="slide level2">
+<h2>Diagramme de Streckeisen : nomenclature volcanique</h2>
+<div class="slide-block">
+<p><strong>Classification modale QAPF des roches volcaniques</strong></p>
+<div id="cell-fig-streckeisen-volcanique" class="cell" data-fig-height="4.6" data-fig-width="10" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-streckeisen-volcanique" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-streckeisen-volcanique-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="02-roches-magmatiques_files/figure-revealjs/fig-streckeisen-volcanique-output-1.png" class="quarto-figure quarto-figure-center" width="937" height="436">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-streckeisen-volcanique-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Diagramme QAPF simplifié de Streckeisen pour les roches volcaniques, avec les compositions A–I du tableau précédent.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="composition-modale-des-roches-ultrabasiques" class="slide level2">
+<h2>Composition modale des roches ultrabasiques</h2>
+<div class="slide-block">
+<p><strong>Cas spécifique des roches ultrabasiques mantelliques</strong></p>
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 40%; margin: 0 auto;">
+<figure>
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_peridotite_olivine_orthopyroxene_clinopyroxene.svg.webp" alt="Diagramme ternaire de classification des roches ultrabasiques selon les proportions d'olivine, d'orthopyroxène et de clinopyroxène">
+<figcaption>
+Diagramme ternaire adapté aux roches ultrabasiques
+</figcaption>
+</figure>
+</div>
+<p>Le diagramme de Streckeisen n’est pas adapté aux roches ultrabasiques du manteau, car elles ne sont pas composées de QAPF. Ce diagramme ternaire permet de les identifier grâce à la composition modale de l’olivine, de l’orthopyroxène et du clinopyroxène.</p>
+</div>
+</section>
+<section id="olivine-ol" class="slide level2">
+<h2>Olivine (Ol)</h2>
+<div class="slide-block">
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%; margin: 0 auto;">
+<figure>
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_olivine.png" alt="Olivine">
+</figure>
+</div>
+<p>L’olivine ((Mg,Fe)₂SiO₄) se forme lorsque le magma est sous-saturé en silice et riche en magnésium et en fer.</p>
+</div>
+</section>
+<section id="orthopyroxène-opx-et-clinopyroxène-cpx" class="slide level2">
+<h2>Orthopyroxène (Opx) et clinopyroxène (Cpx)</h2>
+<div class="slide-block">
+<div class="slide-media-grid two" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img style="display: block; width: 60%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_peridotite_orthopyroxene.png" alt="Péridotite observée à l'échelle de l'échantillon">
+</figure>
+<figure>
+<img style="display: block; width: 60%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_peridotite_microscope.jpg" alt="Péridotite observée au microscope optique en lumière polarisée">
+</figure>
+</div>
+<ul>
+<li>Structure et chimie : L’Opx est orthorhombique et pauvre en calcium (ex. : enstatite). Le Cpx est monoclinique (incliné) et intègre de gros cations comme le Ca (diopside, augite).</li>
+<li>Au microscope (LPA) : L’Opx présente une extinction droite, tandis que le Cpx montre une extinction oblique.</li>
+<li>À l’œil nu : la distinction est difficile dans une roche sombre. Le Cpx tend vers un vert bouteille brillant, alors que l’Opx est plus mat, brun ou vert très sombre.</li>
+</ul>
+</div>
+</section>
+<section id="composition-modale-des-roches-ultrabasiques-1" class="slide level2">
+<h2>Composition modale des roches ultrabasiques</h2>
+<!-- BLOC UNIQUE : tableau des compositions modales ; le tracé est reporté sur la slide suivante. -->
+<div class="slide-block">
+<p><strong>Exemples de compositions modales</strong></p>
+<p>Les proportions sont normalisées à 100&nbsp;% et réparties entre l’olivine (Ol), le clinopyroxène (Cpx) et l’orthopyroxène (Opx).</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Roche</th>
+<th style="text-align: right;">Olivine (Ol) (%)</th>
+<th style="text-align: right;">Clinopyroxène (Cpx) (%)</th>
+<th style="text-align: right;">Orthopyroxène (Opx) (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dunite</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td>Wehrlite</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td>Lherzolite</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="even">
+<td>Harzburgite</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr class="odd">
+<td>Websterite</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">47</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="composition-modale-des-roches-ultrabasiques-nomenclature-mantellique" class="slide level2">
+<h2>Composition modale des roches ultrabasiques : nomenclature mantellique</h2>
+<!-- BLOC UNIQUE : classification des roches mantelliques. -->
+<div class="slide-block">
+<p><strong>Classification modale des roches mantelliques</strong></p>
+<p>Les proportions d’olivine (Ol), d’orthopyroxène (Opx) et de clinopyroxène (Cpx) sont normalisées à 100 %. À partir de 40 % d’olivine, on parle de péridotites ; sous 40 %, de pyroxénites. Les sous-champs dépendent ensuite du rapport entre Opx et Cpx.</p>
+<style>
+/* Slide 44 : régler uniquement la taille de la figure avec --figure-width. */
+.reveal .slides #cell-fig-triangle-ultrabasique .quarto-float-fig {
+  --figure-width: 65%;
+  align-items: center;
+  display: grid;
+  gap: var(--space-m, 1rem);
+  grid-template-columns: minmax(0, 72%) minmax(0, 1fr);
+}
+
+.reveal .slides #cell-fig-triangle-ultrabasique .quarto-float-fig > div {
+  justify-self: center;
+  margin: 0;
+  min-width: 0;
+  width: var(--figure-width);
+}
+
+.reveal .slides #cell-fig-triangle-ultrabasique .quarto-float-fig > div img {
+  display: block;
+  height: auto;
+  max-width: none;
+  width: 100%;
+}
+
+.reveal .slides #cell-fig-triangle-ultrabasique .quarto-float-fig > figcaption {
+  align-self: center;
+  margin: 0;
+}
+</style>
+<div id="cell-fig-triangle-ultrabasique" class="cell" data-fig-height="4.6" data-fig-width="10" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-triangle-ultrabasique" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-triangle-ultrabasique-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="02-roches-magmatiques_files/figure-revealjs/fig-triangle-ultrabasique-output-1.png" class="quarto-figure quarto-figure-center" width="631" height="386">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-triangle-ultrabasique-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Triangle de classification modale des roches ultrabasiques (Olivine–Orthopyroxène–Clinopyroxène).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="classification-modale-simplifiée" class="slide level2">
+<h2>Classification modale simplifiée</h2>
+<!-- BLOC UNIQUE : classification à partir des proportions modales. -->
+<div class="slide-block">
+<p><strong>Simplification possible avec ce type de diagramme </strong></p>
+<!-- Modifier --caption-image-width pour régler la largeur relative de l'image. -->
+<div class="slide-media-grid one caption-right" style="--caption-image-width: 70%; --media-frame-height: auto; width: 60%;">
+<figure>
+<div class="slide-media-frame">
+<img src="../material_used/seance_02/cours_02_classification_simplifiee.png" alt="Diagramme simplifié des domaines minéralogiques des roches magmatiques">
+</div>
+<figcaption>
+Classification simplifiée et pratique des roches magmatiques, car elle montre toutes les phases minérales attendues dans une roche magmatique.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="amphiboles" class="slide level2">
+<h2>Amphiboles</h2>
+<!-- BLOC UNIQUE : exemples et rappel sur les amphiboles magmatiques. -->
+<div class="slide-block">
+<!-- Les deux images sont placées côte à côte. -->
+<div class="slide-media-grid two" style="width: 100%;">
+<figure>
+<img style="display: block; height: auto; object-fit: contain; width: 80%;" src="../material_used/seance_02/cours_02_amphibole_1.png" alt="Amphibole">
+</figure>
+<figure>
+<img style="display: block; height: auto; object-fit: contain; width: 100%;" src="../material_used/seance_02/cours_02_andesite_porphyrique_amphibole.png" alt="Andésite porphyrique à amphibole">
+</figure>
+</div>
+<p>Les amphiboles sont des inosilicates hydratés, riches en groupes hydroxyle (OH), qui cristallisent dans des magmas relativement riches en eau, généralement à des températures plus basses que les pyroxènes. Elles sont fréquentes dans les andésites et dans les roches plutoniques intermédiaires à acides.</p>
+</div>
+</section>
+<section id="micas-biotite-et-muscovite" class="slide level2">
+<h2>Micas (biotite et muscovite)</h2>
+<!-- BLOC UNIQUE : exemple de biotite et de muscovite. -->
+<div class="slide-block">
+<!-- Modifier width="75%" pour régler la largeur de l'image ; son format original est conservé. -->
+<div class="slide-media-grid one" style="width: 100%; margin: 0 auto;">
+<figure>
+<img style="display: block; height: auto; max-width: 100%; object-fit: contain; width: 90%;" src="../material_used/seance_02/cours_02_biotite_muscovite.png" alt="Biotite et muscovite">
+</figure>
+</div>
+<p>Les micas sont des phyllosilicates à structure en feuillets. La biotite est un mica ferromagnésien sombre, tandis que la muscovite est un mica clair riche en potassium et en aluminium. Ils cristallisent surtout dans des magmas évolués et relativement riches en eau.</p>
+</div>
+</section>
+<section id="classification-par-composition-chimique-le-diagramme-tas-total-alkali-silica" class="slide level2">
+<h2>Classification par composition chimique : le diagramme TAS (Total Alkali Silica)</h2>
+<!-- Deux blocs : diagramme TAS à gauche et explication à droite. -->
+<div class="slide-block-grid two">
+<div class="slide-block">
+<figure style="margin: 0;">
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material/cours_02/TAS-francais.png" alt="Diagramme TAS de classification des roches volcaniques">
+<figcaption>
+Diagramme TAS.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block">
+<p><strong>La classification des roches sur un diagramme TAS</strong></p>
+<p>Le diagramme TAS (pour <em>Total Alkali Silica</em>) permet de classer et de nommer les roches magmatiques volcaniques en fonction de leur composition chimique globale. Il est indispensable pour les roches à grains trop fins dans lesquelles les minéraux ne sont pas visibles à l’œil nu ni au microscope. On utilise alors une analyse chimique globale de la roche totale.</p>
+<p><strong>Les deux axes :</strong></p>
+<ul>
+<li>Axe X : le taux de silice (<span class="math inline">\(\mathrm{SiO_2}\)</span>), qui sépare les roches des plus basiques (pauvres en silice, par exemple le basalte) aux plus acides (riches en silice, par exemple la rhyolite).</li>
+<li>Axe Y (ordonnée) : le taux d’alcalins (<span class="math inline">\(\mathrm{Na_2O + K_2O}\)</span>), c’est-à-dire la somme du sodium et du potassium.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="diagramme-tas-exemples-de-composition" class="slide level2">
+<h2>Diagramme TAS : exemples de composition</h2>
+<div class="slide-block">
+<p><strong>Compositions chimiques de roches magmatiques</strong></p>
+<div id="6c576827" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<table class="caption-top" style="width:100%; table-layout:fixed; line-height:1.05;">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Oxyde<br>
+(% masse)</th>
+<th data-quarto-table-cell-role="th"><span class="small">A</span><br>
+Basanite</th>
+<th data-quarto-table-cell-role="th"><span class="small">B</span><br>
+Hawaiite</th>
+<th data-quarto-table-cell-role="th"><span class="small">C</span><br>
+Basalte</th>
+<th data-quarto-table-cell-role="th"><span class="small">D</span><br>
+Mugearite</th>
+<th data-quarto-table-cell-role="th"><span class="small">E</span><br>
+Andésite</th>
+<th data-quarto-table-cell-role="th"><span class="small">F</span><br>
+Phonolite</th>
+<th data-quarto-table-cell-role="th"><span class="small">G</span><br>
+Dacite</th>
+<th data-quarto-table-cell-role="th"><span class="small">H</span><br>
+Rhyolite</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">SiO₂</th>
+<td>45.46</td>
+<td>48.65</td>
+<td>50.06</td>
+<td>52.28</td>
+<td>56.86</td>
+<td>57.49</td>
+<td>66.36</td>
+<td>74.00</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">TiO₂</th>
+<td>2.56</td>
+<td>3.30</td>
+<td>1.86</td>
+<td>2.11</td>
+<td>0.88</td>
+<td>0.64</td>
+<td>0.58</td>
+<td>0.27</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Al₂O₃</th>
+<td>14.89</td>
+<td>16.32</td>
+<td>15.99</td>
+<td>16.98</td>
+<td>17.22</td>
+<td>19.47</td>
+<td>16.12</td>
+<td>13.53</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Fe₂O₃</th>
+<td>4.14</td>
+<td>4.92</td>
+<td>3.92</td>
+<td>5.17</td>
+<td>3.29</td>
+<td>2.87</td>
+<td>2.39</td>
+<td>1.47</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">FeO</th>
+<td>8.02</td>
+<td>7.73</td>
+<td>7.46</td>
+<td>6.52</td>
+<td>4.26</td>
+<td>2.28</td>
+<td>2.41</td>
+<td>1.16</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">MgO</th>
+<td>8.93</td>
+<td>5.15</td>
+<td>6.96</td>
+<td>3.52</td>
+<td>3.40</td>
+<td>1.12</td>
+<td>1.74</td>
+<td>0.41</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">CaO</th>
+<td>10.53</td>
+<td>8.21</td>
+<td>9.66</td>
+<td>6.14</td>
+<td>6.87</td>
+<td>2.80</td>
+<td>4.29</td>
+<td>1.16</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Na₂O</th>
+<td>3.58</td>
+<td>4.15</td>
+<td>2.97</td>
+<td>4.87</td>
+<td>3.54</td>
+<td>7.98</td>
+<td>3.89</td>
+<td>3.62</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">K₂O</th>
+<td>1.88</td>
+<td>1.58</td>
+<td>1.12</td>
+<td>2.46</td>
+<td>1.67</td>
+<td>5.38</td>
+<td>2.22</td>
+<td>4.38</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">P₂O₅</th>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">H₂O</th>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Total*</th>
+<td>99.99</td>
+<td>100.01</td>
+<td>100.00</td>
+<td>100.05</td>
+<td>97.99</td>
+<td>100.03</td>
+<td>100.00</td>
+<td>100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><em>Le total est la somme des neuf oxydes chiffrés ci-dessus ; P₂O₅ et H₂O ne sont pas inclus. Pour tracer le TAS, SiO₂ et Na₂O + K₂O sont renormalisés sur ce sous-total anhydre.</em></p>
+</div>
+</section>
+<section id="diagramme-tas-nomenclature-plutonique" class="slide level2">
+<h2>Diagramme TAS : nomenclature plutonique</h2>
+<div class="slide-block">
+<p><strong>Classer les roches plutoniques par composition chimique</strong></p>
+<p>La classification de référence des roches plutoniques reste fondée sur la minéralogie (mêmes noms que sur le diagramme QAPF).</p>
+<style>
+/* Slide 50 : modifier uniquement cette valeur pour régler la taille globale de la figure. */
+.reveal .slides section#diagramme-tas-nomenclature-plutonique {
+  --tas-figure-width: 75%;
+}
+
+.reveal .slides section#diagramme-tas-nomenclature-plutonique #cell-fig-tas-roches-plutoniques .cell-output-display > img,
+.reveal .slides section#diagramme-tas-nomenclature-plutonique #cell-fig-tas-roches-plutoniques .cell-output-display > div img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: none;
+  width: var(--tas-figure-width);
+}
+
+/* Si Quarto génère une légende automatique, on la masque au profit de la légende sans numéro ci-dessous. */
+.reveal .slides section#diagramme-tas-nomenclature-plutonique #cell-fig-tas-roches-plutoniques .quarto-float-caption {
+  display: none;
+}
+
+.reveal .slides section#diagramme-tas-nomenclature-plutonique .tas-figure-caption {
+  color: var(--slide-muted) !important;
+  font-size: 0.43em !important;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.12;
+  margin: 0.25em 0 0;
+  text-align: left;
+}
+</style>
+<div id="cell-fig-tas-roches-plutoniques" class="cell" data-fig-height="5.1" data-fig-width="11" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-tas-roches-plutoniques" class="quarto-float quarto-figure quarto-figure-center" height="465" width="1033" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-tas-roches-plutoniques-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="02-roches-magmatiques_files/figure-revealjs/fig-tas-roches-plutoniques-output-1.png" id="fig-tas-roches-plutoniques" class="quarto-figure quarto-figure-center" width="1033" height="465">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-tas-roches-plutoniques-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p class="tas-figure-caption">
+Champs du diagramme TAS avec nomenclature plutonique et compositions moyennes du tableau (A–H).
+</p>
+</div>
+</section>
+<section id="quelques-exemples-représentatifs-de-roches-plutoniques-gabbro" class="slide level2">
+<h2>Quelques exemples représentatifs de roches plutoniques : gabbro</h2>
+<!-- BLOC UNIQUE : exemple de gabbro. -->
+<div class="slide-block">
+<!-- Modifier width="100%" pour régler la largeur ; la hauteur suit le format original. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img style="display: block; width: 45%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_gabbro_exemple_2.png" alt="Gabbro, exemple 2">
+</figure>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-représentatifs-de-roches-plutoniques-granite" class="slide level2">
+<h2>Quelques exemples représentatifs de roches plutoniques : granite</h2>
+<!-- BLOC UNIQUE : exemple de granite. -->
+<div class="slide-block">
+<!-- Modifier width="100%" pour régler la largeur ; la hauteur suit le format original. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 45%;">
+<figure>
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_granite_2.png" alt="Granite, exemple 2">
+</figure>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-représentatifs-de-roches-plutoniques-granodiorite" class="slide level2">
+<h2>Quelques exemples représentatifs de roches plutoniques : granodiorite</h2>
+<!-- BLOC UNIQUE : exemple de granodiorite. -->
+<div class="slide-block">
+<!-- Modifier width="100%" pour régler la largeur ; la hauteur suit le format original. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 45%;">
+<figure>
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_granodiorite_2.png" alt="Granodiorite, exemple 2">
+</figure>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-représentatifs-de-roches-plutoniques-syénite" class="slide level2">
+<h2>Quelques exemples représentatifs de roches plutoniques : syénite</h2>
+<!-- BLOC UNIQUE : exemple de syénite. -->
+<div class="slide-block">
+<!-- Modifier width="100%" pour régler la largeur ; la hauteur suit le format original. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 45%;">
+<figure>
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_syenite_2.png" alt="Syénite, exemple 2">
+</figure>
+</div>
+</div>
+</section>
+<section id="diagramme-tas-nomenclature-volcanique" class="slide level2">
+<h2>Diagramme TAS : nomenclature volcanique</h2>
+<div class="slide-block">
+<p><strong>Classer les roches volcaniques par composition chimique</strong></p>
+<p>La classification de référence des roches volcaniques reste fondée sur la minéralogie (mêmes noms que sur le diagramme QAPF).</p>
+<style>
+/* Slide 55 : modifier uniquement cette valeur pour régler la taille globale de la figure. */
+.reveal .slides section#diagramme-tas-nomenclature-volcanique {
+  --tas-figure-width: 75%;
+}
+
+.reveal .slides section#diagramme-tas-nomenclature-volcanique #cell-fig-tas-roches-volcaniques .cell-output-display > img,
+.reveal .slides section#diagramme-tas-nomenclature-volcanique #cell-fig-tas-roches-volcaniques .cell-output-display > div img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: none;
+  width: var(--tas-figure-width);
+}
+
+/* Si Quarto génère une légende automatique, on la masque au profit de la légende sans numéro ci-dessous. */
+.reveal .slides section#diagramme-tas-nomenclature-volcanique #cell-fig-tas-roches-volcaniques .quarto-float-caption {
+  display: none;
+}
+
+.reveal .slides section#diagramme-tas-nomenclature-volcanique .tas-figure-caption {
+  color: var(--slide-muted) !important;
+  font-size: 0.43em !important;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.12;
+  margin: 0.25em 0 0;
+  text-align: left;
+}
+</style>
+<div id="cell-fig-tas-roches-volcaniques" class="cell" data-fig-height="5.1" data-fig-width="11" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div id="fig-tas-roches-volcaniques" class="quarto-float quarto-figure quarto-figure-center" height="465" width="1033" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-tas-roches-volcaniques-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="02-roches-magmatiques_files/figure-revealjs/fig-tas-roches-volcaniques-output-1.png" id="fig-tas-roches-volcaniques" class="quarto-figure quarto-figure-center" width="1033" height="465">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-tas-roches-volcaniques-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p class="tas-figure-caption">
+Champs de classification TAS et compositions moyennes de roches volcaniques (A–H).
+</p>
+</div>
+<aside class="notes">
+<p>On reviendra sur ce diagramme central au cours de plusieurs séances.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="quelques-exemples-représentatifs-de-roches-volcaniques-andésite" class="slide level2">
+<h2>Quelques exemples représentatifs de roches volcaniques : Andésite</h2>
+<!-- BLOC UNIQUE : exemple d'andésite. -->
+<div class="slide-block">
+<!-- Modifier width="100%" pour régler la largeur ; la hauteur suit le format original. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 45%;">
+<figure>
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_andesite_porphyrique_2.png" alt="Andésite porphyrique, exemple 2">
+</figure>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-représentatifs-de-roches-volcaniques-phonolite-et-téphrite" class="slide level2">
+<h2>Quelques exemples représentatifs de roches volcaniques : phonolite et téphrite</h2>
+<!-- BLOC UNIQUE : exemples de phonolite et de téphrite. -->
+<div class="slide-block">
+<!-- Trois images dans un seul bloc et trois colonnes ; modifier width="100%" pour régler leur largeur. -->
+<div class="slide-media-grid three" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img style="display: block; width: 65%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_phonolite_tephrite_2.png" alt="Phonolite ou téphrite, exemple 2">
+</figure>
+<figure>
+<img style="display: block; width: 70%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_phonolite_tephrite_3.png" alt="Phonolite ou téphrite, exemple 3">
+</figure>
+<figure>
+<img style="display: block; width: 100%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_phonolite_tephrite_4.png" alt="Phonolite ou téphrite, exemple 4">
+</figure>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-représentatifs-de-roches-volcaniques-rhyolite" class="slide level2">
+<h2>Quelques exemples représentatifs de roches volcaniques : rhyolite</h2>
+<!-- BLOC UNIQUE : exemple de rhyolite. -->
+<div class="slide-block">
+<!-- Modifier width="100%" pour régler la largeur ; la hauteur suit le format original. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img style="display: block; width: 45%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_rhyolite_porphyrique_2.png" alt="Rhyolite porphyrique, exemple 2">
+</figure>
+</div>
+</div>
+</section>
+<section id="quelques-exemples-représentatifs-de-roches-volcaniques-trachyte" class="slide level2">
+<h2>Quelques exemples représentatifs de roches volcaniques : trachyte</h2>
+<!-- BLOC UNIQUE : exemple de trachyte. -->
+<div class="slide-block">
+<!-- Modifier width="100%" pour régler la largeur ; la hauteur suit le format original. -->
+<div class="slide-media-grid one" style="--media-frame-height: auto; width: 100%;">
+<figure>
+<img style="display: block; width: 50%; height: auto; object-fit: contain;" src="../material_used/seance_02/cours_02_trachyte_porphyrique_2.png" alt="Trachyte porphyrique, exemple 2">
+</figure>
+</div>
+</div>
+</section>
+<section id="messages-à-retenir" class="slide level2">
+<h2>Messages à retenir</h2>
+<div class="slide-block">
+<p><strong>On peut classer une roche selon quatre axes :</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Axe</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contexte</td>
+<td>mantellique, plutonique ou volcanique ?</td>
+</tr>
+<tr class="even">
+<td>Texture</td>
+<td>taille, cristallinité, vésicularité ?</td>
+</tr>
+<tr class="odd">
+<td>Minéralogie</td>
+<td>quels minéraux principaux ?</td>
+</tr>
+<tr class="even">
+<td>Composition</td>
+<td>mafique, intermédiaire, felsique, ultramafique ?</td>
+</tr>
+</tbody>
+</table>
+<p>On peut donc donner un nom de roche et une texture associée.</p>
+<p>Exemples :</p>
+<ul>
+<li>Bombe (taille), basaltique (composition minéralogique et géochimique), aphyrique (type de cristaux) et scoriacée (type de vésicules).</li>
+<li>Granite (composition minéralogique et géochimique), à texture grenue (cristaux).</li>
+</ul>
+<p>Note : Les roches mantelliques et plutoniques étant implicitement massives et denses, ces caractères ne sont généralement pas mentionnés. Seules les roches volcaniques peuvent être vésiculées ou se présenter sous forme de grains (projections), à l’exception des coulées de lave qui restent compactes.</p>
+
+
+</div>
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copié");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copié");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
