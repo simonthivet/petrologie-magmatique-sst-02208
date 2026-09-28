@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Simon THIVET">
+
+<title>Séance 3 - TP : reconnaissance des roches magmatiques – Pétrologie magmatique – SST.02208</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles/site.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Pétrologie magmatique – SST.02208</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cours" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Cours</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-cours">    
+        <li>
+    <a class="dropdown-item" href="../cours/01-introduction-constituants.html">
+ <span class="dropdown-text">Séance 1 - Pétrologie magmatique : introduction du cours + les constituants de la Terre</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cours/02-roches-magmatiques.html">
+ <span class="dropdown-text">Séance 2 - Les roches magmatiques I : pétrographie et classification</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cours/04-roches-sources.html">
+ <span class="dropdown-text">Séance 4 - La naissance des magmas I : nature des roches sources et réservoirs terrestres</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cours/05-fusion-partielle.html">
+ <span class="dropdown-text">Séance 5 - La naissance des magmas II : fusion partielle des roches sources et séries magmatiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cours/06-evolution-magmas.html">
+ <span class="dropdown-text">Séance 6 - L’évolution des magmas I : différenciation par mélange, contamination et cristallisation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cours/08-roches-plutoniques.html">
+ <span class="dropdown-text">Séance 8 - La solidification des magmas I : roches plutoniques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cours/09-roches-volcaniques.html">
+ <span class="dropdown-text">Séance 9 - La solidification des magmas II : roches volcaniques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cours/10-magmatisme-geodynamique.html">
+ <span class="dropdown-text">Séance 10 - L’impact du magmatisme I : géodynamique terrestre</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cours/11-processus-volcaniques.html">
+ <span class="dropdown-text">Séance 11 - L’impact du magmatisme II : volcanisme</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../cours/13a-magmatisme-extraterrestre.html">
+ <span class="dropdown-text">Séance 13 - Magmatisme extraterrestre</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tp" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">TP</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tp">    
+        <li>
+    <a class="dropdown-item" href="../tp/tp01-observer-classer-roches.html">
+ <span class="dropdown-text">Séance 3 - Les roches magmatiques II : exercices de reconnaissance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tp/tp02-diagrammes-phases.html">
+ <span class="dropdown-text">Séance 7 - L’évolution des magmas II : utilisation de diagrammes de phase</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tp/tp03-proprietes-magmas.html">
+ <span class="dropdown-text">Séance 12 - L’impact du magmatisme III : propriétés magmatiques et dynamiques éruptives</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.unifr.ch/home/fr/"> 
+<span class="menu-text"><span class="unifr-navbar-logo">Université de Fribourg</span></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <div class="quarto-alternate-formats"><h2>Autres formats</h2><ul><li><a href="tp01-observer-classer-roches.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Séance 3 - TP : reconnaissance des roches magmatiques</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Auteur·rice</div>
+    <div class="quarto-title-meta-contents">
+             <p>Simon THIVET </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+/* Styles locaux de la page du TP : les exercices restent indépendants du site du cours. */
+.tp-interactif {
+  --tp-green: #1b8a54;
+  --tp-green-dark: #14683f;
+  --tp-orange: #d06516;
+  --tp-blue: #0a3859;
+  --tp-ink: #18201d;
+  --tp-muted: #5b6268;
+}
+
+.tp-interactif .tp-panel {
+  background: #ffffff;
+  border: 1px solid #d5d9dc;
+  border-left: 0.35rem solid var(--tp-green);
+  border-radius: 0.35rem;
+  box-shadow: 0 0.15rem 0.45rem rgba(0, 0, 0, 0.05);
+  margin: 1rem 0 1.35rem;
+  padding: 1rem 1.2rem;
+}
+
+.tp-interactif .tp-panel--orange {
+  border-left-color: var(--tp-orange);
+}
+
+.tp-interactif .tp-panel h3,
+.tp-interactif .tp-panel h4 {
+  color: var(--tp-blue);
+  margin-top: 0;
+}
+
+.tp-interactif .tp-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Dans l'exercice 2, les trois critères restent sur trois colonnes distinctes. */
+.tp-interactif .tp-ex2-card .tp-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tp-interactif .tp-photo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 1.4rem;
+}
+
+.tp-interactif .tp-ex-card {
+  background: #fff;
+  border: 1px solid #d5d9dc;
+  border-radius: 0.35rem;
+  padding: 0.85rem;
+}
+
+.tp-interactif .tp-ex-card h4 {
+  color: var(--tp-blue);
+  margin: 0 0 0.6rem;
+}
+
+.tp-interactif .tp-question {
+  color: var(--tp-ink);
+  margin: 0.75rem 0;
+}
+
+.tp-interactif .tp-indice {
+  background: #fff8ed;
+  border-left: 0.3rem solid var(--tp-orange);
+  border-radius: 0.25rem;
+  color: var(--tp-ink);
+  margin: 0.75rem 0;
+  padding: 0.6rem 0.8rem;
+}
+
+.tp-interactif .tp-reference-diagrams {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 1.4rem;
+}
+
+.tp-interactif .tp-reference-diagrams > p {
+  margin: 0;
+}
+
+.tp-interactif .tp-reference-diagrams img {
+  background: #fff;
+  border: 1px solid #d5d9dc;
+  border-radius: 0.25rem;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.tp-interactif .tp-reference-pdf {
+  background: #fff;
+  border: 1px solid #d5d9dc;
+  border-radius: 0.25rem;
+  padding: 0.6rem;
+}
+
+.tp-interactif .tp-reference-pdf > p {
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.tp-interactif .tp-reference-pdf object {
+  display: block;
+  height: 36rem;
+  width: 100%;
+}
+
+.tp-interactif .tp-correction {
+  background: #eef6ff;
+  border-left: 0.3rem solid var(--tp-blue);
+  border-radius: 0.25rem;
+  color: var(--tp-ink);
+  margin-top: 0.8rem;
+  padding: 0.7rem 0.8rem;
+}
+
+.tp-interactif .tp-correction[hidden] {
+  display: none;
+}
+
+.tp-interactif .tp-correction p {
+  margin: 0.35rem 0 0;
+}
+
+.tp-interactif .tp-image-placeholder {
+  align-items: center;
+  background: #f1f4f3;
+  border: 1px dashed #8b9a92;
+  color: var(--tp-muted);
+  display: flex;
+  font-size: 0.95rem;
+  justify-content: center;
+  min-height: 10rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.tp-interactif .tp-ex-card img {
+  display: block;
+  height: auto;
+  max-height: 18rem;
+  object-fit: contain;
+  width: 100%;
+}
+
+.tp-interactif .tp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+.tp-interactif label {
+  color: var(--tp-ink);
+  font-weight: 600;
+}
+
+.tp-interactif select,
+.tp-interactif input[type="number"] {
+  background: #fff;
+  border: 1px solid #adb8b2;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  color: var(--tp-ink);
+  font: inherit;
+  min-height: 2.1rem;
+  padding: 0.25rem 0.45rem;
+  width: 100%;
+}
+
+.tp-interactif input[type="number"] {
+  min-width: 5rem;
+}
+
+.tp-interactif button {
+  background: var(--tp-green-dark);
+  border: 1px solid var(--tp-green-dark);
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  padding: 0.35rem 0.7rem;
+}
+
+.tp-interactif button:hover,
+.tp-interactif button:focus-visible {
+  background: var(--tp-orange);
+  border-color: var(--tp-orange);
+}
+
+.tp-interactif .tp-feedback {
+  border-radius: 0.25rem;
+  display: none;
+  font-weight: 600;
+  margin: 0.65rem 0 0;
+  padding: 0.45rem 0.6rem;
+}
+
+.tp-interactif .tp-feedback.is-visible {
+  display: block;
+}
+
+.tp-interactif .tp-feedback.is-ok {
+  background: #e4f3e9;
+  color: #12633b;
+}
+
+.tp-interactif .tp-feedback.is-wrong {
+  background: #fbe7e7;
+  color: #9d2020;
+}
+
+.tp-interactif .tp-feedback.is-pending {
+  background: #fff3df;
+  color: #85500b;
+}
+
+.tp-interactif .tp-choice-table,
+.tp-interactif .tp-table-scroll {
+  overflow-x: auto;
+}
+
+.tp-interactif .tp-choice-table table,
+.tp-interactif .tp-edit-table {
+  margin: 0.8rem 0 1.2rem;
+  min-width: 42rem;
+  width: 100%;
+}
+
+.tp-interactif .tp-choice-table th {
+  background: var(--tp-blue);
+  color: #fff;
+}
+
+.tp-interactif .tp-choice-table th,
+.tp-interactif .tp-choice-table td {
+  padding: 0.45rem 0.6rem;
+  vertical-align: top;
+}
+
+.tp-interactif .tp-edit-table {
+  font-size: 0.9rem;
+}
+
+.tp-interactif .tp-edit-table th,
+.tp-interactif .tp-edit-table td {
+  min-width: 5.2rem;
+  padding: 0.3rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tp-interactif .tp-edit-table th:first-child,
+.tp-interactif .tp-edit-table td:first-child {
+  min-width: 4.3rem;
+  white-space: nowrap;
+}
+
+.tp-interactif .tp-edit-table select,
+.tp-interactif .tp-edit-table input[type="number"] {
+  font-size: 0.88rem;
+  min-width: 4.8rem;
+}
+
+.tp-interactif .tp-diagram-layout {
+  align-items: start;
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: minmax(0, 1.1fr) minmax(25rem, 1fr);
+  margin: 1.1rem 0 1.6rem;
+}
+
+.tp-interactif .tp-diagram-card {
+  background: #fff;
+  border: 1px solid #d5d9dc;
+  border-radius: 0.35rem;
+  padding: 0.45rem;
+}
+
+.tp-interactif .tp-diagram-card svg {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.tp-interactif .tp-input-panel {
+  min-width: 0;
+}
+
+.tp-interactif .tp-input-panel h3 {
+  color: var(--tp-blue);
+  margin-top: 0;
+}
+
+.tp-interactif .tp-note {
+  background: #eef5f1;
+  border-left: 0.3rem solid var(--tp-green);
+  margin: 0.8rem 0 1rem;
+  padding: 0.65rem 0.8rem;
+}
+
+.tp-interactif .tp-small {
+  color: var(--tp-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .tp-interactif .tp-grid,
+  .tp-interactif .tp-photo-grid,
+  .tp-interactif .tp-reference-diagrams,
+  .tp-interactif .tp-diagram-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tp-interactif .tp-diagram-layout {
+    gap: 0.8rem;
+  }
+}
+</style>
+<div class="tp-interactif">
+<section id="principe-du-tp" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="principe-du-tp"><span class="header-section-number">1</span> Principe du TP</h2>
+<!-- PARTIE 1 : principe, objectifs et plan réunis dans la même section. -->
+<div class="tp-panel">
+<p>Ce TP est conçu comme un atelier d’observation et de discussion à partir de modèles 3D d’affleurements, de photos d’échantillons, d’une base de données de compositions minéralogiques et géochmiques, mais aussi à partir d’échantillons réels.</p>
+<p>À la fin de cette séance, vous devriez pouvoir :</p>
+<ul>
+<li>Décrire un affleurement et discuter son contexte géologique</li>
+<li>Décrire la granulométrie et les textures cristallines et vésiculaires d’un échantillon</li>
+<li>Nommer les roches en se basant sur des compositions minéralogiques et géochimiques</li>
+</ul>
+<p>Durées indicatives des différents exercices :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Temps</th>
+<th>Contenu</th>
+<th>Objectif</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>20 min</td>
+<td>Exercice 1 : décrire un affleurement</td>
+<td>Relier les informations disponibles aux structures visibles de l’affleurement pour en déduire un contexte géologique</td>
+</tr>
+<tr class="even">
+<td>20 min</td>
+<td>Exercice 2 : décrire la texture d’un échantillon</td>
+<td>Caractériser la granulométrie, cristallinité, et vésicularité d’un échantillon</td>
+</tr>
+<tr class="odd">
+<td>20 min</td>
+<td>Exercice 3 : nommer une roche</td>
+<td>Utiliser les classifications adéquates pour détermimer le nom d’une roche</td>
+</tr>
+<tr class="even">
+<td>30 min</td>
+<td>Exercice 4 : observations de vrais échantillons</td>
+<td>Récapitulatif sur de vrais échantillons</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="exercice-1-décrire-un-affleurement-20-min" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="exercice-1-décrire-un-affleurement-20-min"><span class="header-section-number">2</span> Exercice 1 : Décrire un affleurement (20 min)</h2>
+<!-- PARTIE 3 : quatre cas d'étude en modèle 3D. -->
+<div class="tp-panel">
+<p><strong>Consigne :</strong> Pour chaque cas d’étude présenté ci-dessous, observez le modèle 3D et utilisez l’indice pour formuler votre propre description d’affleurement et proposition de contexte géologique (quel type de roche et pourquoi).</p>
+</div>
+<div class="tp-photo-grid">
+<article class="tp-ex-card tp-ex1-card">
+<h4 class="anchored">
+Cas d’étude 1 — Spitzkoppe (Namibie)
+</h4>
+<p>
+<a href="https://v3geo.com/viewer/#/341" target="_blank" rel="noopener">Ouvrir le modèle 3D — Spitzkoppe</a>
+</p>
+<p class="tp-indice">
+<strong>Indice :</strong> Ce petit modèle en surface, montre des roches qui affleurent grâce à une érosion substentielle. Les roches affleurantes sont néanmoins en place et sont datées d’environ 600 Ma lors de l’orogénèse damarienne. On observe ici des chaos de blocs façonnés par l’aridité du désert.
+</p>
+</article>
+<article class="tp-ex-card tp-ex1-card">
+<h4 class="anchored">
+Cas d’étude 2 — Chachahuén (Argentine)
+</h4>
+<p>
+<a href="https://v3geo.com/viewer/index.html#/272" target="_blank" rel="noopener">Ouvrir le modèle 3D — Chachahuén</a>
+</p>
+<p class="tp-indice">
+<strong>Indice :</strong> Ce modéle montre une structure allongée où l’érosion a fait son œuvre : les roches les plus dures ressortent par rapport aux roches les plus tendres. Évaluez la continuité et la géométrie singulière de l’affleurement et réfléchissez à ce que cela peut représenter.
+</p>
+</article>
+<article class="tp-ex-card tp-ex1-card">
+<h4 class="anchored">
+Cas d’étude 3 — Hestgerðismúli (Islande)
+</h4>
+<p>
+<a href="https://v3geo.com/viewer/index.html#/444" target="_blank" rel="noopener">Ouvrir le modèle 3D — Hestgerðismúli</a>
+</p>
+<p class="tp-indice">
+<strong>Indice :</strong> Les différentes faces latérales de ce vaste affleurement révèlent la structure interne de cette zone géologique. Évaluez la forme et la répétition des structures visibles pour déduire la nature et le mode d’emplacement de ces roches.
+</p>
+</article>
+<article class="tp-ex-card tp-ex1-card">
+<h4 class="anchored">
+Cas d’étude 4 — Tajogaite (Espagne)
+</h4>
+<p>
+<a href="https://v3geo.com/viewer/index.html#/442" target="_blank" rel="noopener">Ouvrir le modèle 3D — Tajogaite</a>
+</p>
+<p class="tp-indice">
+<strong>Indice :</strong> Ce modèle représente une zone de plusieurs kilomètres avec plusieurs éléments observables. Essayez d’identifier les différents éléments. La situation est plus complexe qu’il n’y paraît.
+</p>
+</article>
+</div>
+</section>
+<section id="exercice-2-décrire-la-texture-dun-échantillon-20-min" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="exercice-2-décrire-la-texture-dun-échantillon-20-min"><span class="header-section-number">3</span> Exercice 2 : Décrire la texture d’un échantillon (20 min)</h2>
+<!-- PARTIE 4 : tableau de référence pour décrire les textures. -->
+<section id="partie-1-granulométrie-texture-cristalline-et-texture-vésiculaire" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="partie-1-granulométrie-texture-cristalline-et-texture-vésiculaire"><span class="header-section-number">3.1</span> Partie 1 — Granulométrie, texture cristalline et texture vésiculaire</h3>
+<div class="tp-panel tp-panel--orange">
+<p><strong>Consigne :</strong> Pour chaque échantillon présenté ci-dessous, décrivez la granulométrie ainsi que les textures cristalline et vésiculaire, en vous aidant du tableau ci-dessous et des indices à disposition.</p>
+<div class="tp-choice-table">
+<table>
+<thead>
+<tr>
+<th>
+Granulométrie
+</th>
+<th>
+Texture cristalline
+</th>
+<th>
+Texture vésiculaire
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Non-applicable (massif)<br>Bombe (arrondi)/bloc(anguleux)<br>Lapilli<br>Cendre
+</td>
+<td>
+Grenue<br>Porphyrique<br>Aphyrique ou microlitique<br>Vitreuse<br>Autre
+</td>
+<td>
+Réticulite<br>Ponce<br>Scorie
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tp-photo-grid">
+<article class="tp-ex-card tp-ex2-card">
+<h4 class="anchored">
+Échantillon 1
+</h4>
+<img src="../material_used/seance_03/granite grenue massif.jpg" alt="Granite grenue massif">
+<p class="tp-indice">
+<strong>Indice :</strong> Photo d’un échantillon prélevé sur un affleurement massif. La largeur du champ est de quelques centimètres.
+</p>
+</article>
+<article class="tp-ex-card tp-ex2-card">
+<h4 class="anchored">
+Échantillon 2
+</h4>
+<img src="../material_used/seance_03/picrite massive.jpeg" alt="Picrite massive">
+<p class="tp-indice">
+<strong>Indice :</strong> Photo d’un échantillon prélevé sur un affleurement massif. La largeur du champ est de quelques centimètres.
+</p>
+</article>
+<article class="tp-ex-card tp-ex2-card">
+<h4 class="anchored">
+Échantillon 3
+</h4>
+<img src="../material_used/seance_03/Lucia_Bomb_Etna_2-removebg-preview.png" alt="Bombe volcanique de l'Etna">
+<p class="tp-indice">
+<strong>Indice :</strong> Échantillon ramassé au sol. La densité du fragment paraît intermédiaire.
+</p>
+</article>
+<article class="tp-ex-card tp-ex2-card">
+<h4 class="anchored">
+Échantillon 4
+</h4>
+<img src="../material_used/seance_03/Allan_Lapilli_CordonCaulle_3-removebg-preview.png" alt="Lapilli du Cordón Caulle">
+<p class="tp-indice">
+<strong>Indice :</strong> Échantillon récolté au sein d’un log stratigraphique proche d’un volcan. Les fragments paraissent très légers.
+</p>
+</article>
+<article class="tp-ex-card tp-ex2-card">
+<h4 class="anchored">
+Échantillon 5
+</h4>
+<img src="../material_used/seance_03/Allan_CoarseAsh_CordonCaulle_1-removebg-preview.png" alt="Cendre grossière du Cordón Caulle">
+<p class="tp-indice">
+<strong>Indice :</strong> Échantillon récolté au sein d’un log stratigraphique à distance d’un volcan. Les fragments paraissent très légers.
+</p>
+</article>
+<article class="tp-ex-card tp-ex2-card">
+<h4 class="anchored">
+Échantillon 6
+</h4>
+<img src="../material_used/seance_03/obsidienne - oregon.jpg" alt="Obsidienne de l'Oregon">
+<p class="tp-indice">
+<strong>Indice :</strong> Photo d’un échantillon prélevé sur un affleurement massif. La largeur du champ est de quelques centimètres.
+</p>
+</article>
+</div>
+</section>
+</section>
+<section id="exercice-3-trouver-le-nom-dune-roche-20-min" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="exercice-3-trouver-le-nom-dune-roche-20-min"><span class="header-section-number">4</span> Exercice 3 : Trouver le nom d’une roche (20 min)</h2>
+<!-- PARTIE 5 : documents de référence QAPF et TAS. -->
+<div class="tp-panel">
+<section id="composition-minéralogique-diagramme-qapf-de-streckeisen" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="composition-minéralogique-diagramme-qapf-de-streckeisen"><span class="header-section-number">4.1</span> Composition minéralogique : diagramme QAPF de Streckeisen</h3>
+<p>Les quatre diagrammes suivants sont fournis comme références pour l’exercice :</p>
+<div class="tp-reference-diagrams">
+<div class="tp-reference-pdf">
+<p>
+<strong>Diagramme QAPF - Roches plutoniques</strong>
+</p>
+<object data="../material_used/seance_03/QAPF-plutonic.pdf" type="application/pdf" width="100%" height="600">
+<p>
+<a href="../material_used/seance_03/QAPF-plutonic.pdf" target="_blank" rel="noopener">Ouvrir le diagramme QAPF des roches plutoniques</a>
+</p>
+</object>
+</div>
+<div class="tp-reference-pdf">
+<p>
+<strong>Diagramme QAPF - Roches volcaniques</strong>
+</p>
+<object data="../material_used/seance_03/QAPF-volcanic.pdf" type="application/pdf" width="100%" height="600">
+<p>
+<a href="../material_used/seance_03/QAPF-volcanic.pdf" target="_blank" rel="noopener">Ouvrir le diagramme QAPF des roches volcaniques</a>
+</p>
+</object>
+</div>
+</div>
+<div class="tp-reference-diagrams">
+<div class="tp-reference-pdf">
+<p>
+<strong>Diagramme O-OPX-CPX - roches mantelliques</strong>
+</p>
+<object data="../material_used/seance_03/Ultramafic.pdf" type="application/pdf" width="100%" height="600">
+<p>
+<a href="../material_used/seance_03/Ultramafic.pdf" target="_blank" rel="noopener">Ouvrir la classification des roches ultramafiques</a>
+</p>
+</object>
+</div>
+<div class="tp-reference-pdf">
+<p>
+<strong>Classification minéralogique modale simplifiée</strong>
+</p>
+<p>
+Particulièrement pratique pour l’ensemble des roches, notamment les roches basiques et mafiques, qui sont moins faciles à identifier avec le diagramme QAPF de Streckeisen.
+</p>
+<object data="../material_used/seance_03/modal.pdf" type="application/pdf" width="100%" height="600">
+<p>
+<a href="../material_used/seance_03/modal.pdf" target="_blank" rel="noopener">Ouvrir la classification minéralogique modale simplifiée</a>
+</p>
+</object>
+</div>
+</div>
+<p>À l’aide des différents diagrammes d’identification fournis, identifiez les roches correspondant aux compositions présentées dans les tableaux suivants.</p>
+</section>
+<section id="compositions-minéralogiques" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="compositions-minéralogiques"><span class="header-section-number">4.2</span> Compositions minéralogiques</h3>
+<p>Pour chaque échantillon, déterminez le nom de la roche à l’aide du diagramme de référence correspondant. Les valeurs de chaque ligne sont normalisées et totalisent 100 %.</p>
+<section id="échantillons-plutoniques-diagramme-qapf" class="level4" data-number="4.2.1">
+<h4 data-number="4.2.1" class="anchored" data-anchor-id="échantillons-plutoniques-diagramme-qapf"><span class="header-section-number">4.2.1</span> Échantillons plutoniques — diagramme QAPF</h4>
+<div class="tp-table-scroll">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Échantillon</th>
+<th style="text-align: right;">Q (%)</th>
+<th style="text-align: right;">A (%)</th>
+<th style="text-align: right;">P (%)</th>
+<th style="text-align: right;">F (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">P1</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="échantillons-volcaniques-diagramme-qapf" class="level4" data-number="4.2.2">
+<h4 data-number="4.2.2" class="anchored" data-anchor-id="échantillons-volcaniques-diagramme-qapf"><span class="header-section-number">4.2.2</span> Échantillons volcaniques — diagramme QAPF</h4>
+<div class="tp-table-scroll">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Échantillon</th>
+<th style="text-align: right;">Q (%)</th>
+<th style="text-align: right;">A (%)</th>
+<th style="text-align: right;">P (%)</th>
+<th style="text-align: right;">F (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">V1</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">V2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">V3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">V4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">V5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">70</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="échantillons-mantelliques-diagramme-o-opx-cpx" class="level4" data-number="4.2.3">
+<h4 data-number="4.2.3" class="anchored" data-anchor-id="échantillons-mantelliques-diagramme-o-opx-cpx"><span class="header-section-number">4.2.3</span> Échantillons mantelliques — diagramme O-OPX-CPX</h4>
+<div class="tp-table-scroll">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Échantillon</th>
+<th style="text-align: right;">O (%)</th>
+<th style="text-align: right;">OPX (%)</th>
+<th style="text-align: right;">CPX (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">M1</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">M2</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">M3</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">M4</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">M5</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">25</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="échantillons-classification-modale-simplifiée" class="level4" data-number="4.2.4">
+<h4 data-number="4.2.4" class="anchored" data-anchor-id="échantillons-classification-modale-simplifiée"><span class="header-section-number">4.2.4</span> Échantillons — classification modale simplifiée</h4>
+<p>Ces compositions peuvent correspondre aussi bien à des roches volcaniques qu’à des roches plutoniques.</p>
+<div class="tp-table-scroll">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Échantillon</th>
+<th style="text-align: right;">Olivine (%)</th>
+<th style="text-align: right;">Pyroxène (%)</th>
+<th style="text-align: right;">Plagioclase (%)</th>
+<th style="text-align: right;">Amphibole (%)</th>
+<th style="text-align: right;">Biotite (%)</th>
+<th style="text-align: right;">Muscovite (%)</th>
+<th style="text-align: right;">Quartz (%)</th>
+<th style="text-align: right;">Feldspath potassique (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">E1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">E2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">E3</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">E4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">E5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="composition-chimique-diagramme-tas" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="composition-chimique-diagramme-tas"><span class="header-section-number">4.3</span> Composition chimique : diagramme TAS</h3>
+<p>Les deux diagrammes suivants sont fournis comme références pour l’exercice :</p>
+<div class="tp-reference-diagrams">
+<div class="tp-reference-pdf">
+<p>
+<strong>Nomenclature TAS — roches plutoniques</strong>
+</p>
+<object data="../material_used/seance_03/TAS-plutonic.pdf" type="application/pdf" width="100%" height="600">
+<p>
+<a href="../material_used/seance_03/TAS-plutonic.pdf" target="_blank" rel="noopener">Ouvrir le diagramme TAS pour les roches plutoniques</a>
+</p>
+</object>
+</div>
+<div class="tp-reference-pdf">
+<p>
+<strong>Nomenclature TAS — roches volcaniques</strong>
+</p>
+<object data="../material_used/seance_03/TAS-volcanic.pdf" type="application/pdf" width="100%" height="600">
+<p>
+<a href="../material_used/seance_03/TAS-volcanic.pdf" target="_blank" rel="noopener">Ouvrir le diagramme TAS pour les roches volcaniques</a>
+</p>
+</object>
+</div>
+</div>
+<p>À l’aide des diagrammes TAS fournis, identifiez les roches correspondant aux compositions chimiques présentées dans le tableau suivant, en appliquant à la fois la nomenclature plutonique et la nomenclature volcanique.</p>
+<p>Les valeurs sont exprimées en pourcentage massique. Le fer total est exprimé sous la forme Fe₂O₃ᵗ. Les compositions totalisent 100 %. Pour chaque échantillon, calculez la somme Na₂O + K₂O, puis reportez la composition sur les diagrammes TAS.</p>
+<div class="tp-table-scroll">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Échantillon</th>
+<th style="text-align: right;">SiO₂ (%)</th>
+<th style="text-align: right;">TiO₂ (%)</th>
+<th style="text-align: right;">Al₂O₃ (%)</th>
+<th style="text-align: right;">Fe₂O₃ᵗ (%)</th>
+<th style="text-align: right;">MnO (%)</th>
+<th style="text-align: right;">MgO (%)</th>
+<th style="text-align: right;">CaO (%)</th>
+<th style="text-align: right;">Na₂O (%)</th>
+<th style="text-align: right;">K₂O (%)</th>
+<th style="text-align: right;">P₂O₅ (%)</th>
+<th style="text-align: right;">Total (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">E6</td>
+<td style="text-align: right;">49,0</td>
+<td style="text-align: right;">1,5</td>
+<td style="text-align: right;">15,5</td>
+<td style="text-align: right;">12,0</td>
+<td style="text-align: right;">0,2</td>
+<td style="text-align: right;">7,5</td>
+<td style="text-align: right;">10,5</td>
+<td style="text-align: right;">2,5</td>
+<td style="text-align: right;">0,8</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">100,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">E7</td>
+<td style="text-align: right;">57,0</td>
+<td style="text-align: right;">1,0</td>
+<td style="text-align: right;">17,0</td>
+<td style="text-align: right;">8,0</td>
+<td style="text-align: right;">0,2</td>
+<td style="text-align: right;">4,0</td>
+<td style="text-align: right;">7,0</td>
+<td style="text-align: right;">3,5</td>
+<td style="text-align: right;">1,8</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">100,0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">E8</td>
+<td style="text-align: right;">64,5</td>
+<td style="text-align: right;">0,7</td>
+<td style="text-align: right;">16,5</td>
+<td style="text-align: right;">5,0</td>
+<td style="text-align: right;">0,1</td>
+<td style="text-align: right;">2,0</td>
+<td style="text-align: right;">4,0</td>
+<td style="text-align: right;">4,0</td>
+<td style="text-align: right;">2,7</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">100,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">E9</td>
+<td style="text-align: right;">74,0</td>
+<td style="text-align: right;">0,2</td>
+<td style="text-align: right;">13,5</td>
+<td style="text-align: right;">2,0</td>
+<td style="text-align: right;">0,05</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">1,5</td>
+<td style="text-align: right;">3,5</td>
+<td style="text-align: right;">4,5</td>
+<td style="text-align: right;">0,25</td>
+<td style="text-align: right;">100,0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">E10</td>
+<td style="text-align: right;">45,5</td>
+<td style="text-align: right;">2,0</td>
+<td style="text-align: right;">14,0</td>
+<td style="text-align: right;">13,0</td>
+<td style="text-align: right;">0,2</td>
+<td style="text-align: right;">6,0</td>
+<td style="text-align: right;">8,5</td>
+<td style="text-align: right;">5,0</td>
+<td style="text-align: right;">5,0</td>
+<td style="text-align: right;">0,8</td>
+<td style="text-align: right;">100,0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+</section>
+<section id="exercice-4-observations-de-vrais-échantillons-30-min" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="exercice-4-observations-de-vrais-échantillons-30-min"><span class="header-section-number">5</span> Exercice 4 : Observations de vrais échantillons (30 min)</h2>
+<!-- PARTIE 6 : aucune interaction à préparer sur la page. -->
+<div class="tp-panel tp-panel--orange">
+<p>Essayez d’identifier les roches présentes dans le tiroir fourni, en applicant les notions vues en cours au sein de ce TP.</p>
+</div>
+</section>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copié");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copié");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Université de Fribourg - Bachelor 2ème année</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Simon THIVET</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,610 @@
+---
+title: "Séance 3 - TP : reconnaissance des roches magmatiques"
+author: "Simon THIVET"
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+    geometry:
+      - margin=2cm
+lang: fr
+---
+
+<style>
+/* Styles locaux de la page du TP : les exercices restent indépendants du site du cours. */
+.tp-interactif {
+  --tp-green: #1b8a54;
+  --tp-green-dark: #14683f;
+  --tp-orange: #d06516;
+  --tp-blue: #0a3859;
+  --tp-ink: #18201d;
+  --tp-muted: #5b6268;
+}
+
+.tp-interactif .tp-panel {
+  background: #ffffff;
+  border: 1px solid #d5d9dc;
+  border-left: 0.35rem solid var(--tp-green);
+  border-radius: 0.35rem;
+  box-shadow: 0 0.15rem 0.45rem rgba(0, 0, 0, 0.05);
+  margin: 1rem 0 1.35rem;
+  padding: 1rem 1.2rem;
+}
+
+.tp-interactif .tp-panel--orange {
+  border-left-color: var(--tp-orange);
+}
+
+.tp-interactif .tp-panel h3,
+.tp-interactif .tp-panel h4 {
+  color: var(--tp-blue);
+  margin-top: 0;
+}
+
+.tp-interactif .tp-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Dans l'exercice 2, les trois critères restent sur trois colonnes distinctes. */
+.tp-interactif .tp-ex2-card .tp-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tp-interactif .tp-photo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 1.4rem;
+}
+
+.tp-interactif .tp-ex-card {
+  background: #fff;
+  border: 1px solid #d5d9dc;
+  border-radius: 0.35rem;
+  padding: 0.85rem;
+}
+
+.tp-interactif .tp-ex-card h4 {
+  color: var(--tp-blue);
+  margin: 0 0 0.6rem;
+}
+
+.tp-interactif .tp-question {
+  color: var(--tp-ink);
+  margin: 0.75rem 0;
+}
+
+.tp-interactif .tp-indice {
+  background: #fff8ed;
+  border-left: 0.3rem solid var(--tp-orange);
+  border-radius: 0.25rem;
+  color: var(--tp-ink);
+  margin: 0.75rem 0;
+  padding: 0.6rem 0.8rem;
+}
+
+.tp-interactif .tp-reference-diagrams {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 1.4rem;
+}
+
+.tp-interactif .tp-reference-diagrams > p {
+  margin: 0;
+}
+
+.tp-interactif .tp-reference-diagrams img {
+  background: #fff;
+  border: 1px solid #d5d9dc;
+  border-radius: 0.25rem;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.tp-interactif .tp-reference-pdf {
+  background: #fff;
+  border: 1px solid #d5d9dc;
+  border-radius: 0.25rem;
+  padding: 0.6rem;
+}
+
+.tp-interactif .tp-reference-pdf > p {
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.tp-interactif .tp-reference-pdf object {
+  display: block;
+  height: 36rem;
+  width: 100%;
+}
+
+.tp-interactif .tp-correction {
+  background: #eef6ff;
+  border-left: 0.3rem solid var(--tp-blue);
+  border-radius: 0.25rem;
+  color: var(--tp-ink);
+  margin-top: 0.8rem;
+  padding: 0.7rem 0.8rem;
+}
+
+.tp-interactif .tp-correction[hidden] {
+  display: none;
+}
+
+.tp-interactif .tp-correction p {
+  margin: 0.35rem 0 0;
+}
+
+.tp-interactif .tp-image-placeholder {
+  align-items: center;
+  background: #f1f4f3;
+  border: 1px dashed #8b9a92;
+  color: var(--tp-muted);
+  display: flex;
+  font-size: 0.95rem;
+  justify-content: center;
+  min-height: 10rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.tp-interactif .tp-ex-card img {
+  display: block;
+  height: auto;
+  max-height: 18rem;
+  object-fit: contain;
+  width: 100%;
+}
+
+.tp-interactif .tp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+.tp-interactif label {
+  color: var(--tp-ink);
+  font-weight: 600;
+}
+
+.tp-interactif select,
+.tp-interactif input[type="number"] {
+  background: #fff;
+  border: 1px solid #adb8b2;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  color: var(--tp-ink);
+  font: inherit;
+  min-height: 2.1rem;
+  padding: 0.25rem 0.45rem;
+  width: 100%;
+}
+
+.tp-interactif input[type="number"] {
+  min-width: 5rem;
+}
+
+.tp-interactif button {
+  background: var(--tp-green-dark);
+  border: 1px solid var(--tp-green-dark);
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  padding: 0.35rem 0.7rem;
+}
+
+.tp-interactif button:hover,
+.tp-interactif button:focus-visible {
+  background: var(--tp-orange);
+  border-color: var(--tp-orange);
+}
+
+.tp-interactif .tp-feedback {
+  border-radius: 0.25rem;
+  display: none;
+  font-weight: 600;
+  margin: 0.65rem 0 0;
+  padding: 0.45rem 0.6rem;
+}
+
+.tp-interactif .tp-feedback.is-visible {
+  display: block;
+}
+
+.tp-interactif .tp-feedback.is-ok {
+  background: #e4f3e9;
+  color: #12633b;
+}
+
+.tp-interactif .tp-feedback.is-wrong {
+  background: #fbe7e7;
+  color: #9d2020;
+}
+
+.tp-interactif .tp-feedback.is-pending {
+  background: #fff3df;
+  color: #85500b;
+}
+
+.tp-interactif .tp-choice-table,
+.tp-interactif .tp-table-scroll {
+  overflow-x: auto;
+}
+
+.tp-interactif .tp-choice-table table,
+.tp-interactif .tp-edit-table {
+  margin: 0.8rem 0 1.2rem;
+  min-width: 42rem;
+  width: 100%;
+}
+
+.tp-interactif .tp-choice-table th {
+  background: var(--tp-blue);
+  color: #fff;
+}
+
+.tp-interactif .tp-choice-table th,
+.tp-interactif .tp-choice-table td {
+  padding: 0.45rem 0.6rem;
+  vertical-align: top;
+}
+
+.tp-interactif .tp-edit-table {
+  font-size: 0.9rem;
+}
+
+.tp-interactif .tp-edit-table th,
+.tp-interactif .tp-edit-table td {
+  min-width: 5.2rem;
+  padding: 0.3rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tp-interactif .tp-edit-table th:first-child,
+.tp-interactif .tp-edit-table td:first-child {
+  min-width: 4.3rem;
+  white-space: nowrap;
+}
+
+.tp-interactif .tp-edit-table select,
+.tp-interactif .tp-edit-table input[type="number"] {
+  font-size: 0.88rem;
+  min-width: 4.8rem;
+}
+
+.tp-interactif .tp-diagram-layout {
+  align-items: start;
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: minmax(0, 1.1fr) minmax(25rem, 1fr);
+  margin: 1.1rem 0 1.6rem;
+}
+
+.tp-interactif .tp-diagram-card {
+  background: #fff;
+  border: 1px solid #d5d9dc;
+  border-radius: 0.35rem;
+  padding: 0.45rem;
+}
+
+.tp-interactif .tp-diagram-card svg {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.tp-interactif .tp-input-panel {
+  min-width: 0;
+}
+
+.tp-interactif .tp-input-panel h3 {
+  color: var(--tp-blue);
+  margin-top: 0;
+}
+
+.tp-interactif .tp-note {
+  background: #eef5f1;
+  border-left: 0.3rem solid var(--tp-green);
+  margin: 0.8rem 0 1rem;
+  padding: 0.65rem 0.8rem;
+}
+
+.tp-interactif .tp-small {
+  color: var(--tp-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .tp-interactif .tp-grid,
+  .tp-interactif .tp-photo-grid,
+  .tp-interactif .tp-reference-diagrams,
+  .tp-interactif .tp-diagram-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tp-interactif .tp-diagram-layout {
+    gap: 0.8rem;
+  }
+}
+</style>
+
+<div class="tp-interactif">
+
+## Principe du TP
+
+<!-- PARTIE 1 : principe, objectifs et plan réunis dans la même section. -->
+<div class="tp-panel">
+
+Ce TP est conçu comme un atelier d'observation et de discussion à partir de modèles 3D d'affleurements, de photos d'échantillons, d'une base de données de compositions minéralogiques et géochmiques, mais aussi à partir d'échantillons réels.
+
+À la fin de cette séance, vous devriez pouvoir :
+
+- Décrire un affleurement et discuter son contexte géologique
+- Décrire la granulométrie et les textures cristallines et vésiculaires d'un échantillon
+- Nommer les roches en se basant sur des compositions minéralogiques et géochimiques
+
+Durées indicatives des différents exercices :
+
+| Temps | Contenu | Objectif |
+|---|---|---|
+| 20 min | Exercice 1 : décrire un affleurement | Relier les informations disponibles aux structures visibles de l'affleurement pour en déduire un contexte géologique |
+| 20 min | Exercice 2 : décrire la texture d'un échantillon | Caractériser la granulométrie, cristallinité, et vésicularité d'un échantillon |
+| 20 min | Exercice 3 : nommer une roche | Utiliser les classifications adéquates pour détermimer le nom d'une roche |
+| 30 min | Exercice 4 : observations de vrais échantillons | Récapitulatif sur de vrais échantillons |
+
+</div>
+
+## Exercice 1 : Décrire un affleurement (20 min)
+
+<!-- PARTIE 3 : quatre cas d'étude en modèle 3D. -->
+<div class="tp-panel">
+
+**Consigne :** Pour chaque cas d'étude présenté ci-dessous, observez le modèle 3D et utilisez l'indice pour formuler votre propre description d'affleurement et proposition de contexte géologique (quel type de roche et pourquoi).
+
+</div>
+
+<div class="tp-photo-grid">
+
+<article class="tp-ex-card tp-ex1-card">
+  <h4>Cas d'étude 1 — Spitzkoppe (Namibie)</h4>
+  <p><a href="https://v3geo.com/viewer/#/341" target="_blank" rel="noopener">Ouvrir le modèle 3D — Spitzkoppe</a></p>
+  <p class="tp-indice"><strong>Indice :</strong> Ce petit modèle en surface, montre des roches qui affleurent grâce à une érosion substentielle. Les roches affleurantes sont néanmoins en place et sont datées d'environ 600 Ma lors de l'orogénèse damarienne. On observe ici des chaos de blocs façonnés par l'aridité du désert.</p>
+</article>
+
+<article class="tp-ex-card tp-ex1-card">
+  <h4>Cas d'étude 2 — Chachahuén (Argentine)</h4>
+  <p><a href="https://v3geo.com/viewer/index.html#/272" target="_blank" rel="noopener">Ouvrir le modèle 3D — Chachahuén</a></p>
+  <p class="tp-indice"><strong>Indice :</strong> Ce modéle montre une structure allongée où l'érosion a fait son œuvre : les roches les plus dures ressortent par rapport aux roches les plus tendres. Évaluez la continuité et la géométrie singulière de l'affleurement et réfléchissez à ce que cela peut représenter.</p>
+</article>
+
+<article class="tp-ex-card tp-ex1-card">
+  <h4>Cas d'étude 3 — Hestgerðismúli (Islande)</h4>
+  <p><a href="https://v3geo.com/viewer/index.html#/444" target="_blank" rel="noopener">Ouvrir le modèle 3D — Hestgerðismúli</a></p>
+  <p class="tp-indice"><strong>Indice :</strong> Les différentes faces latérales de ce vaste affleurement révèlent la structure interne de cette zone géologique. Évaluez la forme et la répétition des structures visibles pour déduire la nature et le mode d'emplacement de ces roches.</p>
+</article>
+
+<article class="tp-ex-card tp-ex1-card">
+  <h4>Cas d'étude 4 — Tajogaite (Espagne)</h4>
+  <p><a href="https://v3geo.com/viewer/index.html#/442" target="_blank" rel="noopener">Ouvrir le modèle 3D — Tajogaite</a></p>
+  <p class="tp-indice"><strong>Indice :</strong> Ce modèle représente une zone de plusieurs kilomètres avec plusieurs éléments observables. Essayez d'identifier les différents éléments. La situation est plus complexe qu'il n'y paraît.</p>
+</article>
+
+</div>
+
+## Exercice 2 : Décrire la texture d'un échantillon (20 min)
+
+<!-- PARTIE 4 : tableau de référence pour décrire les textures. -->
+### Partie 1 — Granulométrie, texture cristalline et texture vésiculaire
+
+<div class="tp-panel tp-panel--orange">
+
+**Consigne :** Pour chaque échantillon présenté ci-dessous, décrivez la granulométrie ainsi que les textures cristalline et vésiculaire, en vous aidant du tableau ci-dessous et des indices à disposition.
+
+<div class="tp-choice-table">
+<table>
+<thead><tr><th>Granulométrie</th><th>Texture cristalline</th><th>Texture vésiculaire</th></tr></thead>
+<tbody><tr>
+<td>Non-applicable (massif)<br>Bombe (arrondi)/bloc(anguleux)<br>Lapilli<br>Cendre</td>
+<td>Grenue<br>Porphyrique<br>Aphyrique ou microlitique<br>Vitreuse<br>Autre</td>
+<td>Réticulite<br>Ponce<br>Scorie</td>
+</tr></tbody>
+</table>
+</div>
+
+</div>
+
+<div class="tp-photo-grid">
+
+<article class="tp-ex-card tp-ex2-card">
+  <h4>Échantillon 1</h4>
+  <img src="../material_used/seance_03/granite%20grenue%20massif.jpg" alt="Granite grenue massif">
+  <p class="tp-indice"><strong>Indice :</strong> Photo d'un échantillon prélevé sur un affleurement massif. La largeur du champ est de quelques centimètres.</p>
+</article>
+
+<article class="tp-ex-card tp-ex2-card">
+  <h4>Échantillon 2</h4>
+  <img src="../material_used/seance_03/picrite%20massive.jpeg" alt="Picrite massive">
+  <p class="tp-indice"><strong>Indice :</strong> Photo d'un échantillon prélevé sur un affleurement massif. La largeur du champ est de quelques centimètres.</p>
+</article>
+
+<article class="tp-ex-card tp-ex2-card">
+  <h4>Échantillon 3</h4>
+  <img src="../material_used/seance_03/Lucia_Bomb_Etna_2-removebg-preview.png" alt="Bombe volcanique de l'Etna">
+  <p class="tp-indice"><strong>Indice :</strong> Échantillon ramassé au sol. La densité du fragment paraît intermédiaire.</p>
+</article>
+
+<article class="tp-ex-card tp-ex2-card">
+  <h4>Échantillon 4</h4>
+  <img src="../material_used/seance_03/Allan_Lapilli_CordonCaulle_3-removebg-preview.png" alt="Lapilli du Cordón Caulle">
+  <p class="tp-indice"><strong>Indice :</strong> Échantillon récolté au sein d'un log stratigraphique proche d'un volcan. Les fragments paraissent très légers.</p>
+</article>
+
+<article class="tp-ex-card tp-ex2-card">
+  <h4>Échantillon 5</h4>
+  <img src="../material_used/seance_03/Allan_CoarseAsh_CordonCaulle_1-removebg-preview.png" alt="Cendre grossière du Cordón Caulle">
+  <p class="tp-indice"><strong>Indice :</strong> Échantillon récolté au sein d'un log stratigraphique à distance d'un volcan. Les fragments paraissent très légers.</p>
+</article>
+
+<article class="tp-ex-card tp-ex2-card">
+  <h4>Échantillon 6</h4>
+  <img src="../material_used/seance_03/obsidienne%20-%20oregon.jpg" alt="Obsidienne de l'Oregon">
+  <p class="tp-indice"><strong>Indice :</strong> Photo d'un échantillon prélevé sur un affleurement massif. La largeur du champ est de quelques centimètres.</p>
+</article>
+
+</div>
+
+## Exercice 3 : Trouver le nom d'une roche (20 min)
+
+<!-- PARTIE 5 : documents de référence QAPF et TAS. -->
+<div class="tp-panel">
+
+### Composition minéralogique : diagramme QAPF de Streckeisen
+
+Les quatre diagrammes suivants sont fournis comme références pour l'exercice :
+
+::: {.tp-reference-diagrams}
+<div class="tp-reference-pdf">
+<p><strong>Diagramme QAPF - Roches plutoniques</strong></p>
+<object data="../material_used/seance_03/QAPF-plutonic.pdf" type="application/pdf" width="100%" height="600">
+<p><a href="../material_used/seance_03/QAPF-plutonic.pdf" target="_blank" rel="noopener">Ouvrir le diagramme QAPF des roches plutoniques</a></p>
+</object>
+</div>
+
+<div class="tp-reference-pdf">
+<p><strong>Diagramme QAPF - Roches volcaniques</strong></p>
+<object data="../material_used/seance_03/QAPF-volcanic.pdf" type="application/pdf" width="100%" height="600">
+<p><a href="../material_used/seance_03/QAPF-volcanic.pdf" target="_blank" rel="noopener">Ouvrir le diagramme QAPF des roches volcaniques</a></p>
+</object>
+</div>
+:::
+
+::: {.tp-reference-diagrams}
+<div class="tp-reference-pdf">
+<p><strong>Diagramme O-OPX-CPX - roches mantelliques</strong></p>
+<object data="../material_used/seance_03/Ultramafic.pdf" type="application/pdf" width="100%" height="600">
+<p><a href="../material_used/seance_03/Ultramafic.pdf" target="_blank" rel="noopener">Ouvrir la classification des roches ultramafiques</a></p>
+</object>
+</div>
+
+<div class="tp-reference-pdf">
+<p><strong>Classification minéralogique modale simplifiée</strong></p>
+<p>Particulièrement pratique pour l'ensemble des roches, notamment les roches basiques et mafiques, qui sont moins faciles à identifier avec le diagramme QAPF de Streckeisen.</p>
+<object data="../material_used/seance_03/modal.pdf" type="application/pdf" width="100%" height="600">
+<p><a href="../material_used/seance_03/modal.pdf" target="_blank" rel="noopener">Ouvrir la classification minéralogique modale simplifiée</a></p>
+</object>
+</div>
+:::
+
+À l’aide des différents diagrammes d’identification fournis, identifiez les roches correspondant aux compositions présentées dans les tableaux suivants.
+
+### Compositions minéralogiques
+
+Pour chaque échantillon, déterminez le nom de la roche à l’aide du diagramme de référence correspondant. Les valeurs de chaque ligne sont normalisées et totalisent 100 %.
+
+#### Échantillons plutoniques — diagramme QAPF
+
+::: {.tp-table-scroll}
+| Échantillon | Q (%) | A (%) | P (%) | F (%) |
+|:--|--:|--:|--:|--:|
+| P1 | 30 | 40 | 30 | 0 |
+| P2 | 10 | 50 | 40 | 0 |
+| P3 | 0 | 50 | 0 | 50 |
+| P4 | 0 | 40 | 35 | 25 |
+| P5 | 0 | 20 | 50 | 30 |
+:::
+
+#### Échantillons volcaniques — diagramme QAPF
+
+::: {.tp-table-scroll}
+| Échantillon | Q (%) | A (%) | P (%) | F (%) |
+|:--|--:|--:|--:|--:|
+| V1 | 25 | 45 | 30 | 0 |
+| V2 | 0 | 40 | 60 | 0 |
+| V3 | 0 | 20 | 50 | 30 |
+| V4 | 5 | 55 | 40 | 0 |
+| V5 | 0 | 0 | 30 | 70 |
+:::
+
+#### Échantillons mantelliques — diagramme O-OPX-CPX
+
+::: {.tp-table-scroll}
+| Échantillon | O (%) | OPX (%) | CPX (%) |
+|:--|--:|--:|--:|
+| M1 | 60 | 25 | 15 |
+| M2 | 45 | 40 | 15 |
+| M3 | 35 | 20 | 45 |
+| M4 | 70 | 10 | 20 |
+| M5 | 25 | 50 | 25 |
+:::
+
+#### Échantillons — classification modale simplifiée
+
+Ces compositions peuvent correspondre aussi bien à des roches volcaniques qu'à des roches plutoniques.
+
+::: {.tp-table-scroll}
+| Échantillon | Olivine (%) | Pyroxène (%) | Plagioclase (%) | Amphibole (%) | Biotite (%) | Muscovite (%) | Quartz (%) | Feldspath potassique (%) |
+|:--|--:|--:|--:|--:|--:|--:|--:|--:|
+| E1 | 40 | 60 | 0 | 0 | 0 | 0 | 0 | 0 |
+| E2 | 5 | 80 | 15 | 0 | 0 | 0 | 0 | 0 |
+| E3 | 0 | 0 | 55 | 20 | 5 | 5 | 10 | 5 |
+| E4 | 0 | 0 | 5 | 5 | 5 | 10 | 25 | 50 |
+:::
+
+### Composition chimique : diagramme TAS
+
+Les deux diagrammes suivants sont fournis comme références pour l'exercice :
+
+::: {.tp-reference-diagrams}
+<div class="tp-reference-pdf">
+<p><strong>Nomenclature TAS — roches plutoniques</strong></p>
+<object data="../material_used/seance_03/TAS-plutonic.pdf" type="application/pdf" width="100%" height="600">
+<p><a href="../material_used/seance_03/TAS-plutonic.pdf" target="_blank" rel="noopener">Ouvrir le diagramme TAS pour les roches plutoniques</a></p>
+</object>
+</div>
+
+<div class="tp-reference-pdf">
+<p><strong>Nomenclature TAS — roches volcaniques</strong></p>
+<object data="../material_used/seance_03/TAS-volcanic.pdf" type="application/pdf" width="100%" height="600">
+<p><a href="../material_used/seance_03/TAS-volcanic.pdf" target="_blank" rel="noopener">Ouvrir le diagramme TAS pour les roches volcaniques</a></p>
+</object>
+</div>
+:::
+
+À l’aide des diagrammes TAS fournis, identifiez les roches correspondant aux compositions chimiques présentées dans le tableau suivant, en appliquant à la fois la nomenclature plutonique et la nomenclature volcanique.
+
+Les valeurs sont exprimées en pourcentage massique. Le fer total est exprimé sous la forme Fe₂O₃ᵗ. Les compositions totalisent 100 %. Pour chaque échantillon, calculez la somme Na₂O + K₂O, puis reportez la composition sur les diagrammes TAS.
+
+::: {.tp-table-scroll}
+| Échantillon | SiO₂ (%) | TiO₂ (%) | Al₂O₃ (%) | Fe₂O₃ᵗ (%) | MnO (%) | MgO (%) | CaO (%) | Na₂O (%) | K₂O (%) | P₂O₅ (%) | Total (%) |
+|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| E5 | 49,0 | 1,5 | 15,5 | 12,0 | 0,2 | 7,5 | 10,5 | 2,5 | 0,8 | 0,5 | 100,0 |
+| E6 | 57,0 | 1,0 | 17,0 | 8,0 | 0,2 | 4,0 | 7,0 | 3,5 | 1,8 | 0,5 | 100,0 |
+| E7 | 64,5 | 0,7 | 16,5 | 5,0 | 0,1 | 2,0 | 4,0 | 4,0 | 2,7 | 0,5 | 100,0 |
+| E8 | 74,0 | 0,2 | 13,5 | 2,0 | 0,05 | 0,5 | 1,5 | 3,5 | 4,5 | 0,25 | 100,0 |
+| E9 | 45,5 | 2,0 | 14,0 | 13,0 | 0,2 | 6,0 | 8,5 | 5,0 | 5,0 | 0,8 | 100,0 |
+:::
+
+</div>
+
+## Exercice 4 : Observations de vrais échantillons (30 min)
+
+<!-- PARTIE 6 : aucune interaction à préparer sur la page. -->
+<div class="tp-panel tp-panel--orange">
+
+Essayez d'identifier les roches présentes dans le tiroir fourni, en applicant les notions vues en cours au sein de ce TP.
+</div>
+
+</div>
