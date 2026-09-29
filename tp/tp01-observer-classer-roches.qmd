@@ -558,9 +558,10 @@ Ces compositions peuvent correspondre aussi bien à des roches volcaniques qu'à
 | Échantillon | Olivine (%) | Pyroxène (%) | Plagioclase (%) | Amphibole (%) | Biotite (%) | Muscovite (%) | Quartz (%) | Feldspath potassique (%) |
 |:--|--:|--:|--:|--:|--:|--:|--:|--:|
 | E1 | 40 | 60 | 0 | 0 | 0 | 0 | 0 | 0 |
-| E2 | 5 | 80 | 15 | 0 | 0 | 0 | 0 | 0 |
-| E3 | 0 | 0 | 55 | 20 | 5 | 5 | 10 | 5 |
-| E4 | 0 | 0 | 5 | 5 | 5 | 10 | 25 | 50 |
+| E2 | 10 | 70 | 20 | 0 | 0 | 0 | 0 | 0 |
+| E3 | 0 | 20 | 65 | 15 | 0 | 0 | 0 | 0 |
+| E4 | 0 | 0 | 50 | 15 | 10 | 5 | 15 | 5 |
+| E5 | 0 | 0 | 10 | 5 | 5 | 5 | 25 | 50 |
 :::
 
 ### Composition chimique : diagramme TAS
