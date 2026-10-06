@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Simon THIVET">
+  <title>Pétrologie magmatique – SST.02208 – Séance 4 - La naissance des magmas I : nature des roches sources</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-a215b705cddf9571ca435b57a46e6dbb.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Séance 4 - La naissance des magmas I : nature des roches sources</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Simon THIVET
+</div>
+</div>
+</div>
+
+</section>
+<section id="plan-du-cours" class="slide level2">
+<h2>Plan du cours</h2>
+<!-- BLOC UNIQUE : format en deux blocs de 45 minutes. -->
+<div class="slide-block">
+<div class="course-plan-table">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Temps</th>
+<th>Contenu</th>
+<th>Objectif</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0–40 min</td>
+<td>Les différentes sources mantelliques</td>
+<td>Comprendre pourquoi le manteau est géochimiquement hétérogène</td>
+</tr>
+<tr class="even">
+<td>40–45 min</td>
+<td>Questions générales</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>45–60 min</td>
+<td>Pause</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>60–100 min</td>
+<td>Les différentes roches magmatiques issues des hétérogénéités du manteau</td>
+<td>Lier les roches magmatiques aux différentes sources existantes et à la géodynamique terrestre</td>
+</tr>
+<tr class="odd">
+<td>100–105 min</td>
+<td>Questions générales</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="notion-de-source-des-magmas" class="slide level2">
+<h2>Notion de source des magmas</h2>
+<!-- BLOC UNIQUE : chaîne conceptuelle reliant le cours 2 à la séance 4. -->
+<div class="slide-block">
+<p><strong>Rappel sur les processus de naissance et de maturation des magmas</strong></p>
+<div class="process-chain">
+<p><span>Source mantellique </span><span>→</span><span> Fusion partielle </span><span>→</span><span> Magma primaire </span><span>→</span><span> Transport et évolution du magma </span><span>→</span><span> Roche magmatique </span></p>
+</div>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>La compréhension des magmas commence par l’identification des sources et des processus qui les ont modifiées.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Rappel fondamental sur le processus de fusion des roches sources</strong></p>
+<div class="process-chain">
+<p><span>Roche source</span><span> → </span><span>Liquide magmatique extrait</span><span> + </span><span>Résidu solide</span></p>
+</div>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Le liquide ne représente qu’une fraction de la source (taux de fusion généralement de quelques pour cent).</li>
+<li>Les éléments compatibles restent préférentiellement dans les minéraux du résidu.</li>
+<li>Les éléments incompatibles passent préférentiellement dans le liquide.</li>
+<li>Le résidu et le liquide n’ont donc plus la même composition.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="slide-block">
+<p><strong>Hétérogénéité du manteau</strong></p>
+<p>La nature géochimique du manteau est hétérogène en raison de l’évolution de la Terre : les éléments chimiques, notamment les éléments traces et les isotopes, ne sont pas répartis partout de la même manière.</p>
+</div>
+</section>
+<section id="limportance-de-lévolution-de-la-terre-la-terre-globale" class="slide level2">
+<h2>L’importance de l’évolution de la Terre : la Terre globale</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Bulk Earth (BE) – Terre globale</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/BulkEarth_step1.png" alt="Schéma Bulk Earth — étape 1" style="width: 100%; max-height: 430px; object-fit: contain;">
+<figcaption>
+État schématique de la Terre primitive avant sa différenciation.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Composition théorique de la Terre globale</strong></p>
+<p>La Terre globale (BE pour <em>Bulk Earth</em>) correspond à la composition moyenne de l’ensemble de la planète, avant de distinguer le noyau, le manteau et les différentes croûtes.</p>
+<p>Elle constitue le point de départ pour comprendre la différenciation chimique de la Terre. Les matériaux primitifs, notamment les chondrites, servent de références pour estimer cette composition globale.</p>
+</div>
+</div>
+</section>
+<section id="limportance-de-lévolution-de-la-terre-la-terre-globale-silicatée" class="slide level2">
+<h2>L’importance de l’évolution de la Terre : la Terre globale silicatée</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Bulk Silicate Earth (BSE) – Terre silicatée globale</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/BulkEarth_step2.png" alt="Schéma Bulk Silicate Earth — étape 2" style="width: 100%; max-height: 280px; object-fit: contain;">
+<figcaption>
+État schématique de la Terre primitive après la formation du noyau.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Composition théorique de la Terre silicatée globale</strong></p>
+<p>La Terre globale silicatée (BSE pour <em>Bulk Silicate Earth</em>) correspond à la composition moyenne de l’ensemble des silicates de la planète, après la formation du noyau de fer, mais avant la naissance de la première croûte.</p>
+<p>Aujourd’hui, ce réservoir pur n’existe presque plus, mais de rares poches profondes préservées dans le manteau inférieur se rapprochent de cette composition. Il est donc utilisé comme référence pour comprendre la différenciation chimique de la Terre silicatée et l’évolution des réservoirs mantelliques.</p>
+</div>
+</div>
+</section>
+<section id="limportance-de-lévolution-de-la-terre-cristallisation-de-locéan-magmatique" class="slide level2">
+<h2>L’importance de l’évolution de la Terre : cristallisation de l’océan magmatique</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Manteau appauvri (DM) et manteau enrichi (EM)</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/BulkEarth_step3.png" alt="Schéma Magma Ocean — étape 3" style="width: 100%; max-height: 430px; object-fit: contain;">
+<figcaption>
+État schématique de la Terre actuelle après différenciation et mise en place du système de plaques tectoniques.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Le point de bascule : formation des croûtes continentales et océaniques qui segmentent la composition du manteau</strong></p>
+<p>Le refroidissement de l’océan magmatique primitif terrestre a formé un manteau initialement fertile et homogène, mais qui a été progressivement vidé de ses éléments incompatibles par la formation de la croûte continentale et océanique.</p>
+<p>Le manteau supérieur résiduel est désormais appauvri en éléments incompatibles, tandis que les croûtes en sont enrichies.</p>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>On observe donc actuellement un manteau supérieur appauvri (DM) par rapport à la BSE.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="limportance-de-lévolution-de-la-terre-interactions-entre-ces-différents-réservoirs" class="slide level2">
+<h2>L’importance de l’évolution de la Terre : interactions entre ces différents réservoirs</h2>
+<div class="slide-block">
+<p><strong>L’impact de la géodynamique terrestre et de la tectonique des plaques</strong></p>
+<ul>
+<li>La délamination de la croûte continentale peut se produire lors des collisions.</li>
+<li>La tectonique des plaques provoque le recyclage en profondeur des plaques lors de la subduction.</li>
+</ul>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Il en résulte un recyclage limité de la croûte continentale au sein du manteau supérieur appauvri (DM).</li>
+<li>La subduction constante et volumineuse des croûtes océaniques enrichit certaines régions du manteau, ce qui contribue à former un manteau enrichi (EM) par rapport à la BSE.</li>
+<li>Le DM et l’EM représentent deux pôles importants de la composition du manteau terrestre actuel.</li>
+<li>Cependant, l’ensemble de ces processus ne se limite pas au manteau supérieur et au manteau inférieur. La convection mantellique globale mélange les matériaux et produit des hétérogénéités à toutes les échelles, selon un modèle de type « marble cake ».</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="hétérogénéité-visible-par-la-géophysique" class="slide level2">
+<h2>Hétérogénéité visible par la géophysique</h2>
+<div class="slide-block">
+<p><strong>Flux de remontée mantellique estimés</strong></p>
+<p>Les anomalies des vitesses sismiques peuvent être mesurées en profondeur et intégrées sur une carte en surface. Elles révèlent des zones préférentiellement ductiles, où les ondes sismiques sont ralenties, ce qui peut indiquer des remontées mantelliques plus chaudes au sein d’un manteau environnant plus froid.</p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/plume buoyency map.jpg" alt="Carte des anomalies des vitesses sismiques" style="width: 100%; max-height: 390px; object-fit: contain;">
+<figcaption>
+Carte terrestre des anomalies des vitesses sismiques.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="hétérogénéité-visible-par-la-géophysique-1" class="slide level2">
+<h2>Hétérogénéité visible par la géophysique</h2>
+<div class="slide-block">
+<p><strong>Flux de remontée mantellique estimés</strong></p>
+<p>Les anomalies de vitesse sismique peuvent être interprétées comme des panaches ascendants chauds (anomalies négatives de vitesse), ou comme des croûtes plongeantes froides (anomalies positives de vitesse), en cohérence avec la géodynamique terrestre et la tectonique des plaques.</p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/chemical reservoirs.jpg" alt="Coupe interprétative des anomalies de vitesse sismiques" style="width: 100%; max-height: 390px; object-fit: contain;">
+<figcaption>
+Coupe interprétative des anomalies de vitesse sismiques.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="les-éléments-chimiques-dune-roche-classification" class="slide level2">
+<h2>Les éléments chimiques d’une roche : classification</h2>
+<div class="slide-block">
+<p><strong>Éléments majeurs, éléments traces, terres rares (REE pour <em>Rare Earth Elements</em>) et isotopes</strong></p>
+<ul>
+<li><strong>Éléments majeurs</strong> : Ce sont les éléments chimiques les plus abondants, représentant chacun plus de 0,1 % de la masse totale d’une roche (généralement Si, Ti, Al, Fe, Mg, Ca, Na, K, P).</li>
+<li><strong>Éléments traces</strong> : Ce sont les éléments présents en très faible quantité, représentant moins de 0,1 % de la masse totale d’une roche. Bien que discrets, ils sont de précieux indicateurs pour retracer l’histoire géologique ou l’origine d’un matériau (Rb, Sr, Ba, Cs, Zr, Hf, Nb, Ta, Th, U, etc.).</li>
+<li><strong>REE</strong> : Il s’agit d’un groupe spécifique de 17 éléments chimiques aux propriétés très voisines, comprenant les 15 lanthanides, du lanthane (La) au lutétium (Lu), ainsi que l’yttrium (Y) et le scandium (Sc).</li>
+<li><strong>Isotopes</strong> : Un isotope est une variante d’un élément chimique qui possède le même nombre de protons, mais un nombre différent de neutrons. On distingue les isotopes stables, qui ne se désintègrent pas au cours du temps, et les isotopes radioactifs, dont la demi-vie permet notamment de dater des roches et des minéraux (par exemple, <sup>40</sup>K–<sup>40</sup>Ar, <sup>87</sup>Rb–<sup>87</sup>Sr, <sup>238</sup>U–<sup>206</sup>Pb).</li>
+</ul>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Les traces et isotopes sont des outils géochimiques puissants pour remonter à la source des magmas.</li>
+<li>Les rapports isotopiques sont de bons traceurs de source pour les magmas, car la fusion partielle modifie généralement peu les rapports isotopiques des systèmes concernés.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="les-éléments-chimiques-dune-roche-en-détail" class="slide level2">
+<h2>Les éléments chimiques d’une roche : en détail</h2>
+<div class="slide-block">
+<p><strong>Tableau périodique des éléments</strong></p>
+<figure style="margin: 0; width: 65%;">
+<img src="../material_used/seance_04/Tableau_périodique_des_éléments.svg.webp" alt="Tableau périodique des éléments" style="width: 100%; height: auto; max-height: none; object-fit: contain;">
+<figcaption>
+Tableau périodique des éléments, montrant à la fois les éléments majeurs, les éléments traces et les REE.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="les-éléments-chimiques-dune-roche-comptabilité-et-incompatibilité" class="slide level2">
+<h2>Les éléments chimiques d’une roche : comptabilité et incompatibilité</h2>
+<!-- BLOC UNIQUE : outils géochimiques utilisés pour remonter à la source. -->
+<div class="slide-block">
+<p><strong>Les éléments majeurs</strong></p>
+<ul>
+<li><p><strong>Compatibles</strong> : par exemple le Mg et, selon le minéral, le Fe. Ils intègrent facilement les premiers minéraux qui cristallisent, notamment l’olivine et les pyroxènes.</p></li>
+<li><p><strong>Incompatibles</strong> : le Na et le K, qui préfèrent généralement rester dans le liquide résiduel jusqu’aux stades tardifs de la cristallisation.</p></li>
+</ul>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Les éléments traces hors REE</strong></p>
+<ul>
+<li><p><strong>Compatibles</strong> : le Cr, le Ni et le Co.&nbsp;Ils entrent facilement dans l’olivine et certains oxydes, comme la chromite.</p></li>
+<li><p><strong>Incompatibles</strong> : ils sont souvent classés en deux sous-groupes :</p>
+<ul>
+<li><p>LILE (<em>Large-Ion Lithophile Elements</em>) : le Rb, le Sr et le Ba, qui ont une faible charge et un grand rayon ionique.</p></li>
+<li><p>HFSE (<em>High-Field-Strength Elements</em>) : le Zr, le Th et le Nb, qui ont une charge élevée et un petit rayon ionique. Ces éléments sont difficiles à intégrer dans les minéraux courants et restent donc préférentiellement dans le liquide résiduel.</p></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="les-éléments-chimiques-dune-roche-comptabilité-et-incompatibilité-1" class="slide level2">
+<h2>Les éléments chimiques d’une roche : comptabilité et incompatibilité</h2>
+<!-- BLOC UNIQUE : outils géochimiques utilisés pour remonter à la source. -->
+<div class="slide-block">
+<p><strong>Les terres rares (REE pour <em>Rare Earth Elements</em>)</strong></p>
+<p>Les terres rares sont globalement incompatibles, mais leur comportement varie le long de la série :</p>
+<ul>
+<li><p><strong>Très incompatibles</strong> : terres rares légères (LREE pour <em>Light Rare Earth Elements</em>), du La au Sm. Leur rayon ionique relativement grand les rend difficiles à intégrer dans les réseaux cristallins courants.</p></li>
+<li><p><strong>Moins incompatibles, voire compatibles</strong> : terres rares lourdes (HREE pour <em>Heavy Rare Earth Elements</em>), du Gd au Lu. Leurs rayons ioniques plus petits leur permettent de s’insérer plus facilement dans certains minéraux, notamment le grenat.</p></li>
+</ul>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Rappel fondamental sur le coefficient de partage D</strong></p>
+<p>Le comportement d’un élément chimique lors de la fusion ou de la cristallisation d’une roche dépend de son coefficient de partage solide–liquide, <span class="math inline">\(D\)</span> : <span class="math inline">\(D = C_{\text{solide}} / C_{\text{liquide}}\)</span>, où <span class="math inline">\(C\)</span> désigne la concentration de l’élément considéré.</p>
+<ul>
+<li>Éléments compatibles : <span class="math inline">\(D &gt; 1\)</span> ; ils s’intègrent facilement dans les cristaux.</li>
+<li>Éléments incompatibles : <span class="math inline">\(D &lt; 1\)</span> ; ils se concentrent dans le liquide.</li>
+</ul>
+</div>
+</section>
+<section id="les-éléments-chimiques-dune-roche-comptabilité-et-incompatibilité-2" class="slide level2">
+<h2>Les éléments chimiques d’une roche : comptabilité et incompatibilité</h2>
+<!-- BLOC UNIQUE : outils géochimiques utilisés pour remonter à la source. -->
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Exemple de représentation : diagramme multiélémentaire (« spider diagram »)</strong></p>
+<ul>
+<li>Il s’agit d’un spectre multi-élémentaire représentant les concentrations en éléments traces, dont les REE, normalisées par rapport à un réservoir de référence, souvent la chondrite. Les éléments sont disposés de gauche à droite selon leur compatibilité croissante.</li>
+</ul>
+<figure style="margin: 0; width: 65%;">
+<img src="../material_used/seance_04/spider.jpg" alt="Spider diagram montrant la composition de certains éléments traces et terres rares" style="width: 100%; height: auto; max-height: none; object-fit: contain;">
+<figcaption>
+Spider diagram montrant la composition de certains éléments traces et terres rares (REE) entre deux types de roche.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Pourquoi les éléments incompatibles varient-ils beaucoup entre deux types de roches ?</strong></p>
+<p>La nature de la source et le taux de fusion peuvent varier. Les éléments incompatibles étant préférentiellement concentrés dans le liquide, leur abondance amplifie fortement ces différences.</p>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Les éléments incompatibles sont très sensibles à ces deux facteurs.</p>
+</div>
+</div>
+</div>
+<p><strong>Pourquoi les éléments compatibles varient-ils moins ?</strong></p>
+<p>L’effet tampon du manteau solide limite au contraire les variations des éléments compatibles : même si les sources et les taux de fusion diffèrent, leur concentration dans le liquide produit reste souvent relativement stable.</p>
+</div>
+</div>
+</section>
+<section id="le-zoo-du-manteau-complexité-géochimique" class="slide level2">
+<h2>Le « zoo » du manteau : complexité géochimique</h2>
+<div class="slide-block">
+<p><strong>Les outils géochimiques pour cartographier le manteau</strong></p>
+<p>Les systèmes Sr–Nd–Pb–Hf enregistrent l’histoire des différents réservoirs mantelliques.</p>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Les éléments majeurs décrivent surtout l’évolution du magma (cf.&nbsp;séances 6 et 7).</li>
+<li>Les éléments traces et les isotopes sont particulièrement utiles pour contraindre la source.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Diagrammes isotopiques :</strong> Sr–Nd–Pb.</p>
+<!-- Modifier --figure-size pour redimensionner les deux images en conservant leur ratio. -->
+<figure style="--figure-size: 100%; display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: var(--space-m); align-items: center; margin: 0;">
+<div style="min-width: 0; display: flex; flex-direction: column; align-items: center;">
+<p><img src="../material_used/seance_04/diagramme ternaire Sr Pb Nd.jpg" alt="Diagramme ternaire Sr-Pb-Nd" style="width: var(--figure-size); height: auto; max-width: 65%; object-fit: contain;"> <img src="../material_used/seance_04/Capture d’écran 2026-10-05 à 18.54.10.png" alt="Légende des réservoirs mantelliques" style="width: var(--figure-size); height: auto; max-width: 85%; object-fit: contain;"></p>
+</div>
+<figcaption style="width: auto; margin: 0;">
+Diagramme ternaire Sr–Pb–Nd et légende des réservoirs mantelliques.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Identification des réservoirs mantelliques par les isotopes</strong></p>
+<ul>
+<li><p><strong>Isotopes de Sr et Nd</strong> : ils séparent le manteau appauvri (DM) des influences crustales recyclées du manteau enrichi (EM-1 et EM-2).</p></li>
+<li><p><strong>Isotopes du Pb</strong> : permettent d’identifier le réservoir HIMU (issu de la subduction d’anciennes croûtes océaniques recyclées au sein du manteau profond).</p></li>
+<li><p><strong>Isotopes de Nd et Hf</strong> : ils permettent de distinguer EM-1 de EM-2, qui correspondent à des histoires de recyclage différentes.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="le-zoo-du-manteau-les-isotopes-de-nd-et-sr" class="slide level2">
+<h2>Le « zoo » du manteau : les isotopes de Nd et Sr</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Le graphique classique : <sup>143</sup>Nd/<sup>144</sup>Nd vs.&nbsp;<sup>87</sup>Sr/<sup>86</sup>Sr</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/diagramme Nd Sr.jpg" alt="Diagramme des isotopes de Nd et Sr" style="width: 100%; max-height: 390px; object-fit: contain;"> <img src="../material_used/seance_04/Capture d’écran 2026-10-05 à 18.54.10.png" alt="Légende des réservoirs mantelliques" style="width: 100%; max-height: 60px; object-fit: contain;">
+<figcaption>
+Diagramme des isotopes de Nd et Sr et légende des réservoirs mantelliques.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>À retenir</strong></p>
+<ul>
+<li><strong>DM</strong>, en haut à gauche : faible <sup>87</sup>Sr/<sup>86</sup>Sr et fort <sup>143</sup>Nd/<sup>144</sup>Nd, signature d’un manteau appauvri.</li>
+<li><strong>EM-1</strong> et <strong>EM-2</strong>, plus bas et vers la droite : signatures enrichies liées à des domaines crustaux recyclés. <strong>EM-2</strong> se distingue notamment par un rapport de Sr élevé.</li>
+<li>Les alignements entre ces pôles isotopiques traduisent des mélanges entre différents domaines du manteau, avec des compositions intermédiaires comme PREMA ou FOZO.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="le-zoo-du-manteau-les-isotopes-du-pb" class="slide level2">
+<h2>Le « zoo » du manteau : les isotopes du Pb</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Le graphique spécifique <sup>208</sup>Pb/<sup>204</sup>Pb vs.&nbsp;<sup>206</sup>Pb/<sup>204</sup>Pb</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/diagramme Pb.jpg" alt="Diagramme des isotopes du plomb" style="width: 100%; max-height: 390px; object-fit: contain;"> <img src="../material_used/seance_04/Capture d’écran 2026-10-05 à 18.54.10.png" alt="Légende des réservoirs mantelliques" style="width: 100%; max-height: 60px; object-fit: contain;">
+<figcaption>
+Diagramme des isotopes du Pb et légende des réservoirs mantelliques.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>À retenir</strong></p>
+<ul>
+<li>Les <sup>206</sup>Pb et <sup>208</sup>Pb radiogéniques enregistrent respectivement l’évolution des systèmes de désintégration radioactifs U–Pb et Th–Pb.</li>
+<li><strong>DM</strong> (MORB), en bas à gauche, correspond aux compositions les moins radiogéniques du manteau appauvri.</li>
+<li><strong>EM-1</strong> et <strong>EM-2</strong> occupent des domaines intermédiaires, représentatifs de sources enrichies par des matériaux crustaux recyclés.</li>
+<li><strong>HIMU</strong>, en haut à droite, se reconnaît à ses rapports de Pb très radiogéniques, hérités d’un réservoir à fort rapport U/Pb ancien (recyclage d’anciennes croûtes océaniques).</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="le-zoo-du-manteau-les-isotopes-de-hf-et-nd" class="slide level2">
+<h2>Le « zoo » du manteau : les isotopes de Hf et Nd</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Le graphique complémentaire <sup>176</sup>Hf/<sup>177</sup>Hf vs.&nbsp;<sup>143</sup>Nd/<sup>144</sup>Nd</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/diagramme Pb Nd.jpg" alt="Diagramme des isotopes Hf-Nd" style="width: 100%; max-height: 390px; object-fit: contain;"> <img src="../material_used/seance_04/Capture d’écran 2026-10-05 à 18.54.10.png" alt="Légende des réservoirs mantelliques" style="width: 100%; max-height: 60px; object-fit: contain;">
+<figcaption>
+Diagramme des isotopes de Hf et Nd et légende des réservoirs mantelliques.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>À retenir</strong></p>
+<ul>
+<li><strong>DM</strong>, en haut à droite, présente les rapports isotopiques de Hf et de Nd les plus élevés : il s’agit d’un manteau durablement appauvri.</li>
+<li><strong>EM-1</strong> et <strong>EM-2</strong> se situent vers le bas et la gauche, ce qui traduit des sources enrichies et recyclées. Leur position relative aide à distinguer leurs histoires de recyclage.</li>
+<li><strong>HIMU</strong> se place sous l’alignement principal Hf–Nd. Cette position aide à identifier une contribution d’anciennes croûtes océaniques recyclées.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="les-réservoirs-majeurs-actuels-le-manteau-supérieur-appauvri" class="slide level2">
+<h2>Les réservoirs majeurs actuels : le manteau supérieur appauvri</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Depleted Mantle (DM) — manteau supérieur appauvri</strong></p>
+<p>Le DM est le résidu solide de fusions partielles répétées qui ont extrait des éléments incompatibles pour former les croûtes. Il présente de faibles rapports <sup>87</sup>Sr/<sup>86</sup>Sr et <sup>206</sup>Pb/<sup>204</sup>Pb, mais un rapport <sup>143</sup>Nd/<sup>144</sup>Nd élevé.</p>
+<p>Déjà réfractaire et pauvre en éléments incompatibles, il nécessite un taux de fusion important ou des conditions thermiques élevées pour produire de nouveaux magmas.</p>
+</div>
+<div class="slide-block">
+<p><strong>Représentation graphique des sources</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/diagramme ternaire Sr Pb Nd.jpg" alt="Diagramme ternaire Sr-Pb-Nd représentant les sources" style="width: 100%; max-height: 360px; object-fit: contain;"> <img src="../material_used/seance_04/Capture d’écran 2026-10-05 à 18.54.10.png" alt="Légende des réservoirs mantelliques" style="width: 100%; max-height: 60px; object-fit: contain;">
+<figcaption>
+Diagramme ternaire Sr–Pb–Nd et légende des réservoirs mantelliques.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="les-réservoirs-majeurs-actuels-le-manteau-enrichi" class="slide level2">
+<h2>Les réservoirs majeurs actuels : le manteau enrichi</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Enriched Mantle (EM) — manteau enrichi</strong></p>
+<p>L’EM reçoit des sédiments et des fragments de croûte recyclés par subduction ou délamination. Ces matériaux concentrent les éléments incompatibles et peuvent abaisser la température de fusion du domaine source.</p>
+<p>EM-1 est souvent associé à une lithosphère continentale ancienne ou à des sédiments pélagiques recyclés, tandis qu’EM-2 est davantage associé à des sédiments terrigènes. Leurs signatures isotopiques permettent de distinguer différentes histoires de recyclage.</p>
+<p>Ces domaines enrichis peuvent être entraînés vers les zones de fusion par la convection mantellique.</p>
+</div>
+<div class="slide-block">
+<p><strong>Représentation graphique des sources</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/diagramme ternaire Sr Pb Nd.jpg" alt="Diagramme ternaire Sr-Pb-Nd représentant les sources" style="width: 100%; max-height: 360px; object-fit: contain;"> <img src="../material_used/seance_04/Capture d’écran 2026-10-05 à 18.54.10.png" alt="Légende des réservoirs mantelliques" style="width: 100%; max-height: 60px; object-fit: contain;">
+<figcaption>
+Diagramme ternaire Sr–Pb–Nd et légende des réservoirs mantelliques.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="les-réservoirs-majeurs-actuels-le-réservoir-himu" class="slide level2">
+<h2>Les réservoirs majeurs actuels : le réservoir HIMU</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Réservoir High-μ (HIMU), avec μ = <sup>238</sup>U/<sup>204</sup>Pb</strong></p>
+<p>Le HIMU est généralement interprété comme une ancienne croûte océanique basaltique subduite, déshydratée puis isolée pendant une longue durée. Son rapport U/Pb élevé permet l’accumulation de plomb radiogénique.</p>
+<p>Il se reconnaît notamment à un rapport <sup>206</sup>Pb/<sup>204</sup>Pb très élevé et à un faible rapport <sup>87</sup>Sr/<sup>86</sup>Sr.&nbsp;Les domaines pyroxénitiques issus de cette croûte recyclée peuvent être plus fusibles que la péridotite environnante.</p>
+<p>Ces domaines peuvent être entraînés vers les zones de fusion par la convection mantellique.</p>
+</div>
+<div class="slide-block">
+<p><strong>Représentation graphique des sources</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/diagramme ternaire Sr Pb Nd.jpg" alt="Diagramme ternaire Sr-Pb-Nd représentant les sources" style="width: 100%; max-height: 360px; object-fit: contain;"> <img src="../material_used/seance_04/Capture d’écran 2026-10-05 à 18.54.10.png" alt="Légende des réservoirs mantelliques" style="width: 100%; max-height: 60px; object-fit: contain;">
+<figcaption>
+Diagramme ternaire Sr–Pb–Nd et légende des réservoirs mantelliques.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="les-réservoirs-majeurs-actuels-les-réservoirs-communs-et-de-mélange" class="slide level2">
+<h2>Les réservoirs majeurs actuels : les réservoirs communs et de mélange</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Prevalent Mantle (PREMA) et Focus Zone (FOZO)</strong></p>
+<p>Ces termes désignent des compositions communes et intermédiaires entre le pôle appauvri DM et les pôles enrichis EM ou HIMU. Elles représentent un composant fréquent des mélanges mantelliques, observé dans de nombreux MORB et OIB, plutôt qu’un pôle isotopique extrême.</p>
+</div>
+<div class="slide-block">
+<p><strong>Représentation graphique des sources</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/diagramme ternaire Sr Pb Nd.jpg" alt="Diagramme ternaire Sr-Pb-Nd représentant les sources" style="width: 100%; max-height: 360px; object-fit: contain;"> <img src="../material_used/seance_04/Capture d’écran 2026-10-05 à 18.54.10.png" alt="Légende des réservoirs mantelliques" style="width: 100%; max-height: 60px; object-fit: contain;">
+<figcaption>
+Diagramme ternaire Sr–Pb–Nd et légende des réservoirs mantelliques.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="la-production-de-roches-à-partir-des-différentes-sources-mantelliques" class="slide level2">
+<h2>La production de roches à partir des différentes sources mantelliques</h2>
+<div class="slide-block">
+<p><strong>Les roches magmatiques sont issues de sources mantelliques distinctes, avec des signatures géochimiques et isotopiques différentes</strong></p>
+<ul>
+<li><strong>N-MORB</strong> : basaltes de dorsale issus principalement du manteau appauvri (DM).</li>
+<li><strong>E-MORB</strong> : basaltes de dorsale enrichis, issus d’un mélange entre le DM et des domaines enrichis (EM ou HIMU).</li>
+<li><strong>OIB</strong> : basaltes de point chaud issus d’un manteau hétérogène, pouvant inclure des composantes EM-1, EM-2, HIMU, PREMA ou FOZO.</li>
+<li><strong>IAB</strong> : basaltes et andésites d’arc issus d’un coin de manteau hydraté par la subduction ; ils contribuent à la construction de la croûte continentale (CC).</li>
+</ul>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Ne pas confondre les sources (DM, EM-1, EM-2, HIMU, PREMA et FOZO) avec les roches qui en résultent (N-MORB, E-MORB, OIB et IAB). Ces roches sont produites par fusion partielle, puis leur composition dépend aussi du taux de fusion, du mélange, de l’assimilation et de la cristallisation fractionnée.</li>
+<li>Les pôles isotopiques extrêmes sont rarement observés seuls dans les roches magmatiques. La plupart des magmas enregistrent un mélange entre plusieurs domaines mantelliques.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="la-production-de-roches-n-morb" class="slide level2">
+<h2>La production de roches : N-MORB</h2>
+<div class="slide-block">
+<p><strong>Normal Mid-Ocean Ridge Basalts (N-MORB)</strong></p>
+<p>Les N-MORB proviennent principalement du manteau appauvri (DM). Sous une dorsale, la remontée de l’asthénosphère entraîne une fusion par décompression adiabatique.</p>
+<p>Le degré de fusion est relativement élevé et peut atteindre environ 10 à 30 % sous les dorsales rapides. Le liquide produit est donc pauvre en éléments incompatibles et présente généralement un spectre de terres rares appauvri en terres rares légères.</p>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Cas extrême : l’EDMM et les boninites.</strong> L’EDMM (<em>Extremely Depleted MORB Mantle</em>) correspond à une portion du DM ayant subi une extraction supplémentaire. Très réfractaire, riche en magnésium et en chrome, il est fortement appauvri en éléments incompatibles.</p>
+<p>Les boninites résultent de la fusion hydratée de cette source, notamment lors de l’initiation d’une subduction. Elles sont riches en Mg et en Si, mais très pauvres en Ti, car les fluides de la plaque plongeante abaissent le solidus d’un manteau déjà très réfractaire.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="la-production-de-roches-e-morb" class="slide level2">
+<h2>La production de roches : E-MORB</h2>
+<div class="slide-block">
+<p><strong>Enriched Mid-Ocean Ridge Basalts (E-MORB)</strong></p>
+<p>Les E-MORB sont des basaltes de dorsale dont les éléments incompatibles et les rapports isotopiques sont plus enrichis que ceux des N-MORB. Leur source reste principalement le DM, mais elle contient des veines ou des filaments enrichis issus du manteau hétérogène.</p>
+<p>Ces domaines enrichis peuvent fondre plus facilement et contribuer de façon disproportionnée au liquide produit. L’interaction entre une dorsale et un point chaud, comme en Islande ou aux Açores, constitue un contexte fréquent, mais elle n’est pas indispensable pour former un E-MORB.</p>
+<p>Les E-MORB représentent donc un mélange entre le DM et une composante enrichie de type HIMU, EM-1 ou EM-2.</p>
+</div>
+</section>
+<section id="pourquoi-une-hétérogénéité-si-marquée-des-morb" class="slide level2">
+<h2>Pourquoi une hétérogénéité si marquée des MORB ?</h2>
+<!-- BLOC UNIQUE : hétérogénéité locale à régionale — modèle du Marble Cake. -->
+<div class="slide-block">
+<p><strong>1 — Hétérogénéité à petite échelle : Marble Cake</strong></p>
+<p><strong>Échelle :</strong> du mètre au kilomètre.</p>
+<p>Le manteau supérieur contient une matrice de péridotite traversée par des veines et des filaments de croûte océanique recyclée. Au cours de la convection, ces domaines sont étirés et transformés en éclogite ou en pyroxénite, formant une structure de type « gâteau marbré ».</p>
+<p>Lors de la fusion sous une dorsale, la péridotite et les domaines recyclés ne fondent pas au même degré. Le mélange de ces liquides produit des variations chimiques et isotopiques locales entre les MORB.</p>
+</div>
+</section>
+<section id="pourquoi-une-hétérogénéité-si-marquée-des-morb-1" class="slide level2">
+<h2>Pourquoi une hétérogénéité si marquée des MORB ?</h2>
+<!-- BLOC UNIQUE : hétérogénéité régionale — effet Schilling. -->
+<div class="slide-block">
+<p><strong>2 — Hétérogénéité à moyenne échelle : effet Schilling</strong></p>
+<p><strong>Échelle :</strong> régionale, de l’ordre de centaines à milliers de kilomètres.</p>
+<p>L’effet Schilling correspond à l’influence d’un point chaud ou d’un panache proche d’une dorsale. Un matériau chaud et enrichi en éléments incompatibles est advecté le long de l’axe, puis se mélange progressivement au manteau asthénosphérique appauvri.</p>
+<p>On observe alors un gradient continu : les MORB sont généralement plus proches du type N-MORB loin du point chaud et plus enrichis, de type E-MORB, à proximité. Il s’agit d’une transition progressive plutôt que d’une frontière nette entre deux sources.</p>
+</div>
+</section>
+<section id="pourquoi-une-hétérogénéité-si-marquée-des-morb-2" class="slide level2">
+<h2>Pourquoi une hétérogénéité si marquée des MORB ?</h2>
+<!-- BLOC UNIQUE : hétérogénéité globale — anomalie DUPAL. -->
+<div class="slide-block">
+<p><strong>3 — Hétérogénéité à grande échelle : anomalie DUPAL</strong></p>
+<p><strong>Échelle :</strong> du bassin océanique à l’hémisphère, avec une expression particulièrement marquée dans l’hémisphère Sud.</p>
+<p>L’anomalie DUPAL correspond à une tendance géochimique et isotopique observée dans de nombreux MORB, notamment dans l’océan Indien et le domaine sud-atlantique. Elle se traduit généralement par un enrichissement relatif en Sr et en Pb radiogéniques et par des rapports de Nd moins radiogéniques que ceux des MORB normaux.</p>
+<p>Cette signature indique la présence d’un vaste domaine mantellique contenant du matériel crustal recyclé. Son origine exacte reste discutée : elle peut impliquer de la croûte océanique ou continentale recyclée, ainsi que des interactions avec des panaches et la lithosphère.</p>
+</div>
+</section>
+<section id="pourquoi-une-hétérogénéité-si-marquée-des-morb-3" class="slide level2">
+<h2>Pourquoi une hétérogénéité si marquée des MORB ?</h2>
+<!-- SYNTHÈSE : les trois échelles de l'hétérogénéité mantellique. -->
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>4 — Intégration des trois phénomènes</strong></p>
+<p>Les trois échelles se superposent. À petite échelle, des veines de croûte recyclée sont dispersées dans la péridotite. À moyenne échelle, un panache peut créer un gradient d’enrichissement le long d’une dorsale. À grande échelle, des domaines recyclés peuvent produire des signatures régionales ou hémisphériques comme l’anomalie DUPAL.</p>
+<p>La composition d’un MORB dépend donc de la nature de la source, de la proportion de ses différents domaines, du degré de fusion et du mélange des liquides pendant leur remontée. Les MORB ne proviennent pas d’un manteau parfaitement homogène, mais d’un échantillonnage variable d’un manteau recyclé et convectif.</p>
+</div>
+<div class="slide-block slide-block--orange">
+<figure style="margin: 0;">
+<img src="../material_used/seance_04/global model mantle hetero.jpg" alt="Modèle global de l'hétérogénéité du manteau" style="width: 100%; max-height: 400px; object-fit: contain;">
+<figcaption>
+Modèle intégratif expliquant les hétérogénéités géochimiques du manteau supérieur à l’échelle planétaire.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="la-production-de-roches-oib" class="slide level2">
+<h2>La production de roches : OIB</h2>
+<div class="slide-block">
+<p><strong>OIB (Ocean Island Basalts)</strong></p>
+<p>Les OIB sont des basaltes intraplaques associés aux points chauds, comme à Hawaï ou à La Réunion. Ils proviennent de remontées mantelliques chaudes, souvent décrites comme des panaches, dont la source peut intégrer des composantes HIMU, EM-1 ou EM-2, ainsi que des compositions communes de type PREMA ou FOZO.</p>
+<p>La fusion se produit à des profondeurs généralement plus importantes que sous les dorsales et son degré est souvent plus faible. Le liquide concentre alors les éléments incompatibles et présente souvent un spectre de terres rares enrichi et fortement incliné.</p>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Cas des CFB</strong> (<em>Continental Flood Basalts</em>). Les CFB correspondent à un volcanisme intraplaque continental très volumineux, comme les trapps du Deccan ou de Sibérie. Ils peuvent se former lorsqu’une tête de panache arrive sous un continent, donc sous une lithosphère épaisse, et provoque une fusion par décompression et réchauffement.</p>
+<p>Leur magma peut avoir une signature proche de celle des OIB, mais il est souvent modifié par le manteau lithosphérique et par l’assimilation de la croûte continentale pendant la remontée et le stockage (cf.&nbsp;séance 6).</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="la-production-de-roches-iab-et-cc" class="slide level2">
+<h2>La production de roches : IAB et CC</h2>
+<div class="slide-block">
+<p><strong>Island Arc Basalts (IAB) et croûte continentale (CC)</strong></p>
+<p>Les IAB se forment dans le coin de manteau situé au-dessus d’une plaque en subduction. La déshydratation de la plaque libère de l’eau et des éléments mobiles, ce qui provoque une fusion par fluxage hydraté de la péridotite du manteau.</p>
+<p>Les magmas d’arc sont généralement enrichis en éléments mobiles comme Ba, Rb, Sr et Pb, mais présentent des anomalies négatives en Nb et Ta, qui sont relativement peu mobilisés par les fluides. Cette association constitue une signature géochimique caractéristique des zones de subduction.</p>
+<p>Les basaltes et andésites d’arc peuvent ensuite évoluer par cristallisation fractionnée, mélange et assimilation. Ce magmatisme contribue ainsi à la construction de la croûte continentale, sans que la croûte continentale soit le produit direct d’un seul type de magma.</p>
+</div>
+</section>
+<section id="évolution-de-la-création-de-la-croûte-continentale" class="slide level2">
+<h2>Évolution de la création de la croûte continentale</h2>
+<!-- BLOC UNIQUE : premiers continents et TTG archéennes. -->
+<div class="slide-block">
+<p><strong>1 — Les premiers continents archéens</strong></p>
+<p>Les TTG (tonalites, trondhjémites et granodiorites) constituent une grande partie des noyaux continentaux archéens, formés entre environ 4,0 et 2,5 milliards d’années.</p>
+<p>Mécanisme de formation : fusion partielle d’une croûte basaltique hydratée à haute pression, produisant des liquides felsiques qui s’accumulent et contribuent à former les premiers noyaux continentaux. Le contexte tectonique exact reste discuté.</p>
+</div>
+</section>
+<section id="évolution-de-la-création-de-la-croûte-continentale-1" class="slide level2">
+<h2>Évolution de la création de la croûte continentale</h2>
+<!-- BLOC UNIQUE : formation moderne par magmatisme d’arc et différenciation. -->
+<div class="slide-block">
+<p><strong>2 — La croûte continentale actuelle</strong></p>
+<p>La croissance continentale actuelle commence principalement dans les zones de subduction : la plaque plongeante libère de l’eau et des éléments mobiles, ce qui déclenche la fusion partielle du coin de manteau. Les magmas d’arc produits sont d’abord basaltiques à andésitiques.</p>
+<p>Dans la croûte, ces magmas évoluent par cristallisation fractionnée, mélange, assimilation et parfois fusion de la croûte inférieure. L’accrétion d’arcs, les collisions, l’épaississement crustal et le recyclage contribuent ensuite à produire une croûte continentale plus différenciée, des andésites jusqu’aux granitoïdes.</p>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p><strong>Différence avec les TTG :</strong> les TTG archéennes sont principalement des liquides felsiques issus de la fusion à haute pression d’une croûte basaltique hydratée. La croûte actuelle se construit surtout par accumulation de magmas d’arc issus de la fusion partielle du manteau hydraté. Ces magmas évoluent ensuite par différenciation, mélange, assimilation et recyclage, produisant des compositions allant des andésites aux granitoïdes.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="transition-vers-le-prochain-cours-la-fusion-partielle" class="slide level2">
+<h2>Transition vers le prochain cours : la fusion partielle</h2>
+<!-- BLOC UNIQUE : ouverture vers la fusion partielle. -->
+<div class="slide-block">
+<ul>
+<li><p>Les roches magmatiques sont produites par fusion partielle de ces sources mantelliques, mais leur composition finale dépend aussi du contexte de fusion, du taux de fusion et des processus postérieurs (mélange, assimilation, cristallisation fractionnée).</p></li>
+<li><p>Aujourd’hui, nous avons identifié ce qui peut fondre et ce que les magmas peuvent enregistrer.</p></li>
+<li><p>La prochaine séance portera sur la manière dont la fusion partielle commence, sur le rôle du solidus et sur la composition des liquides produits.</p></li>
+</ul>
+</div>
+</section>
+<section id="messages-à-retenir" class="slide level2">
+<h2>Messages à retenir</h2>
+<!-- BLOC UNIQUE : synthèse finale. -->
+<div class="slide-block">
+<ul>
+<li>La composition finale d’une roche doit être interprétée avec les éléments majeurs, qui renseignent surtout sur l’évolution du magma, ainsi qu’avec les éléments traces et les isotopes, qui contraignent la source.</li>
+<li>Le DM est un réservoir mantellique appauvri par rapport à la BSE et une source majeure des MORB. Dans les arcs, le coin de manteau est également issu d’un manteau appauvri, mais il est modifié par les fluides et les liquides de subduction.</li>
+<li>HIMU, EM-1 et EM-2 sont des pôles géochimiques résultant de l’histoire du recyclage de matériaux océaniques et continentaux. Ils ne correspondent pas nécessairement à des réservoirs isolés et contribuent notamment à la diversité des OIB.</li>
+<li>Le manteau est hétérogène à toutes les échelles : locale avec le modèle du marble cake, régionale avec l’effet Schilling et globale avec l’anomalie DUPAL.</li>
+<li>Les sources mantelliques sont rarement pures ; les roches magmatiques enregistrent souvent le mélange de plusieurs domaines et les processus qui suivent la fusion.</li>
+</ul>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copié");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copié");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
