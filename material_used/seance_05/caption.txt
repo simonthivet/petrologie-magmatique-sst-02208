@@ -1,0 +1,5 @@
+Schéma des processus conduisant à une fusion partielle du manteau supérieur. Les graphes montrent le géotherme en rouge et le solidus en vert. La fusion partielle concerne les profondeurs (z) où la température du géotherme excède celle du solidus. De A à D on a représenté différents contextes de la tectonique des plaques :
+A) géotherme et solidus normaux : pas de fusion partielle ;
+B) remontée adiabatique sous une dorsale médio-océanique : le manteau est anormalement chaud à faible profondeur ;
+C) remontée d'un diapir mantellique : le manteau est anormalement chaud à grande profondeur ;
+D) libération de fluides (surtout H2O) par une plaque plongeante : la température du solidus est anormalement basse dans le coin de manteau qui la surplombe.

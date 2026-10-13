@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Simon THIVET">
+  <title>Pétrologie magmatique – SST.02208 – Séance 5 - La naissance des magmas II : fusion partielle des roches sources et séries magmatiques</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-a215b705cddf9571ca435b57a46e6dbb.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Séance 5 - La naissance des magmas II : fusion partielle des roches sources et séries magmatiques</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Simon THIVET
+</div>
+</div>
+</div>
+
+</section>
+<section id="plan-du-cours" class="slide level2">
+<h2>Plan du cours</h2>
+<div class="slide-block">
+<!-- Tableau standard : Temps compact, Contenu prioritaire, Objectif lisible. -->
+<div class="course-plan-table">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Temps</th>
+<th>Contenu</th>
+<th>Objectif</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0-40 min</td>
+<td>Les conditions de la fusion des roches sources</td>
+<td>Assimiler les notions physiques et chimiques qui contrôlent la fusion des roches sources</td>
+</tr>
+<tr class="even">
+<td>40-45 min</td>
+<td>Questions générales</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>45-60 min</td>
+<td>Pause</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>60-100 min</td>
+<td>Les séries magmatiques issues des différents contextes géodynamiques</td>
+<td>Relier les concepts de roches sources, de taux de fusion et de compositions géochimiques</td>
+</tr>
+<tr class="odd">
+<td>100-105 min</td>
+<td>Questions générales</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="rappel-sur-la-naissance-des-magmas" class="slide level2">
+<h2>Rappel sur la naissance des magmas</h2>
+<div class="slide-block">
+<p><strong>Le manteau terrestre est hétérogène</strong></p>
+<ul>
+<li><p>L’hétérogénéité du manteau se traduit par l’existence de plusieurs pôles de composition chimique (DM, EM, HIMU) qui peuvent se mélanger (PREMA, FOZO).</p></li>
+<li><p>Des roches sources différentes génèrent donc des magmas de compositions géochimiques différentes selon les contextes géodynamiques (OIB, MORB, IAB).</p></li>
+</ul>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Comment ces roches sources fusionnent pour donner des liquides magmatiques ?</strong></p>
+<ul>
+<li>Fusion partielle par décompression adiabatique (rifting)</li>
+<li>Fusion partielle par réchauffement isobare (points chauds)</li>
+<li>Fusion partielle par changement de composition chimique (subduction)</li>
+</ul>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>La combinaison entre ces processus est aussi possible (exemple : effet Schilling).</li>
+<li>Ces différents mécanismes de fusion partielle correspondent à des contextes géodynamiques, des taux de fusion et des profondeurs différents.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="les-conditions-pour-la-fusion-des-roches-sources" class="slide level2">
+<h2>Les conditions pour la fusion des roches sources</h2>
+<div class="slide-block">
+<p><strong>La fusion dépend de trois paramètres majeurs :</strong></p>
+<ul>
+<li>La température (T)</li>
+<li>La pression (P)</li>
+<li>La composition de la roche (X)</li>
+</ul>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Une roche peut être très chaude (T) sans être fondue, à cause de sa composition réfractaire (X) et/ou de la pression (P).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Rappel sur le solidus et liquidus d’une roche</strong></p>
+<ul>
+<li>Solidus : température à laquelle une roche commence à produire un liquide.</li>
+<li>Liquidus : température au-dessus de laquelle tout le système est liquide.</li>
+</ul>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>La fusion partielle d’une roche se déroule donc entre le solidus et le liquidus.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="représentation-graphique-simplifiée-de-la-fusion-partielle-en-fonction-de-t-et-x" class="slide level2">
+<h2>Représentation graphique simplifiée de la fusion partielle en fonction de T et X</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Diagramme de phase</strong></p>
+<ul>
+<li><p>Situation simplifiée où la composition de la roche source (X) peut être représentée sur un seul axe.</p></li>
+<li><p>Un pôle de composition est plus appauvri ou réfractaire (température de fusion relativement élevée), tandis que l’autre est plus enrichi ou fertile (température de fusion relativement faible).</p></li>
+<li><p>Exemple : une péridotite présentant des domaines fertiles et réfractaires selon le modèle du « marble cake ».</p></li>
+<li><p>Le solidus et le liquidus peuvent être représentés par deux lignes qui se rejoignent sur les pôles purs.</p></li>
+<li><p>La règle des leviers permet de déterminer les proportions de liquide et de solide à une température donnée.</p></li>
+</ul>
+</div>
+<div class="slide-block slide-block--orange">
+<figure style="margin: 0;">
+<img src="../material_used/seance_05/Partial_Melting_Phase_Diagram.svg" alt="Diagramme de phase illustrant le processus de fusion d'une roche." style="height: 470px; width: auto; max-width: 100%; object-fit: contain;">
+<figcaption>
+Diagramme de phase illustrant le processus de fusion d’une roche. Ce diagramme est valable pour une pression donnée.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="rappel-de-leffet-de-la-pression" class="slide level2">
+<h2>Rappel de l’effet de la pression</h2>
+<div class="slide-block">
+<p><strong>La pression influence le solidus et le liquidus d’une roche.</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_01/partie_b/slides_assets/pression_profondeur.svg" alt="Évolution de la pression en fonction de la profondeur terrestre." style="height: 500px; width: auto; max-width: 100%; object-fit: contain;">
+<figcaption>
+Évolution de la pression en fonction de la profondeur terrestre. La pression augmente les températures du solidus et du liquidus.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="rappel-sur-la-chaleur-terrestre" class="slide level2">
+<h2>Rappel sur la chaleur terrestre</h2>
+<div class="slide-block">
+<p><strong>La chaleur interne de la Terre vient principalement de :</strong></p>
+<ul>
+<li><p>La chaleur primordiale héritée de l’accrétion, des impacts et de la différenciation (20 à 50 % de la chaleur totale).</p></li>
+<li><p>La chaleur radiogénique (50 à 80 %) due à la radioactivité de certains éléments chimiques, notamment le K, l’U et le Th.</p></li>
+</ul>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Les mécanismes de transfert de chaleur sont :</strong></p>
+<ul>
+<li><p>La conduction : transfert sans déplacement global de matière.</p></li>
+<li><p>La convection : transfert par déplacement de matière.</p></li>
+<li><p>L’advection : transport de chaleur associé au déplacement d’un fluide ou d’un matériau.</p></li>
+</ul>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Le transfert radiatif est négligeable à l’intérieur de la Terre, mais il devient important à la surface et dans l’atmosphère.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="rappel-sur-le-géotherme-global" class="slide level2">
+<h2>Rappel sur le géotherme global</h2>
+<div class="slide-block">
+<p><strong>Évolution de la température en fonction de la profondeur</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_05/geotherme_global.svg" alt="Géotherme moyen terrestre." style="height: 500px; width: auto; max-width: 100%; object-fit: contain;">
+<figcaption>
+Géotherme moyen terrestre.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="représentation-graphique-simplifiée-de-la-fusion-partielle-en-fonction-de-t-et-p" class="slide level2">
+<h2>Représentation graphique simplifiée de la fusion partielle en fonction de T et P</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Une manière de représenter la fusion partielle est d’utiliser un diagramme P-T</strong></p>
+<ul>
+<li><p>Situation simplifiée où la température est représentée sur l’axe X et la pression sur l’axe Y.</p></li>
+<li><p>Le géotherme et le solidus peuvent être représentés par deux lignes. Si le géotherme intersecte le solidus, une fusion partielle peut se produire.</p></li>
+</ul>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Il existe plusieurs manières de modifier un géotherme (décompression adiabatique, réchauffement isobare) ou un solidus (changement de composition par ajout de fluides).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="slide-block slide-block--orange">
+<figure style="margin: 0;">
+<img src="../material_used/seance_05/geotherme-nornal-seul.png" alt="Diagramme P-T montrant le géotherme terrestre normal et le solidus typique d'une roche mantellique." style="width: 100%; max-height: 430px; object-fit: contain;">
+<figcaption>
+Diagramme P-T montrant le géotherme terrestre normal et le solidus typique d’une roche mantellique.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="taux-de-fusion" class="slide level2">
+<h2>Taux de fusion</h2>
+<div class="slide-block">
+<p><strong>Le taux de fusion (F) est variable</strong></p>
+<p>Si F = 10 %, cela signifie que 100 kg de roche source produisent environ 10 kg de liquide et 90 kg de résidu solide.</p>
+<ul>
+<li><strong>Faible F</strong> : autour de 1 %, le liquide produit est fortement influencé par les éléments incompatibles.</li>
+<li><strong>F intermédiaire</strong> : quelques pourcents ; le liquide devient plus représentatif de la source.</li>
+<li><strong>F élevé</strong> : plusieurs dizaines de pourcents, le résidu devient très appauvri.</li>
+</ul>
+<div class="callout callout-note callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Le taux de fusion contrôle à la fois la quantité et la composition du magma. Dans la nature, la fusion est souvent progressive. Le liquide est extrait au fur et à mesure et la composition de la source évolue pendant la fusion. Plusieurs petites fractions de liquide peuvent ensuite se mélanger.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="un-géotherme-normal-ne-suffit-pas-à-provoquer-la-fusion-des-roches-sources" class="slide level2">
+<h2>Un géotherme normal ne suffit pas à provoquer la fusion des roches sources</h2>
+<div class="slide-block">
+<p><strong>Représentation schématique d’un géotherme typique sans fusion partielle</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_05/a-situation-normale.png" alt="Géotherme terrestre sans perturbation géodynamique particulière." style="width: 100%; max-height: 430px; object-fit: contain;">
+<figcaption>
+Géotherme terrestre sans perturbation géodynamique particulière (majorité des endroits sur Terre).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="fusion-par-décompression-adiabatique" class="slide level2">
+<h2>Fusion par décompression adiabatique</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Mécanisme</strong></p>
+<ul>
+<li><p>La fusion par décompression adiabatique se produit lorsqu’une roche chaude remonte plus vite qu’elle ne refroidit.</p></li>
+<li><p>Ce processus est typique des dorsales médio-océaniques et des rifts continentaux car ce sont les endroits où la lithosphère est amincie et où le manteau asthénosphérique peut remonter.</p></li>
+<li><p>La remontée suit une trajectoire quasi adiabatique dans le diagramme pression–température et peut intersecter le solidus.</p></li>
+</ul>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Représentation</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_05/b-rifting.png" alt="Géotherme terrestre au niveau des rifts océaniques ou continentaux." style="width: 100%; max-height: 430px; object-fit: contain;">
+<figcaption>
+Géotherme terrestre au niveau des rifts océaniques ou continentaux.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="contextualisation-de-la-fusion-par-rifting" class="slide level2">
+<h2>Contextualisation de la fusion par rifting</h2>
+<div class="slide-block">
+<p><strong>Ce qui se passe</strong></p>
+<ul>
+<li><strong>Taux de fusion :</strong> environ 5 à 20 %. Les modèles de formation des MORB primitifs utilisent souvent des valeurs proches de 10 à 20 %, tandis que la moyenne intégrée sur toute la colonne de fusion peut être plus faible.</li>
+<li><strong>Profondeur :</strong> la fusion débute généralement vers 60 à 80 km sous une dorsale normale, puis se poursuit vers le haut jusqu’à environ 20 à 30 km de profondeur, selon la vitesse d’accrétion et la température du manteau.</li>
+<li><strong>Source :</strong> péridotite du manteau appauvri (DM), généralement une lherzolite, avec d’éventuelles hétérogénéités issues de matériaux recyclés.</li>
+<li><strong>Magma produit :</strong> MORB, principalement des basaltes tholéiitiques. Une source localement enrichie peut produire un E-MORB.</li>
+<li><strong>Liquide et résidu :</strong> le liquide est basaltique et relativement pauvre en éléments incompatibles dans le cas d’un N-MORB ; le résidu devient plus réfractaire, de type harzburgite ou dunite, et s’enrichit relativement en Mg, Cr et Ni.</li>
+<li><strong>Volume produit :</strong> production importante et continue à l’échelle planétaire ; une dorsale normale construit environ 6 à 7 km de croûte océanique, avec un flux plus élevé aux dorsales rapides.</li>
+<li><strong>Exemples comparatifs :</strong> la dorsale Est-Pacifique, rapide et magmatiquement abondante, produit une croûte relativement régulière ; la dorsale médio-atlantique, plus lente, présente une production et une épaisseur de croûte plus variables.</li>
+</ul>
+</div>
+</section>
+<section id="fusion-par-réchauffement-isobare" class="slide level2">
+<h2>Fusion par réchauffement isobare</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Mécanisme</strong></p>
+<ul>
+<li><p>La fusion par réchauffement isobare se produit lorsqu’une roche se réchauffe sans décompression importante.</p></li>
+<li><p>Ce processus est typique des points chauds mantelliques, où le manteau asthénosphérique présente une anomalie thermique ascendante liée aux mouvements convectifs du manteau.</p></li>
+<li><p>Le géotherme est donc déplacé vers les températures élevées et peut intersecter le solidus.</p></li>
+</ul>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Représentation</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_05/c-point-chaud.png" alt="Géotherme terrestre au niveau des points chauds." style="width: 100%; max-height: 430px; object-fit: contain;">
+<figcaption>
+Géotherme terrestre au niveau des points chauds.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="contextualisation-de-la-fusion-par-point-chaud" class="slide level2">
+<h2>Contextualisation de la fusion par point chaud</h2>
+<div class="slide-block">
+<p><strong>Ce qui se passe</strong></p>
+<ul>
+<li><strong>Taux de fusion :</strong> environ 2 à 10 % pour de nombreux OIB alcalins ; les points chauds très chauds peuvent atteindre environ 10 à 20 % et produire des basaltes tholéiitiques.</li>
+<li><strong>Profondeur :</strong> la fusion se produit généralement vers 70 à 150 km de profondeur, dans le manteau supérieur sous une lithosphère océanique ; la source du panache peut toutefois être beaucoup plus profonde.</li>
+<li><strong>Source :</strong> manteau de panache hétérogène, souvent décrit comme un mélange de PREMA ou de FOZO avec des composantes EM, HIMU et des lithologies recyclées de type pyroxénite ou éclogite.</li>
+<li><strong>Magma produit :</strong> OIB, alcalins ou tholéiitiques selon le taux de fusion, la température et l’épaisseur de la lithosphère. Sous un continent, un panache peut aussi produire un CFB.</li>
+<li><strong>Liquide et résidu :</strong> un faible taux de fusion donne des liquides alcalins fortement enrichis en éléments incompatibles ; un taux plus élevé donne des liquides tholéiitiques plus magnésiens. Le résidu est une péridotite réfractaire, souvent à grenat, appauvrie en éléments incompatibles.</li>
+<li><strong>Volume produit :</strong> très variable : modéré pour une île océanique isolée, mais potentiellement gigantesque lors de l’arrivée d’une tête de panache, comme dans les grandes provinces magmatiques continentales.</li>
+<li><strong>Exemples comparatifs :</strong> Hawaii illustre un volcanisme tholéiitique associé à des taux de fusion élevés ; Tahiti ou La Réunion illustrent davantage des magmas alcalins issus de taux de fusion plus faibles.</li>
+</ul>
+</div>
+</section>
+<section id="fusion-par-changement-de-composition-apport-de-fluides" class="slide level2">
+<h2>Fusion par changement de composition (apport de fluides)</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>Mécanisme</strong></p>
+<ul>
+<li><p>La fusion par changement de composition se produit lorsque la composition de la roche source est modifiée par un apport important de fluides, sans variation majeure de la pression et de la température.</p></li>
+<li><p>Ce processus est typique des zones de subduction, où les plaques océaniques plongeantes se déshydratent au cours de leur descente dans le manteau. Les fluides libérés, majoritairement constitués de H₂O, se mélangent au coin de manteau sus-jacent et modifient la composition des roches sources.</p></li>
+<li><p>Le géotherme n’est donc pas nécessairement modifié. En revanche, l’apport de fluides abaisse le solidus de la roche source, qui peut alors intersecter le géotherme.</p></li>
+</ul>
+</div>
+<div class="slide-block slide-block--orange">
+<p><strong>Représentation</strong></p>
+<figure style="margin: 0;">
+<img src="../material_used/seance_05/d-subduction.png" alt="Géotherme terrestre au niveau des zones de subduction." style="width: 100%; max-height: 430px; object-fit: contain;">
+<figcaption>
+Géotherme terrestre au niveau des zones de subduction.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="contextualisation-de-la-fusion-par-subduction" class="slide level2">
+<h2>Contextualisation de la fusion par subduction</h2>
+<div class="slide-block">
+<p><strong>Ce qui se passe</strong></p>
+<ul>
+<li><strong>Taux de fusion :</strong> environ 5 à 15 % du coin mantellique ; les estimations globales utilisent souvent un ordre de grandeur proche de 10 %, avec de fortes variations selon la quantité de fluides et la température.</li>
+<li><strong>Profondeur :</strong> fusion généralement vers 70 à 100 km sous l’arc volcanique, au-dessus de la plaque plongeante. La profondeur varie avec l’âge, la température et le pendage de la plaque.</li>
+<li><strong>Source :</strong> péridotite du coin mantellique, souvent issue du DM, puis métasomatisée par les fluides et les éventuels liquides issus de la plaque subduite et des sédiments.</li>
+<li><strong>Magma produit :</strong> IAB, c’est-à-dire des basaltes d’arc ; après stockage et cristallisation, ils peuvent évoluer vers des andésites et des dacites calco-alcalines riches en eau.</li>
+<li><strong>Liquide et résidu :</strong> le liquide est enrichi en éléments lithophiles à grand rayon ionique (LILE), en Pb et en Sr, mais présente souvent des anomalies négatives en Nb-Ta. Le résidu est une péridotite plus appauvrie, parfois stabilisée par l’amphibole ou le grenat.</li>
+<li><strong>Volume produit :</strong> production modérée et très localisée le long des arcs ; elle est moins continue qu’aux dorsales, mais suffisante pour construire une croûte volcanique et contribuer durablement à la croissance de la croûte continentale.</li>
+<li><strong>Exemples comparatifs :</strong> l’arc Izu-Bonin-Mariana produit surtout une croûte océanique d’arc ; les Andes produisent davantage de magmas évolués, car les magmas traversent et assimilent une croûte continentale épaisse.</li>
+</ul>
+</div>
+</section>
+<section id="fusion-de-la-croûte-par-enfouissement-anatexie" class="slide level2">
+<h2>Fusion de la croûte par enfouissement : anatexie</h2>
+<div class="slide-block">
+<p><strong>Mécanisme</strong></p>
+<ul>
+<li><p>L’anatexie désigne la fusion partielle de roches crustales, notamment de la croûte continentale.</p></li>
+<li><p>Lors des collisions continentales, la croûte peut s’épaissir fortement et ses niveaux profonds peuvent être enfouis à des pressions et des températures suffisantes pour atteindre les conditions de fusion.</p></li>
+<li><p>L’enfouissement modifie les conditions de pression et de température, tandis que le métamorphisme transforme les minéraux et peut introduire ou libérer des fluides. La combinaison de ces effets abaisse le solidus de certaines roches crustales et permet leur fusion partielle.</p></li>
+</ul>
+</div>
+</section>
+<section id="contextualisation-de-la-fusion-par-anatexie-de-la-croûte" class="slide level2">
+<h2>Contextualisation de la fusion par anatexie de la croûte</h2>
+<div class="slide-block">
+<p><strong>Ce qui se passe</strong></p>
+<ul>
+<li><strong>Taux de fusion :</strong> généralement quelques pourcents à environ 20 ou 30 %. Les taux effectivement ségrégés sont souvent de l’ordre de 5 à 15 %, mais dépendent fortement de la présence d’eau et de la composition de la croûte.</li>
+<li><strong>Profondeur :</strong> fusion surtout dans la croûte moyenne à inférieure, environ 15 à 40 km de profondeur, lors d’un épaississement, d’un enfouissement ou d’un apport de chaleur mantellique.</li>
+<li><strong>Source :</strong> roches crustales, notamment métasédiments pélitiques, grauwackes, granitoïdes ou roches mafiques métamorphisées ; il ne s’agit pas d’une source DM ou EM du manteau.</li>
+<li><strong>Magma produit :</strong> liquides felsiques crustaux : leucogranites, granites, tonalites ou granodiorites ; s’ils atteignent la surface, ils peuvent alimenter des rhyolites.</li>
+<li><strong>Liquide et résidu :</strong> le liquide est enrichi en SiO₂, en alcalins et en éléments incompatibles ; le résidu, souvent appelé mélanosome ou restite, conserve les minéraux réfractaires et est appauvri en composants fusibles et en eau.</li>
+<li><strong>Volume produit :</strong> souvent limité et localisé par rapport à la fusion mantellique, mais une fusion prolongée de la croûte épaissie peut produire de grands complexes granitiques et contribuer à la différenciation continentale.</li>
+<li><strong>Exemples comparatifs :</strong> les leucogranites de l’Himalaya résultent de la fusion de la croûte continentale épaissie ; les granites des chaînes varisques illustrent une anatexie crustale associée à l’évolution d’un ancien orogène.</li>
+</ul>
+</div>
+</section>
+<section id="les-séries-magmatiques" class="slide level2">
+<h2>Les séries magmatiques</h2>
+<div class="slide-block">
+<p><strong>Une série magmatique est un ensemble de magmas et de roches présentant une évolution chimique cohérente à partir d’une ou plusieurs compositions parentales.</strong></p>
+<ul>
+<li><strong>Deux grands domaines de composition :</strong>
+<ul>
+<li><strong>Domaine subalcalin :</strong> faible teneur relative en Na₂O + K₂O. Il comprend principalement les séries tholéiitique et calco-alcaline.</li>
+<li><strong>Domaine alcalin :</strong> teneur plus élevée en Na₂O + K₂O, souvent associée à des magmas sous-saturés en silice.</li>
+</ul></li>
+<li><strong>Domaine transitionnel :</strong> compositions intermédiaires entre les domaines subalcalin et alcalin.</li>
+<li><strong>Autres séries ou familles spécialisées :</strong> séries calco-alcaline potassique, shoshonitique, komatiitique et hyperalcaline.</li>
+<li><strong>Contrôles principaux :</strong> la composition et la lithologie de la source ainsi que le taux de fusion partielle.</li>
+</ul>
+</div>
+</section>
+<section id="contrôle-des-séries-magmatiques" class="slide level2">
+<h2>Contrôle des séries magmatiques</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<p><strong>La source contrôle la signature initiale</strong></p>
+<ul>
+<li>Une source issue du <strong>DM</strong>, déjà appauvrie par des épisodes de fusion, produit généralement des liquides pauvres en éléments incompatibles, comme les <strong>N-MORB</strong>.</li>
+<li>Une source <strong>EM</strong>, <strong>HIMU</strong> ou enrichie par du matériel recyclé produit des liquides plus riches en éléments incompatibles, comme de nombreux <strong>OIB</strong>.</li>
+<li>La lithologie compte aussi : une pyroxénite ou une éclogite ne fond pas comme une péridotite et peut modifier fortement les rapports d’éléments majeurs et traces.</li>
+<li>Dans les zones de subduction, les fluides et les liquides issus de la plaque plongeante métasomatisent le manteau et contribuent aux magmas d’arc, souvent calco-alcalins.</li>
+</ul>
+</div>
+<div class="slide-block">
+<p><strong>Le taux de fusion contrôle le liquide extrait</strong></p>
+<ul>
+<li>À <strong>faible taux de fusion</strong>, les éléments incompatibles se concentrent dans un petit volume de liquide. Les magmas sont souvent alcalins et enrichis en éléments incompatibles.</li>
+<li>À <strong>taux de fusion plus élevé</strong>, le liquide est plus abondant, généralement moins enrichi en éléments incompatibles et souvent plus tholéiitique. Le résidu devient plus réfractaire.</li>
+<li>La pression et la présence de H₂O modifient cette relation : à haute pression et faible taux de fusion, des liquides très alcalins peuvent se former, alors qu’une fusion plus importante favorise des liquides tholéiitiques.</li>
+<li>Le taux de fusion ne suffit donc pas à lui seul : il agit avec la source, la pression, les fluides et les processus de différenciation.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="séries-magmatiques-diagramme-tas" class="slide level2">
+<h2>Séries magmatiques : diagramme TAS</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<figure style="margin: 0 0 0.3em 0;">
+<img src="../material_used/seance_05/serie1.jpg" alt="Second diagramme TAS montrant les différentes séries magmatiques." style="height: 500px; width: auto; max-width: 100%; object-fit: contain;">
+<figcaption>
+Diagrammes TAS où sont montrées les différentes séries magmatiques.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block">
+<p><strong>Lire les séries sur un diagramme TAS</strong></p>
+<ul>
+<li>Le diagramme TAS représente la teneur en SiO₂ en abscisse et la teneur totale en alcalins, Na₂O + K₂O, en ordonnée. Il sert principalement à nommer et classer les roches volcaniques.</li>
+<li>Les champs situés vers le bas correspondent globalement au domaine subalcalin, qui inclut les tendances tholéiitique et calco-alcaline. Les champs plus riches en alcalins correspondent au domaine alcalin.</li>
+<li>Les taux de fusion peuvent être globalement estimés en suivant une tendance en haut à gauche, alors que la différenciation (cf.&nbsp;séances 6 &amp; 7) suit une tendance en haut à droite.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="séries-magmatiques-diagramme-tas-1" class="slide level2">
+<h2>Séries magmatiques : diagramme TAS</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<figure style="margin: 0;">
+<img src="../material_used/seance_05/serie0.jpeg" alt="Diagramme TAS montrant les différentes séries magmatiques." style="height: 500px; width: auto; max-width: 100%; object-fit: contain;">
+<figcaption>
+Diagrammes TAS où sont montrées les différentes séries magmatiques.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block">
+<p><strong>Lire les séries sur un diagramme TAS</strong></p>
+<ul>
+<li>Les compositions transitionnelles se placent entre les deux domaines. Les compositions très riches en alcalins peuvent être qualifiées d’hyperalcalines.</li>
+<li>Le TAS ne permet pas, à lui seul, de distinguer de manière robuste une série tholéiitique d’une série calco-alcaline. Cette distinction s’étudie notamment avec les diagrammes AFM, complétés par les éléments traces et les isotopes.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="séries-magmatiques-diagramme-afm" class="slide level2">
+<h2>Séries magmatiques : diagramme AFM</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<figure style="margin: 0;">
+<img src="../material_used/seance_05/afm.jpg" alt="Diagramme AFM distinguant les séries tholéiitique et calco-alcaline." style="width: 100%; max-height: 430px; object-fit: contain;">
+<figcaption>
+Diagramme AFM permettant l’identification des séries tholéiitique et calco-alcaline.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block">
+<p><strong>Lire un diagramme AFM</strong></p>
+<ul>
+<li><strong>A</strong> correspond aux alcalins totaux (Na₂O + K₂O), <strong>F</strong> au fer total exprimé, et <strong>M</strong> à MgO. Les trois composantes sont représentées en proportions relatives dans un diagramme ternaire.</li>
+<li>Le diagramme suit l’évolution d’une série magmatique depuis des compositions mafiques riches en Mg vers des liquides plus différenciés, généralement plus riches en alcalins.</li>
+<li>La <strong>tendance tholéiitique</strong> montre un enrichissement relatif en fer au cours de la différenciation. Elle est fréquente pour les MORB, mais peut aussi apparaître dans d’autres contextes.</li>
+<li>La <strong>tendance calco-alcaline</strong> montre une diminution relative du fer. Elle est fréquente dans les arcs volcaniques, où l’eau et d’autres paramètres jouent un rôle important.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="séries-magmatiques-diagramme-multiélément" class="slide level2">
+<h2>Séries magmatiques : diagramme multiélément</h2>
+<div class="slide-block-grid two">
+<div class="slide-block">
+<figure style="margin: 0;">
+<img src="../material_used/seance_05/spider.jpg" alt="Diagramme multiélément comparant des basaltes OIB, MORB et IAB." style="width: 100%; max-height: 430px; object-fit: contain;">
+<figcaption>
+Diagramme multiélément montrant la composition en éléments traces, par ordre croissant de compatibilité, de différents types de basaltes : OIB, MORB et IAB.
+</figcaption>
+</figure>
+</div>
+<div class="slide-block">
+<p><strong>Lire un diagramme multiélément</strong></p>
+<ul>
+<li>Les <strong>OIB</strong> présentent généralement un spectre enrichi et élevé en éléments incompatibles, cohérent avec une source mantellique enrichie et souvent avec un faible taux de fusion.</li>
+<li>Les <strong>MORB</strong> sont globalement appauvris en éléments incompatibles, en particulier en terres rares légères, ce qui traduit une source de type <strong>DM</strong> et une fusion relativement importante.</li>
+<li>Les <strong>IAB</strong> montrent souvent un enrichissement en éléments mobiles, comme Ba, Rb, K, Pb et parfois Sr, associé à une anomalie négative en Nb-Ta. Cette signature indique l’influence des fluides ou des liquides libérés par la plaque subduite.</li>
+</ul>
+<div class="callout callout-important callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<ul>
+<li>Le spectre renseigne donc à la fois sur la <strong>source</strong> et sur le <strong>taux de fusion</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="après-la-fusion-que-devient-le-liquide-transition-vers-le-prochain-cours" class="slide level2">
+<h2>Après la fusion, que devient le liquide ? Transition vers le prochain cours</h2>
+<div class="slide-block">
+<p><strong>Le liquide produit par fusion partielle n’est pas encore une roche finale.</strong></p>
+<ul>
+<li><strong>Séparation de la source :</strong> le liquide s’extrait du résidu par percolation entre les grains ou par des réseaux de fractures et de chenaux.</li>
+<li><strong>Réaction avec les roches traversées :</strong> le magma peut réagir avec le manteau ou la croûte, modifier sa composition et parfois dissoudre ou cristalliser des minéraux.</li>
+<li><strong>Regroupement et mélange :</strong> plusieurs fractions de liquide peuvent s’accumuler, se mélanger ou se séparer à nouveau selon leur densité et leur composition.</li>
+<li><strong>Remontée et stockage :</strong> le magma peut migrer vers un réservoir où il refroidit progressivement et commence à cristalliser.</li>
+<li><strong>Évolution du magma :</strong> la cristallisation fractionnée, l’assimilation de la croûte, le mélange et le dégazage peuvent modifier fortement la composition initiale du liquide.</li>
+<li><strong>Produit final :</strong> la roche observée en surface ou dans la croûte enregistre donc la combinaison de la source, du taux de fusion et de l’histoire d’évolution du magma.</li>
+</ul>
+</div>
+</section>
+<section id="messages-à-retenir" class="slide level2">
+<h2>Messages à retenir</h2>
+<div class="slide-block">
+<ul>
+<li>La fusion naturelle d’une roche source mantellique ou de l’anatexie crustale est toujours partielle.</li>
+<li>Le franchissement du solidus peut se faire par décompression adiabatique, par réchauffement isobare ou par changement de composition de la roche source (apport de fluides et abaissement du solidus).</li>
+<li>Chaque processus est lié à un contexte géodynamique (rifting, point chaud, subduction, ou collision)</li>
+<li>Chaque contexte géodynamique est lié à une roche source (DM, EM, HIMU, …) et à un type de magma produit (MORN, OIB, IAB)</li>
+<li>Le taux de fusion contrôle fortement la composition du liquide, et donc les séries magmatiques produites (un F faible produit plutôt des séries alcalines, alors qu’un F élévé produit plutôt des séries sub-alcalines)</li>
+</ul>
+</div>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copié");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copié");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
