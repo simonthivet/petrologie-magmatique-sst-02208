@@ -33,9 +33,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-
-
-
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -47,15 +47,41 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
 
 
-
-<link rel="stylesheet" href="styles/site.css?v=2">
+<link rel="stylesheet" href="styles/site.css">
 </head>
 
 <body class="nav-fixed quarto-light">
 
-
+<div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
@@ -64,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Pétrologie magmatique – SST.02208</span>
     </a>
   </div>
-            
+            <div id="quarto-search" class="" title="Recherche"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -74,19 +100,70 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Accueil</span></a>
   </li>  
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cours" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">Cours</span></a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-cours">
-      <li><a class="dropdown-item" href="./cours/01-introduction-constituants.html">Séance 1 — Introduction et constituants de la Terre</a></li>
-      <li><a class="dropdown-item" href="./cours/02-roches-magmatiques.html">Séance 2 — Les roches magmatiques I : pétrographie et classification</a></li>
-      <li><a class="dropdown-item" href="./cours/04-roches-sources.html?v=e2847e1">Séance 4 — La naissance des magmas I : nature des roches sources et réservoirs terrestres</a></li>
-      <li><a class="dropdown-item" href="./cours/05-fusion-partielle.html">Séance 5 — La naissance des magmas II : fusion partielle des roches sources et séries magmatiques</a></li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cours" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Cours</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-cours">    
+        <li>
+    <a class="dropdown-item" href="./cours/01-introduction-constituants.html">
+ <span class="dropdown-text">Séance 1 - Pétrologie magmatique : introduction du cours + les constituants de la Terre</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cours/02-roches-magmatiques.html">
+ <span class="dropdown-text">Séance 2 - Les roches magmatiques I : pétrographie et classification</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cours/04-roches-sources.html">
+ <span class="dropdown-text">Séance 4 - La naissance des magmas I : nature des roches sources et réservoirs terrestres</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cours/05-fusion-partielle.html">
+ <span class="dropdown-text">Séance 5 - La naissance des magmas II : fusion partielle des roches sources et séries magmatiques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cours/06-evolution-magmas.html">
+ <span class="dropdown-text">Séance 6 - L’évolution des magmas I : Migration et différenciation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cours/08-roches-plutoniques.html">
+ <span class="dropdown-text">Séance 8 - La solidification des magmas I : roches plutoniques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cours/09-roches-volcaniques.html">
+ <span class="dropdown-text">Séance 9 - La solidification des magmas II : roches volcaniques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cours/10-magmatisme-geodynamique.html">
+ <span class="dropdown-text">Séance 10 - L’impact du magmatisme I : géodynamique terrestre</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cours/11-processus-volcaniques.html">
+ <span class="dropdown-text">Séance 11 - L’impact du magmatisme II : volcanisme</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cours/13a-magmatisme-extraterrestre.html">
+ <span class="dropdown-text">Séance 13 - Magmatisme extraterrestre</span></a>
+  </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tp" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">TP</span></a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-tp">
-      <li><a class="dropdown-item" href="./tp/tp01-observer-classer-roches.html">Séance 3 — Les roches magmatiques II : exercices de reconnaissance</a></li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tp" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">TP</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tp">    
+        <li>
+    <a class="dropdown-item" href="./tp/tp01-observer-classer-roches.html">
+ <span class="dropdown-text">Séance 3 - Les roches magmatiques II : exercices de reconnaissance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tp/tp02-diagrammes-phases.html">
+ <span class="dropdown-text">Séance 7 - L’évolution des magmas II : utilisation de diagrammes de phase</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tp/tp03-proprietes-magmas.html">
+ <span class="dropdown-text">Séance 12 - L’impact du magmatisme III : propriétés magmatiques et dynamiques éruptives</span></a>
+  </li>  
     </ul>
   </li>
 </ul>
@@ -121,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -307,24 +384,47 @@ Coupe schématique d’un système magmatique et volcanique où l’on peut cont
 </section>
 <section id="modalités-de-lexamen" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="modalités-de-lexamen"><span class="header-section-number">3</span> Modalités de l’examen</h2>
-<p>Un seul examen écrit de 1h sera à valider pendant la session de février 2027.</p>
+<p>Les modalités exactes de l’examen restent à déterminer.</p>
+<p>Deux formats sont envisagés :</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Format possible</th>
+<th style="text-align: right;">Durée indicative</th>
+<th>Statut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Examen écrit</td>
+<td style="text-align: right;">1 h</td>
+<td>à confirmer</td>
+</tr>
+<tr class="even">
+<td>Examen oral</td>
+<td style="text-align: right;">20 min</td>
+<td>à confirmer</td>
+</tr>
+</tbody>
+</table>
+<p>L’examen aura lieu pendant la <strong>session de février 2027</strong>. La date exacte et le format définitif seront communiqués lorsque les modalités seront stabilisées.</p>
 </section>
 <section id="séances-de-cours-et-de-tp" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="séances-de-cours-et-de-tp"><span class="header-section-number">4</span> Séances de cours et de TP</h2>
 <ul>
-<li><a href="./cours/01-introduction-constituants.html">Séance 1 - Pétrologie magmatique : introduction du cours + les constituants de la Terre</a> <a class="session-pdf-link" href="./cours/01-introduction-constituants.html?print-pdf" target="_blank" rel="noopener" aria-label="Ouvrir la séance 1 en mode imprimable, puis l'enregistrer au format PDF" title="Mode imprimable : utilisez ensuite Imprimer dans le navigateur et choisissez Enregistrer au format PDF"><i class="bi bi-filetype-pdf" aria-hidden="true"></i> PDF</a></li>
-<li><a href="./cours/02-roches-magmatiques.html">Séance 2 - Les roches magmatiques I : pétrographie et classification</a> <a class="session-pdf-link" href="./cours/02-roches-magmatiques.html?print-pdf" target="_blank" rel="noopener" aria-label="Ouvrir la séance 2 en mode imprimable, puis l'enregistrer au format PDF" title="Mode imprimable : utilisez ensuite Imprimer dans le navigateur et choisissez Enregistrer au format PDF"><i class="bi bi-filetype-pdf" aria-hidden="true"></i> PDF</a></li>
+<li><a href="./cours/01-introduction-constituants.html">Séance 1 - Pétrologie magmatique : introduction du cours + les constituants de la Terre</a> <a class="session-pdf-link" href="cours/01-introduction-constituants.html?print-pdf" target="_blank" rel="noopener" aria-label="Ouvrir la séance 1 en mode imprimable, puis l'enregistrer au format PDF" title="Mode imprimable : utilisez ensuite Imprimer dans le navigateur et choisissez Enregistrer au format PDF"><i class="bi bi-filetype-pdf" aria-hidden="true"></i> PDF</a></li>
+<li><a href="./cours/02-roches-magmatiques.html">Séance 2 - Les roches magmatiques I : pétrographie et classification</a></li>
 <li><a href="./tp/tp01-observer-classer-roches.html">Séance 3 - Les roches magmatiques II : exercices de reconnaissance</a></li>
-<li><a href="./cours/04-roches-sources.html?v=e2847e1">Séance 4 - La naissance des magmas I : nature des roches sources et réservoirs terrestres</a> <a class="session-pdf-link" href="./cours/04-roches-sources.html?print-pdf&amp;v=e2847e1" target="_blank" rel="noopener" aria-label="Ouvrir la séance 4 en mode imprimable, puis l'enregistrer au format PDF" title="Mode imprimable : utilisez ensuite Imprimer dans le navigateur et choisissez Enregistrer au format PDF"><i class="bi bi-filetype-pdf" aria-hidden="true"></i> PDF</a></li>
-<li><a href="./cours/05-fusion-partielle.html">Séance 5 - La naissance des magmas II : fusion partielle des roches sources et séries magmatiques</a> <a class="session-pdf-link" href="./cours/05-fusion-partielle.html?print-pdf" target="_blank" rel="noopener" aria-label="Ouvrir la séance 5 en mode imprimable, puis l'enregistrer au format PDF" title="Mode imprimable : utilisez ensuite Imprimer dans le navigateur et choisissez Enregistrer au format PDF"><i class="bi bi-filetype-pdf" aria-hidden="true"></i> PDF</a></li>
-<li><span>Séance 6 - L’évolution des magmas I : différenciation par mélange, contamination et cristallisation</span></li>
-<li><span>Séance 7 - L’évolution des magmas II : utilisation de diagrammes de phase</span></li>
-<li><span>Séance 8 - La solidification des magmas I : roches plutoniques</span></li>
-<li><span>Séance 9 - La solidification des magmas II : roches volcaniques</span></li>
-<li><span>Séance 10 - L’impact du magmatisme I : géodynamique terrestre</span></li>
-<li><span>Séance 11 - L’impact du magmatisme II : volcanisme</span></li>
-<li><span>Séance 12 - L’impact du magmatisme III : propriétés magmatiques et dynamiques éruptives</span></li>
-<li><span>Séance 13 - Magmatisme extraterrestre</span></li>
+<li><a href="./cours/04-roches-sources.html">Séance 4 - La naissance des magmas I : nature des roches sources et réservoirs terrestres</a></li>
+<li><a href="./cours/05-fusion-partielle.html">Séance 5 - La naissance des magmas II : fusion partielle des roches sources et séries magmatiques</a></li>
+<li><a href="./cours/06-evolution-magmas.html">Séance 6 - L’évolution des magmas I : Migration et différenciation</a></li>
+<li><a href="./tp/tp02-diagrammes-phases.html">Séance 7 - L’évolution des magmas II : utilisation de diagrammes de phase</a></li>
+<li><a href="./cours/08-roches-plutoniques.html">Séance 8 - La solidification des magmas I : roches plutoniques</a></li>
+<li><a href="./cours/09-roches-volcaniques.html">Séance 9 - La solidification des magmas II : roches volcaniques</a></li>
+<li><a href="./cours/10-magmatisme-geodynamique.html">Séance 10 - L’impact du magmatisme I : géodynamique terrestre</a></li>
+<li><a href="./cours/11-processus-volcaniques.html">Séance 11 - L’impact du magmatisme II : volcanisme</a></li>
+<li><a href="./tp/tp03-proprietes-magmas.html">Séance 12 - L’impact du magmatisme III : propriétés magmatiques et dynamiques éruptives</a></li>
+<li><a href="./cours/13a-magmatisme-extraterrestre.html">Séance 13 - Magmatisme extraterrestre</a></li>
 </ul>
 </section>
 <section id="références-utiles" class="level2" data-number="5">
