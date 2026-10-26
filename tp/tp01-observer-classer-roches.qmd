@@ -348,7 +348,7 @@ lang: fr
 <!-- PARTIE 1 : principe, objectifs et plan réunis dans la même section. -->
 <div class="tp-panel">
 
-Ce TP est conçu comme un atelier d'observation et de discussion à partir de modèles 3D d'affleurements, de photos d'échantillons, d'une base de données de compositions minéralogiques et géochmiques, mais aussi à partir d'échantillons réels.
+Ce TP est conçu comme un atelier d'observation et de discussion à partir de modèles 3D d'affleurements, de photos d'échantillons, d'une base de données de compositions minéralogiques et géochimiques, mais aussi à partir d'échantillons réels.
 
 À la fin de cette séance, vous devriez pouvoir :
 
@@ -361,8 +361,8 @@ Durées indicatives des différents exercices :
 | Temps | Contenu | Objectif |
 |---|---|---|
 | 20 min | Exercice 1 : décrire un affleurement | Relier les informations disponibles aux structures visibles de l'affleurement pour en déduire un contexte géologique |
-| 20 min | Exercice 2 : décrire la texture d'un échantillon | Caractériser la granulométrie, cristallinité, et vésicularité d'un échantillon |
-| 20 min | Exercice 3 : nommer une roche | Utiliser les classifications adéquates pour détermimer le nom d'une roche |
+| 20 min | Exercice 2 : décrire la texture d'un échantillon | Caractériser la granulométrie, la cristallinité et la vésicularité d'un échantillon |
+| 20 min | Exercice 3 : nommer une roche | Utiliser les classifications adéquates pour déterminer le nom d'une roche |
 | 30 min | Exercice 4 : observations de vrais échantillons | Récapitulatif sur de vrais échantillons |
 
 </div>
@@ -381,19 +381,19 @@ Durées indicatives des différents exercices :
 <article class="tp-ex-card tp-ex1-card">
   <h4>Cas d'étude 1 — Spitzkoppe (Namibie)</h4>
   <p><a href="https://v3geo.com/viewer/#/341" target="_blank" rel="noopener">Ouvrir le modèle 3D — Spitzkoppe</a></p>
-  <p class="tp-indice"><strong>Indice :</strong> Ce petit modèle en surface, montre des roches qui affleurent grâce à une érosion substentielle. Les roches affleurantes sont néanmoins en place et sont datées d'environ 600 Ma lors de l'orogénèse damarienne. On observe ici des chaos de blocs façonnés par l'aridité du désert.</p>
+  <p class="tp-indice"><strong>Indice :</strong> Ce petit modèle en surface montre des roches qui affleurent grâce à une érosion substantielle. Les roches affleurantes sont néanmoins en place et sont datées d'environ 600 Ma, lors de l'orogenèse damarienne. On observe ici un chaos de blocs façonné par l'aridité du désert.</p>
 </article>
 
 <article class="tp-ex-card tp-ex1-card">
   <h4>Cas d'étude 2 — Chachahuén (Argentine)</h4>
   <p><a href="https://v3geo.com/viewer/index.html#/272" target="_blank" rel="noopener">Ouvrir le modèle 3D — Chachahuén</a></p>
-  <p class="tp-indice"><strong>Indice :</strong> Ce modéle montre une structure allongée où l'érosion a fait son œuvre : les roches les plus dures ressortent par rapport aux roches les plus tendres. Évaluez la continuité et la géométrie singulière de l'affleurement et réfléchissez à ce que cela peut représenter.</p>
+  <p class="tp-indice"><strong>Indice :</strong> Ce modèle montre une structure allongée où l'érosion a fait son œuvre : les roches les plus dures ressortent par rapport aux roches les plus tendres. Évaluez la continuité et la géométrie singulière de l'affleurement et réfléchissez à ce que cela peut représenter.</p>
 </article>
 
 <article class="tp-ex-card tp-ex1-card">
   <h4>Cas d'étude 3 — Hestgerðismúli (Islande)</h4>
   <p><a href="https://v3geo.com/viewer/index.html#/444" target="_blank" rel="noopener">Ouvrir le modèle 3D — Hestgerðismúli</a></p>
-  <p class="tp-indice"><strong>Indice :</strong> Les différentes faces latérales de ce vaste affleurement révèlent la structure interne de cette zone géologique. Évaluez la forme et la répétition des structures visibles pour déduire la nature et le mode d'emplacement de ces roches.</p>
+  <p class="tp-indice"><strong>Indice :</strong> Les différentes faces latérales de ce vaste affleurement révèlent la structure interne de cette zone géologique. Évaluez la forme et la répétition des structures visibles pour déduire la nature et le mode de mise en place de ces roches.</p>
 </article>
 
 <article class="tp-ex-card tp-ex1-card">
@@ -605,7 +605,7 @@ Les valeurs sont exprimées en pourcentage massique. Le fer total est exprimé s
 <!-- PARTIE 6 : aucune interaction à préparer sur la page. -->
 <div class="tp-panel tp-panel--orange">
 
-Essayez d'identifier les roches présentes dans le tiroir fourni, en applicant les notions vues en cours au sein de ce TP.
+Essayez d'identifier les roches présentes dans le tiroir fourni, en appliquant les notions vues en cours et au sein de ce TP.
 </div>
 
 </div>
