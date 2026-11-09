@@ -298,6 +298,16 @@ samp {
   padding-bottom: 0.72rem;
 }
 
+.course-visual-image-link {
+  cursor: zoom-in;
+  display: block;
+}
+
+.course-visual-image-link:focus-visible {
+  outline: 2px solid var(--course-faculty);
+  outline-offset: 3px;
+}
+
 .course-visual-figure img {
   aspect-ratio: 4 / 3;
   background: #ffffff;
